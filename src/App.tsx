@@ -10,7 +10,7 @@ function Header({ lang }: { lang: Lang }) {
     <header style={{ borderBottom: "1px solid var(--surface-0)", padding: "1.25rem 1.5rem" }}>
       <div style={{ maxWidth: 880, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <Link to={lang === "es" ? "/es" : "/"} style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="X-Ops Media" style={{ height: 36, borderRadius: 6 }} />
+          <img src="/logo.jpeg" alt="X-Ops Media" style={{ height: 36, borderRadius: 6 }} />
           <span style={{ fontWeight: 700, letterSpacing: "-0.01em", fontSize: "1.15rem" }}>X-Ops Media</span>
         </Link>
         <nav style={{ display: "flex", gap: "1rem", fontSize: "0.9rem" }}>

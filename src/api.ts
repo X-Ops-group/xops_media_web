@@ -1,3 +1,5 @@
+import articlesData from "./content/articles.json";
+
 export interface Article {
   id: string;
   niche_id: string;
@@ -10,15 +12,11 @@ export interface Article {
   published_at: string;
 }
 
-// D1 del ADR-004: el contenido vive como código en git — este fetch client-side
-// es el paso intermedio antes del sync a MDX; hoy lee directo del pipeline vivo.
-const FEED_URL = "http://100.126.250.117:5678/webhook/articles-feed";
-
-export async function fetchArticles(): Promise<Article[]> {
-  const res = await fetch(FEED_URL);
-  if (!res.ok) throw new Error(`articles-feed respondió ${res.status}`);
-  const data = await res.json();
-  return data.articles as Article[];
+// D1 del ADR-004: el contenido vive como código en git. src/content/articles.json
+// se genera con scripts/sync-articles.sh (lee content_factory.articles, status='approved')
+// y se comitea al repo — Vercel builda y despliega automáticamente al detectar el push.
+export function fetchArticles(): Promise<Article[]> {
+  return Promise.resolve((articlesData as { articles: Article[] }).articles);
 }
 
 export const NICHE_LABELS: Record<string, { es: string; en: string }> = {
