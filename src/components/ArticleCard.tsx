@@ -10,7 +10,7 @@ export function ArticleCard({ a, lang }: { a: Article; lang: Lang }) {
   const excerpt = body.slice(0, 200).trim() + (body.length > 200 ? "…" : "");
   return (
     <Link
-      to={`/${lang === "es" ? "es/" : ""}articulo/${a.slug}`}
+      to={`/${lang}/articulo/${a.slug}`}
       style={{
         display: "block",
         background: "var(--card-bg)",

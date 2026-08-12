@@ -15,7 +15,7 @@ export function ArticlePage({ lang }: { lang: Lang }) {
     <>
       <Header lang={lang} />
       <main style={{ maxWidth: 720, margin: "0 auto", padding: "1.5rem 1.5rem 0" }}>
-        <Link to={lang === "es" ? "/es" : "/"} style={{ color: "var(--media-accent-light)", fontSize: "0.9rem" }}>
+        <Link to={`/${lang}`} style={{ color: "var(--media-accent-light)", fontSize: "0.9rem" }}>
           &larr; {lang === "es" ? "Volver" : "Back"}
         </Link>
 
