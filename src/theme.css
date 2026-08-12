@@ -1,0 +1,31 @@
+/* Paleta X-Ops Media — medida del logo (ADR-004 D10), emparentada con X-Ops Conference (theme.css). */
+:root {
+  --media-ink: #021438;      /* navy del logo, tinta propia de Media */
+  --media-accent: #0060F0;   /* corchetes del logo */
+  --media-accent-light: #30B0F0; /* play/ondas del logo */
+  --shared-accent: #4A90D9;  /* compartido con Conference */
+
+  --surface-0: #0F3460;
+  --surface-1: #16213E;
+  --surface-2: #1A1A2E;
+
+  --text-primary: #F4F7FB;
+  --text-secondary: #B8C5D6;
+  --text-muted: #8892A0;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+
+  --bg: var(--surface-2);
+  --card-bg: var(--surface-1);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
