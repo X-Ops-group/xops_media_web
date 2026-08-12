@@ -10,6 +10,17 @@
       "slug": "cover-test-pipeline-verification",
       "cover_asset_key": "https://seaweedfs.holos/holos-media/xopsyou-en/2026/cover-test-pipeline-verification/cover.png",
       "published_at": "2026-08-12T18:11:05.959Z"
+    },
+    {
+      "id": "387721fb-2c44-4c7e-90b2-1cde690346d9",
+      "niche_id": "xopsyou-en",
+      "title_es": "Prueba de guard - verificacion del camino feliz",
+      "title_en": "Guard Test - Verifying the Happy Path",
+      "body_es": "Articulo sintetico para confirmar que el guard de idempotencia no rompe una aprobacion real. Se descarta tras la verificacion.",
+      "body_en": "Synthetic article to confirm the idempotency guard does not break a real approval. Discarded after verification.",
+      "slug": "guard-test-happy-path",
+      "cover_asset_key": null,
+      "published_at": "2026-08-12T19:13:36.972Z"
     }
   ]
 }
