@@ -10,6 +10,17 @@
       "slug": "kvm-nested-virtualization-isolation-flaw",
       "cover_asset_key": null,
       "published_at": "2026-08-12T07:03:07.067Z"
+    },
+    {
+      "id": "6960d160-7410-4887-bd12-8bf7305f46af",
+      "niche_id": "xopsyou-es",
+      "title_es": "CVE-2026-20316 en Cisco Secure Firewall Management Center",
+      "title_en": "CVE-2026-20316 in Cisco Secure Firewall Management Center",
+      "body_es": "Cisco publicó un aviso de seguridad para una vulnerabilidad crítica en Secure Firewall Management Center (FMC) que permite a un atacante remoto no autenticado ejecutar comandos con privilegios elevados en el sistema afectado.\n\nLa falla, identificada como CVE-2026-20316, reside en la interfaz de administración web de FMC y afecta a las versiones 7.2 a 7.4 del software. Un atacante puede explotar la vulnerabilidad enviando una petición HTTP especialmente diseñada al endpoint de configuración, sin necesidad de credenciales válidas.\n\nFMC es la plataforma centralizada que muchas organizaciones usan para administrar múltiples firewalls Cisco Secure Firewall (antes Firepower) distribuidos en su red — comprometer el FMC equivale a comprometer la gestión de todo el perímetro de seguridad de la organización.\n\nCisco calificó la vulnerabilidad con la máxima severidad en su escala interna y ya publicó parches para todas las versiones afectadas. Se recomienda aplicar la actualización de inmediato y, mientras tanto, restringir el acceso a la interfaz de administración solo a redes de gestión de confianza.",
+      "body_en": "Cisco published a security advisory for a critical vulnerability in Secure Firewall Management Center (FMC) that allows an unauthenticated remote attacker to execute commands with elevated privileges on the affected system.\n\nThe flaw, tracked as CVE-2026-20316, resides in FMC's web management interface and affects software versions 7.2 through 7.4. An attacker can exploit the vulnerability by sending a specially crafted HTTP request to the configuration endpoint, without needing valid credentials.\n\nFMC is the centralized platform many organizations use to manage multiple Cisco Secure Firewall (formerly Firepower) devices distributed across their network — compromising the FMC is equivalent to compromising the management of the organization's entire security perimeter.\n\nCisco rated the vulnerability at maximum severity on its internal scale and has already published patches for all affected versions. Immediate patching is recommended, along with restricting access to the management interface to trusted management networks in the meantime.",
+      "slug": "cve-2026-20316-cisco-secure-fmc",
+      "cover_asset_key": null,
+      "published_at": "2026-08-12T14:42:00.820Z"
     }
   ]
 }
