@@ -31,7 +31,7 @@
       "body_en": "Three widely used production infrastructure projects shipped security patches this week, in what analysts describe as an unusually concentrated window of critical disclosures for the DevOps toolchain.\n\nVeeam Backup & Replication fixed a deserialization vulnerability that allowed remote code execution to an attacker with network access to the backup server — a particularly dangerous vector because backup servers commonly hold domain credentials with broad privileges so they can back up any system.\n\nHashiCorp patched Terraform to close a state-handling issue that, under specific parallel-execution conditions, could leak values marked as sensitive (`sensitive = true`) into plaintext execution logs — breaking the core guarantee that flag promises.\n\nDjango, for its part, fixed an authentication-bypass vulnerability in its session middleware affecting installations with a specific distributed cache-backend configuration pattern.\n\nNone of the three flaws has confirmed active exploitation as of publication, but all three projects recommend patching without delay given the vulnerabilities' profile.",
       "slug": "veeam-terraform-django-security-patches",
       "cover_asset_key": "https://seaweedfs.holos/holos-media/devsecops-en/2026/veeam-terraform-django-security-patches/cover.png",
-      "published_at": "2026-08-12T17:19:00.502Z"
+      "published_at": "2026-08-12T17:19:30.500Z"
     }
   ]
 }
