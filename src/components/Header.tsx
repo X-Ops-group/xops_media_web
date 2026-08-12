@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { categoriesForLang, type Lang } from "../content";
+import { categoriesForLang, ROUTE_SEGMENTS, type Lang } from "../content";
 
 export function Header({ lang }: { lang: Lang }) {
   const cats = categoriesForLang(lang);
   const otherLang: Lang = lang === "es" ? "en" : "es";
+  const seg = ROUTE_SEGMENTS[lang];
   return (
     <header style={{ borderBottom: "1px solid var(--surface-0)" }}>
       <div style={{ maxWidth: 960, margin: "0 auto", padding: "1.1rem 1.5rem 0" }}>
@@ -32,7 +33,7 @@ export function Header({ lang }: { lang: Lang }) {
           {cats.map((c) => (
             <Link
               key={c.id}
-              to={`/${lang}/categoria/${lang === "es" ? c.slugEs : c.slugEn}`}
+              to={`/${lang}/${seg.category}/${lang === "es" ? c.slugEs : c.slugEn}`}
               style={{ color: "var(--text-secondary)" }}
             >
               {lang === "es" ? c.labelEs : c.labelEn}

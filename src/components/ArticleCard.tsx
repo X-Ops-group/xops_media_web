@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import type { Article, Lang } from "../content";
-import { categoryById } from "../content";
+import { topicByNicheId, ROUTE_SEGMENTS } from "../content";
 import { AdSlot } from "./AdSlot";
 
 export function ArticleCard({ a, lang }: { a: Article; lang: Lang }) {
   const title = lang === "es" ? a.title_es : a.title_en;
   const body = lang === "es" ? a.body_es : a.body_en;
-  const cat = categoryById(a.niche_id);
+  const cat = topicByNicheId(a.niche_id);
   const excerpt = body.slice(0, 200).trim() + (body.length > 200 ? "…" : "");
   return (
     <Link
-      to={`/${lang}/articulo/${a.slug}`}
+      to={`/${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`}
       style={{
         display: "block",
         background: "var(--card-bg)",

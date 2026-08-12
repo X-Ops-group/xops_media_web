@@ -1,5 +1,5 @@
-import type { Article, Category, Lang } from "./content";
-import { CATEGORIES } from "./content";
+import type { Article, Topic, Lang } from "./content";
+import { ROUTE_SEGMENTS } from "./content";
 
 const SITE_URL = "https://xops.media";
 const SITE_NAME = "X-Ops Media";
@@ -55,12 +55,11 @@ export function homeMeta(lang: Lang): PageMeta {
   };
 }
 
-export function categoryMeta(lang: Lang, cat: Category): PageMeta {
-  const label = lang === "es" ? cat.labelEs : cat.labelEn;
-  const slug = lang === "es" ? cat.slugEs : cat.slugEn;
+export function categoryMeta(lang: Lang, topic: Topic): PageMeta {
+  const label = lang === "es" ? topic.labelEs : topic.labelEn;
+  const slug = lang === "es" ? topic.slugEs : topic.slugEn;
   const otherLang: Lang = lang === "es" ? "en" : "es";
-  const otherCat = CATEGORIES.find((c) => c.lang === otherLang && c.id.startsWith(cat.id.split("-")[0]));
-  const title = `${label} — ${lang === "es" ? "X-Ops Media" : "X-Ops Media"}`;
+  const title = `${label} — X-Ops Media`;
   const description =
     lang === "es"
       ? `Últimas noticias de ${label} — curadas, investigadas y aprobadas por un humano.`
@@ -68,25 +67,25 @@ export function categoryMeta(lang: Lang, cat: Category): PageMeta {
   return {
     title,
     description,
-    canonical: `${SITE_URL}/${lang}/categoria/${slug}`,
-    alternateUrl: otherCat ? `${SITE_URL}/${otherLang}/categoria/${otherLang === "es" ? otherCat.slugEs : otherCat.slugEn}` : `${SITE_URL}/${otherLang}`,
+    canonical: `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`,
+    alternateUrl: `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].category}/${otherLang === "es" ? topic.slugEs : topic.slugEn}`,
     jsonLd: [
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         name: title,
         description,
-        url: `${SITE_URL}/${lang}/categoria/${slug}`,
+        url: `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`,
       },
     ],
   };
 }
 
-export function articleMeta(lang: Lang, article: Article, cat: Category | undefined): PageMeta {
+export function articleMeta(lang: Lang, article: Article, topic: Topic | undefined): PageMeta {
   const title = lang === "es" ? article.title_es : article.title_en;
   const body = lang === "es" ? article.body_es : article.body_en;
   const description = body.slice(0, 155).trim() + "…";
-  const url = `${SITE_URL}/${lang}/articulo/${article.slug}`;
+  const url = `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].article}/${article.slug}`;
   const otherLang: Lang = lang === "es" ? "en" : "es";
 
   const jsonLd = {
@@ -98,7 +97,7 @@ export function articleMeta(lang: Lang, article: Article, cat: Category | undefi
     dateModified: article.published_at,
     inLanguage: lang,
     image: article.cover_asset_key ? [article.cover_asset_key] : undefined,
-    articleSection: cat ? (lang === "es" ? cat.labelEs : cat.labelEn) : article.niche_id,
+    articleSection: topic ? (lang === "es" ? topic.labelEs : topic.labelEn) : article.niche_id,
     author: { "@type": "Organization", name: SITE_NAME },
     publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.jpeg` } },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -109,15 +108,15 @@ export function articleMeta(lang: Lang, article: Article, cat: Category | undefi
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: lang === "es" ? "Portada" : "Home", item: `${SITE_URL}/${lang}` },
-      cat
+      topic
         ? {
             "@type": "ListItem",
             position: 2,
-            name: lang === "es" ? cat.labelEs : cat.labelEn,
-            item: `${SITE_URL}/${lang}/categoria/${lang === "es" ? cat.slugEs : cat.slugEn}`,
+            name: lang === "es" ? topic.labelEs : topic.labelEn,
+            item: `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${lang === "es" ? topic.slugEs : topic.slugEn}`,
           }
         : null,
-      { "@type": "ListItem", position: cat ? 3 : 2, name: title, item: url },
+      { "@type": "ListItem", position: topic ? 3 : 2, name: title, item: url },
     ].filter(Boolean),
   };
 
@@ -125,7 +124,7 @@ export function articleMeta(lang: Lang, article: Article, cat: Category | undefi
     title: `${title} — X-Ops Media`,
     description,
     canonical: url,
-    alternateUrl: `${SITE_URL}/${otherLang}/articulo/${article.slug}`,
+    alternateUrl: `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].article}/${article.slug}`,
     jsonLd: [jsonLd, breadcrumb],
   };
 }

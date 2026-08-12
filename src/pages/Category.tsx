@@ -5,13 +5,13 @@ import { AdSlot } from "../components/AdSlot";
 import { ArticleFeed } from "../components/ArticleCard";
 import { useSEO } from "../components/useSEO";
 import { categoryMeta, homeMeta } from "../seo";
-import { CATEGORIES, articlesByCategory, type Lang } from "../content";
+import { topicBySlug, articlesByTopic, type Lang } from "../content";
 
 export function Category({ lang }: { lang: Lang }) {
   const { slug } = useParams();
-  const cat = CATEGORIES.find((c) => c.lang === lang && (lang === "es" ? c.slugEs : c.slugEn) === slug);
-  const articles = cat ? articlesByCategory(cat.id) : [];
-  useSEO(cat ? categoryMeta(lang, cat) : homeMeta(lang), lang);
+  const topic = slug ? topicBySlug(lang, slug) : undefined;
+  const articles = topic ? articlesByTopic(topic.id) : [];
+  useSEO(topic ? categoryMeta(lang, topic) : homeMeta(lang), lang);
 
   return (
     <>
@@ -19,13 +19,13 @@ export function Category({ lang }: { lang: Lang }) {
       <main style={{ maxWidth: 960, margin: "0 auto", padding: "1.5rem 1.5rem 0" }}>
         <AdSlot variant="leaderboard" id={`category-${slug}-top`} />
         <h1 style={{ fontSize: "1.6rem", marginBottom: "1.5rem" }}>
-          {cat ? (lang === "es" ? cat.labelEs : cat.labelEn) : slug}
+          {topic ? (lang === "es" ? topic.labelEs : topic.labelEn) : slug}
         </h1>
-        {!cat && <p>{lang === "es" ? "Categoría no encontrada." : "Category not found."}</p>}
-        {cat && articles.length === 0 && (
+        {!topic && <p>{lang === "es" ? "Categoría no encontrada." : "Category not found."}</p>}
+        {topic && articles.length === 0 && (
           <p style={{ color: "var(--text-muted)" }}>{lang === "es" ? "Todavía no hay artículos en esta categoría." : "No articles in this category yet."}</p>
         )}
-        {cat && articles.length > 0 && <ArticleFeed articles={articles} lang={lang} />}
+        {topic && articles.length > 0 && <ArticleFeed articles={articles} lang={lang} />}
       </main>
       <Footer lang={lang} />
     </>

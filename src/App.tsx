@@ -10,8 +10,8 @@ export default function App() {
       <Route path="/" element={<Navigate to="/en" replace />} />
 
       <Route path="/en" element={<Home lang="en" />} />
-      <Route path="/en/categoria/:slug" element={<Category lang="en" />} />
-      <Route path="/en/articulo/:slug" element={<ArticlePage lang="en" />} />
+      <Route path="/en/category/:slug" element={<Category lang="en" />} />
+      <Route path="/en/article/:slug" element={<ArticlePage lang="en" />} />
 
       <Route path="/es" element={<Home lang="es" />} />
       <Route path="/es/categoria/:slug" element={<Category lang="es" />} />

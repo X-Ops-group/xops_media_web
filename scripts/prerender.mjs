@@ -5,19 +5,23 @@
 // sigue cargando después y toma control normal de la página (interactividad
 // intacta); esto solo asegura que el <body> inicial ya tenga el contenido real.
 //
-// Corre como parte de `npm run build`, después de generate-seo-files.mjs.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+// Corre como parte de `npm run build`, después de generate-seo-files.mjs, así
+// que se regenera automáticamente con cada sync de artículos nuevos.
+import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 
 const SITE_URL = "https://xops.media";
 const DIST_DIR = new URL("../dist/", import.meta.url).pathname;
 const CONTENT_DIR = new URL("../src/content/", import.meta.url).pathname;
 
-const CATEGORIES = [
-  { id: "devsecops-en", slugEs: "devsecops", slugEn: "devsecops", labelEs: "DevSecOps", labelEn: "DevSecOps", lang: "en" },
-  { id: "devsecops-es", slugEs: "devsecops", slugEn: "devsecops", labelEs: "DevSecOps", labelEn: "DevSecOps", lang: "es" },
-  { id: "xopsyou-en", slugEs: "x-ops", slugEn: "x-ops", labelEs: "X-Ops", labelEn: "X-Ops", lang: "en" },
-  { id: "xopsyou-es", slugEs: "x-ops", slugEn: "x-ops", labelEs: "X-Ops", labelEn: "X-Ops", lang: "es" },
+const ROUTE_SEGMENTS = {
+  en: { category: "category", article: "article" },
+  es: { category: "categoria", article: "articulo" },
+};
+
+const TOPICS = [
+  { id: "devsecops", nicheIds: ["devsecops-en", "devsecops-es"], slugEs: "devsecops", slugEn: "devsecops", labelEs: "DevSecOps", labelEn: "DevSecOps" },
+  { id: "x-ops", nicheIds: ["xopsyou-en", "xopsyou-es"], slugEs: "x-ops", slugEn: "x-ops", labelEs: "X-Ops", labelEn: "X-Ops" },
 ];
 
 function loadArticles(nicheId) {
@@ -28,9 +32,17 @@ function loadArticles(nicheId) {
   }
 }
 
-const allArticles = CATEGORIES.flatMap((c) => loadArticles(c.id).map((a) => ({ ...a, cat: c }))).sort((a, b) =>
-  b.published_at.localeCompare(a.published_at)
-);
+function topicForNiche(nicheId) {
+  return TOPICS.find((t) => t.nicheIds.includes(nicheId));
+}
+
+const nicheDirs = readdirSync(CONTENT_DIR, { withFileTypes: true })
+  .filter((d) => d.isDirectory())
+  .map((d) => d.name);
+
+const allArticles = nicheDirs
+  .flatMap((n) => loadArticles(n).map((a) => ({ ...a, topic: topicForNiche(n) })))
+  .sort((a, b) => b.published_at.localeCompare(a.published_at));
 
 function esc(s) {
   return String(s ?? "")
@@ -65,16 +77,16 @@ ${jsonLd.map((obj) => `  <script type="application/ld+json">${JSON.stringify(obj
   writeFileSync(outPath, html);
 }
 
-function catLabel(cat, lang) {
-  return lang === "es" ? cat.labelEs : cat.labelEn;
+function topicLabel(topic, lang) {
+  if (!topic) return "";
+  return lang === "es" ? topic.labelEs : topic.labelEn;
 }
 
 function articleSnippet(a, lang) {
   const title = lang === "es" ? a.title_es : a.title_en;
   const body = lang === "es" ? a.body_es : a.body_en;
-  const cat = a.cat;
   return `<article>
-    <div>${esc(catLabel(cat, lang))}</div>
+    <div>${esc(topicLabel(a.topic, lang))}</div>
     <h1>${esc(title)}</h1>
     <time datetime="${a.published_at}">${a.published_at.slice(0, 10)}</time>
     ${body
@@ -85,12 +97,13 @@ function articleSnippet(a, lang) {
 }
 
 function feedSnippet(articles, lang) {
+  const seg = ROUTE_SEGMENTS[lang].article;
   return `<ul>
     ${articles
       .map((a) => {
         const title = lang === "es" ? a.title_es : a.title_en;
         const body = lang === "es" ? a.body_es : a.body_en;
-        return `<li><a href="/${lang}/articulo/${a.slug}"><h2>${esc(title)}</h2><p>${esc(body.slice(0, 200))}…</p></a></li>`;
+        return `<li><a href="/${lang}/${seg}/${a.slug}"><h2>${esc(title)}</h2><p>${esc(body.slice(0, 200))}…</p></a></li>`;
       })
       .join("\n    ")}
   </ul>`;
@@ -117,20 +130,23 @@ for (const lang of ["en", "es"]) {
   });
 }
 
-// --- Category pages ---
-for (const cat of CATEGORIES) {
-  const slug = cat.lang === "es" ? cat.slugEs : cat.slugEn;
-  const items = allArticles.filter((a) => a.niche_id === cat.id);
-  const label = catLabel(cat, cat.lang);
-  writePage(`${cat.lang}/categoria/${slug}`, {
-    title: `${label} — X-Ops Media`,
-    description: cat.lang === "es" ? `Últimas noticias de ${label}.` : `The latest ${label} news.`,
-    canonical: `${SITE_URL}/${cat.lang}/categoria/${slug}`,
-    alternate: `${SITE_URL}/${cat.lang === "es" ? "en" : "es"}`,
-    lang: cat.lang,
-    jsonLd: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: label, url: `${SITE_URL}/${cat.lang}/categoria/${slug}` }],
-    bodyHtml: `<h1>${esc(label)}</h1>${feedSnippet(items, cat.lang)}`,
-  });
+// --- Category pages (por tema, no por nicho — un artículo devsecops-en también
+// aparece en /es/categoria/devsecops porque tiene body_es) ---
+for (const topic of TOPICS) {
+  for (const lang of ["en", "es"]) {
+    const slug = lang === "es" ? topic.slugEs : topic.slugEn;
+    const items = allArticles.filter((a) => a.topic?.id === topic.id);
+    const label = topicLabel(topic, lang);
+    writePage(`${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`, {
+      title: `${label} — X-Ops Media`,
+      description: lang === "es" ? `Últimas noticias de ${label}.` : `The latest ${label} news.`,
+      canonical: `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`,
+      alternate: `${SITE_URL}/${lang === "es" ? "en" : "es"}/${ROUTE_SEGMENTS[lang === "es" ? "en" : "es"].category}/${lang === "es" ? topic.slugEn : topic.slugEs}`,
+      lang,
+      jsonLd: [{ "@context": "https://schema.org", "@type": "CollectionPage", name: label, url: `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}` }],
+      bodyHtml: `<h1>${esc(label)}</h1>${feedSnippet(items, lang)}`,
+    });
+  }
 }
 
 // --- Article pages (ambos idiomas por artículo) ---
@@ -138,11 +154,12 @@ for (const a of allArticles) {
   for (const lang of ["en", "es"]) {
     const title = lang === "es" ? a.title_es : a.title_en;
     const body = lang === "es" ? a.body_es : a.body_en;
-    writePage(`${lang}/articulo/${a.slug}`, {
+    const otherLang = lang === "es" ? "en" : "es";
+    writePage(`${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`, {
       title: `${title} — X-Ops Media`,
       description: body.slice(0, 155).trim() + "…",
-      canonical: `${SITE_URL}/${lang}/articulo/${a.slug}`,
-      alternate: `${SITE_URL}/${lang === "es" ? "en" : "es"}/articulo/${a.slug}`,
+      canonical: `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`,
+      alternate: `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].article}/${a.slug}`,
       lang,
       jsonLd: [
         {
@@ -160,4 +177,4 @@ for (const a of allArticles) {
   }
 }
 
-console.log(`Prerendered ${2 + CATEGORIES.length + allArticles.length * 2} static pages.`);
+console.log(`Prerendered ${2 + TOPICS.length * 2 + allArticles.length * 2} static pages.`);

@@ -16,7 +16,6 @@ import { useEffect, useRef } from "react";
 type AdVariant = "leaderboard" | "native" | "in-article";
 
 const ADSENSE_CLIENT = (import.meta.env.VITE_ADSENSE_CLIENT_ID as string | undefined) ?? "ca-pub-5525157068767516";
-const AMAZON_TAG = import.meta.env.VITE_AMAZON_ASSOCIATES_TAG as string | undefined;
 
 const SLOT_IDS: Record<AdVariant, string | undefined> = {
   leaderboard: import.meta.env.VITE_ADSENSE_SLOT_LEADERBOARD as string | undefined,
@@ -70,8 +69,7 @@ export function AdSlot({ variant, id }: { variant: AdVariant; id: string }) {
     return <GoogleAdUnit slotId={slotId} variant={variant} id={id} />;
   }
 
-  const configured = Boolean(ADSENSE_CLIENT) || Boolean(AMAZON_TAG);
-  const { minHeight, label } = DIMENSIONS[variant];
+  const { minHeight } = DIMENSIONS[variant];
 
   return (
     <div
@@ -92,9 +90,7 @@ export function AdSlot({ variant, id }: { variant: AdVariant; id: string }) {
         letterSpacing: "0.05em",
       }}
     >
-      {configured
-        ? `Publicidad — ${label} (falta el slot ID de AdSense para esta posición)`
-        : `Publicidad (${label}) — falta VITE_ADSENSE_CLIENT_ID / VITE_AMAZON_ASSOCIATES_TAG`}
+      Publicidad
     </div>
   );
 }
