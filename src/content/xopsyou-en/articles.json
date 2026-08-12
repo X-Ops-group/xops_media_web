@@ -8,8 +8,8 @@
       "body_es": "Este es un artículo de prueba generado para verificar que la cadena de generación de portada (MiniMax + browserless + SeaweedFS) produce un archivo PNG válido tras el fix del bug de serialización de Buffer. No representa contenido editorial real y será descartado tras la verificación.",
       "body_en": "This is a test article generated to verify that the cover-generation chain (MiniMax + browserless + SeaweedFS) produces a valid PNG file after fixing the Buffer-serialization bug. It does not represent real editorial content and will be discarded after verification.",
       "slug": "cover-test-pipeline-verification",
-      "cover_asset_key": null,
-      "published_at": "2026-08-12T17:33:30.573Z"
+      "cover_asset_key": "https://seaweedfs.holos/holos-media/xopsyou-en/2026/cover-test-pipeline-verification/cover.png",
+      "published_at": "2026-08-12T17:34:00.861Z"
     }
   ]
 }
