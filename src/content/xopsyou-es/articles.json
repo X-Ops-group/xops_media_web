@@ -1,0 +1,15 @@
+{
+  "articles": [
+    {
+      "id": "259c66ce-a8ca-4a57-98d7-13049cbd7c59",
+      "niche_id": "xopsyou-es",
+      "title_es": "Un fallo en KVM rompe el aislamiento en virtualización anidada",
+      "title_en": "KVM Flaw Breaks Isolation in Nested Virtualization",
+      "body_es": "Investigadores de seguridad reportaron una vulnerabilidad en el hipervisor KVM de Linux que permite a una máquina virtual anidada escapar de su capa de aislamiento y acceder a memoria del hipervisor de nivel superior.\n\nEl problema surge en escenarios de virtualización anidada — comunes en plataformas cloud que ofrecen VMs dentro de VMs, como parte de servicios de CI/CD o sandboxes de desarrollo. Bajo condiciones específicas de configuración de páginas de memoria extendida (EPT), una VM L2 maliciosa puede inducir al hipervisor L1 a exponer páginas de memoria que pertenecen al hipervisor L0 real.\n\nEsto rompe una de las garantías fundamentales de la virtualización anidada: que cada capa esté completamente aislada de las demás. En entornos multi-tenant donde clientes distintos comparten infraestructura de virtualización anidada, esto podría permitir a un cliente leer memoria de otro.\n\nEl parche ya está disponible en los últimos kernels de Linux estables. Los operadores de plataformas cloud que ofrecen virtualización anidada deben priorizar la actualización.",
+      "body_en": "Security researchers reported a vulnerability in Linux's KVM hypervisor that allows a nested virtual machine to escape its isolation layer and access memory belonging to the higher-level hypervisor.\n\nThe issue arises in nested virtualization scenarios — common on cloud platforms offering VMs-within-VMs, such as CI/CD services or development sandboxes. Under specific Extended Page Table (EPT) configuration conditions, a malicious L2 VM can trick the L1 hypervisor into exposing memory pages belonging to the actual L0 hypervisor.\n\nThis breaks one of nested virtualization's fundamental guarantees: that each layer is fully isolated from the others. In multi-tenant environments where different customers share nested-virtualization infrastructure, this could let one tenant read another tenant's memory.\n\nA patch is already available in the latest stable Linux kernels. Cloud operators offering nested virtualization should prioritize the update.",
+      "slug": "kvm-nested-virtualization-isolation-flaw",
+      "cover_asset_key": null,
+      "published_at": "2026-08-12T07:03:07.067Z"
+    }
+  ]
+}

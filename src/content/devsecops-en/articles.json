@@ -1,0 +1,26 @@
+{
+  "articles": [
+    {
+      "id": "0b46232d-46dc-4009-9964-fc7f399988c2",
+      "niche_id": "devsecops-en",
+      "title_es": "Vulnerabilidad zero-day en Metabase es explotada activamente",
+      "title_en": "Metabase Zero-Day Vulnerability Actively Exploited in the Wild",
+      "body_es": "Se confirmó la explotación activa de una vulnerabilidad crítica de inyección SQL en Metabase, la popular plataforma open-source de business intelligence, que permite a atacantes remotos ejecutar consultas arbitrarias contra la base de datos subyacente sin autenticación previa.\n\nLa falla reside en el endpoint público de configuración inicial (`/api/setup`), que en instalaciones mal configuradas queda accesible incluso después del despliegue en producción. Un atacante puede inyectar parámetros maliciosos en ese endpoint para leer, y en algunos casos modificar, datos de la base conectada.\n\nMetabase se usa frecuentemente para exponer dashboards analíticos conectados directamente a bases de datos de producción, lo que amplifica el impacto: la explotación no solo compromete la aplicación, sino potencialmente toda la base de datos de negocio detrás de ella.\n\nLos operadores deben aplicar el parche de emergencia publicado por el equipo de Metabase y, como mitigación inmediata, bloquear el acceso público al endpoint `/api/setup` mediante reglas de firewall o del proxy reverso.",
+      "body_en": "Active exploitation has been confirmed for a critical SQL injection vulnerability in Metabase, the popular open-source business intelligence platform, allowing remote attackers to execute arbitrary queries against the underlying database without prior authentication.\n\nThe flaw resides in the public initial-setup endpoint (`/api/setup`), which in misconfigured installations remains accessible even after production deployment. An attacker can inject malicious parameters into that endpoint to read, and in some cases modify, data in the connected database.\n\nMetabase is frequently used to expose analytics dashboards connected directly to production databases, which amplifies the impact: exploitation compromises not just the application, but potentially the entire business database behind it.\n\nOperators should apply the emergency patch released by the Metabase team and, as an immediate mitigation, block public access to the `/api/setup` endpoint via firewall or reverse-proxy rules.",
+      "slug": "metabase-zero-day-sql-injection",
+      "cover_asset_key": null,
+      "published_at": "2026-08-12T07:05:21.184Z"
+    },
+    {
+      "id": "8d124db6-bc21-4850-9a52-241a2fcccb8c",
+      "niche_id": "devsecops-en",
+      "title_es": "CVE-2026-63077: Vulnerabilidad crítica en TeamCity permite ejecución remota de código",
+      "title_en": "CVE-2026-63077: Critical TeamCity Vulnerability Enables Remote Code Execution",
+      "body_es": "JetBrains publicó un parche urgente para TeamCity On-Premises tras descubrirse una vulnerabilidad de autenticación que permite a un atacante no autenticado ejecutar código arbitrario en el servidor de build.\n\nLa falla, catalogada como CVE-2026-63077, afecta a las versiones de TeamCity anteriores a la 2026.03.1 y reside en el manejo de tokens de sesión del endpoint de administración remota. Un atacante que envíe una petición especialmente diseñada puede eludir la verificación de autenticación y obtener acceso con privilegios de administrador del servidor.\n\nDado que TeamCity suele integrarse con pipelines de CI/CD que tienen acceso a secretos de despliegue, repositorios de código fuente y credenciales de infraestructura, la explotación de esta falla representa un riesgo directo de compromiso de la cadena de suministro de software.\n\nSe recomienda actualizar de inmediato a la versión parcheada, o en su defecto, restringir el acceso de red al panel de administración de TeamCity solo a IPs de confianza mientras se aplica el parche.",
+      "body_en": "JetBrains released an emergency patch for TeamCity On-Premises after researchers discovered an authentication vulnerability that allows an unauthenticated attacker to execute arbitrary code on the build server.\n\nThe flaw, tracked as CVE-2026-63077, affects TeamCity versions prior to 2026.03.1 and resides in how the remote administration endpoint handles session tokens. An attacker sending a specially crafted request can bypass authentication checks and obtain server administrator privileges.\n\nBecause TeamCity is commonly integrated into CI/CD pipelines with access to deployment secrets, source repositories, and infrastructure credentials, exploitation of this flaw represents a direct software supply-chain compromise risk.\n\nOrganizations are advised to patch immediately, or at minimum restrict network access to the TeamCity admin panel to trusted IPs until the patch can be applied.",
+      "slug": "teamcity-cve-2026-63077-rce",
+      "cover_asset_key": null,
+      "published_at": "2026-08-12T07:02:15.056Z"
+    }
+  ]
+}
