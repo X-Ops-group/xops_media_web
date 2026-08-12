@@ -2,6 +2,8 @@ import { Link, useParams } from "react-router-dom";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { AdSlot } from "../components/AdSlot";
+import { useSEO } from "../components/useSEO";
+import { articleMeta, homeMeta } from "../seo";
 import { findArticleBySlug, categoryById, type Lang } from "../content";
 
 export function ArticlePage({ lang }: { lang: Lang }) {
@@ -10,6 +12,7 @@ export function ArticlePage({ lang }: { lang: Lang }) {
   const cat = article ? categoryById(article.niche_id) : undefined;
   const paragraphs = article ? (lang === "es" ? article.body_es : article.body_en).split("\n\n") : [];
   const midpoint = Math.ceil(paragraphs.length / 2);
+  useSEO(article ? articleMeta(lang, article, cat) : homeMeta(lang), lang);
 
   return (
     <>

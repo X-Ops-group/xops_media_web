@@ -2,10 +2,13 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { AdSlot } from "../components/AdSlot";
 import { ArticleFeed } from "../components/ArticleCard";
+import { useSEO } from "../components/useSEO";
+import { homeMeta } from "../seo";
 import { allArticles, type Lang } from "../content";
 
 export function Home({ lang }: { lang: Lang }) {
   const articles = allArticles();
+  useSEO(homeMeta(lang), lang);
   return (
     <>
       <Header lang={lang} />

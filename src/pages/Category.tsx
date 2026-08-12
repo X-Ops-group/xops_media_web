@@ -3,12 +3,15 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { AdSlot } from "../components/AdSlot";
 import { ArticleFeed } from "../components/ArticleCard";
+import { useSEO } from "../components/useSEO";
+import { categoryMeta, homeMeta } from "../seo";
 import { CATEGORIES, articlesByCategory, type Lang } from "../content";
 
 export function Category({ lang }: { lang: Lang }) {
   const { slug } = useParams();
   const cat = CATEGORIES.find((c) => c.lang === lang && (lang === "es" ? c.slugEs : c.slugEn) === slug);
   const articles = cat ? articlesByCategory(cat.id) : [];
+  useSEO(cat ? categoryMeta(lang, cat) : homeMeta(lang), lang);
 
   return (
     <>
