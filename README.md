@@ -1,32 +1,27 @@
-# React + TypeScript + Vite
+# X-Ops Media
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Sitio bilingüe (EN/ES) de X-Ops Media — CMSOps: contenido como código (ver ADR-004, `hsm-ops/n8n/workflows/content-factory/ADR-004-cmsops-editorial-pipeline.md`, D1/D7).
 
-Currently, two official plugins are available:
+## Cómo funciona
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Los artículos **no** se cargan en vivo desde el pipeline — se sincronizan a `src/content/articles.json` y se comitean al repo. Vercel builda y despliega automáticamente en cada push a `main`.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+./scripts/sync-articles.sh   # trae los artículos status='approved' del pipeline
+git add src/content/articles.json
+git commit -m "Sync articles"
+git push                     # Vercel despliega solo
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+`sync-articles.sh` necesita alcanzar `100.126.250.117:5678` (Tailscale) — correrlo desde un entorno dentro del tailnet.
+
+## Deploy
+
+Vercel, conectado a este repo de GitHub (mismo patrón que `xopsmainpage-react` / `xops_alliance_web` / `xops_consulting_web`). Sin build steps especiales — Vercel detecta Vite automáticamente. `vercel.json` solo agrega el rewrite de SPA para que las rutas de `react-router` (`/articulo/:slug`, `/es/articulo/:slug`) funcionen en acceso directo.
+
+## Desarrollo local
+
+```bash
+npm install
+npm run dev
+```
