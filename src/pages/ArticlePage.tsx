@@ -26,6 +26,14 @@ export function ArticlePage({ lang }: { lang: Lang }) {
 
         {article && (
           <article style={{ marginTop: "1.25rem" }}>
+            {article.cover_asset_key && (
+              <img
+                src={article.cover_asset_key}
+                alt={lang === "es" ? article.title_es : article.title_en}
+                loading="eager"
+                style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 12, marginBottom: "1.25rem" }}
+              />
+            )}
             <div style={{ fontSize: "0.75rem", color: "var(--media-accent-light)", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>
               {cat ? (lang === "es" ? cat.labelEs : cat.labelEn) : article.niche_id}
             </div>
@@ -48,6 +56,47 @@ export function ArticlePage({ lang }: { lang: Lang }) {
                 </div>
               ))}
             </div>
+            {article.source_urls && article.source_urls.length > 0 && (
+              <section
+                aria-labelledby="sources-heading"
+                style={{
+                  marginTop: "2rem",
+                  paddingTop: "1.25rem",
+                  borderTop: "1px solid rgba(184,197,214,0.3)",
+                  color: "#B8C5D6",
+                  fontFamily: "-apple-system, sans-serif",
+                  fontSize: "0.9rem",
+                  lineHeight: 1.6,
+                }}
+              >
+                <h2
+                  id="sources-heading"
+                  style={{
+                    margin: "0 0 0.75rem",
+                    color: "#F4F7FB",
+                    fontFamily: "Georgia, serif",
+                    fontSize: "1.1rem",
+                    fontWeight: 700,
+                  }}
+                >
+                  {lang === "es" ? "Fuentes" : "Sources"}
+                </h2>
+                <ul style={{ margin: 0, paddingLeft: "1.25rem", listStyle: "disc" }}>
+                  {article.source_urls.map((s, i) => (
+                    <li key={i} style={{ marginBottom: "0.35rem" }}>
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#30B0F0", textDecoration: "underline", wordBreak: "break-word" }}
+                      >
+                        {s.name || s.url}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
           </article>
         )}
       </main>
