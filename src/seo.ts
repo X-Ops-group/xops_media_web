@@ -1,5 +1,5 @@
 import type { Article, Topic, Lang } from "./content";
-import { ROUTE_SEGMENTS } from "./content";
+import { ROUTE_SEGMENTS, coverUrlFor } from "./content";
 
 const SITE_URL = "https://xops.media";
 const SITE_NAME = "X-Ops Media";
@@ -96,7 +96,7 @@ export function articleMeta(lang: Lang, article: Article, topic: Topic | undefin
     datePublished: article.published_at,
     dateModified: article.published_at,
     inLanguage: lang,
-    image: article.cover_asset_key ? [article.cover_asset_key] : undefined,
+    image: coverUrlFor(article) ? [`${SITE_URL}${coverUrlFor(article)}`] : undefined,
     articleSection: topic ? (lang === "es" ? topic.labelEs : topic.labelEn) : article.niche_id,
     author: { "@type": "Organization", name: SITE_NAME },
     publisher: { "@type": "Organization", name: SITE_NAME, logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.jpeg` } },

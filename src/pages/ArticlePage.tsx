@@ -4,12 +4,13 @@ import { Footer } from "../components/Footer";
 import { AdSlot } from "../components/AdSlot";
 import { useSEO } from "../components/useSEO";
 import { articleMeta, homeMeta } from "../seo";
-import { findArticleBySlug, topicByNicheId, type Lang } from "../content";
+import { findArticleBySlug, topicByNicheId, coverUrlFor, type Lang } from "../content";
 
 export function ArticlePage({ lang }: { lang: Lang }) {
   const { slug } = useParams();
   const article = slug ? findArticleBySlug(slug) : undefined;
   const cat = article ? topicByNicheId(article.niche_id) : undefined;
+  const cover = article ? coverUrlFor(article) : null;
   const paragraphs = article ? (lang === "es" ? article.body_es : article.body_en).split("\n\n") : [];
   const midpoint = Math.ceil(paragraphs.length / 2);
   useSEO(article ? articleMeta(lang, article, cat) : homeMeta(lang), lang);
@@ -26,9 +27,9 @@ export function ArticlePage({ lang }: { lang: Lang }) {
 
         {article && (
           <article style={{ marginTop: "1.25rem" }}>
-            {article.cover_asset_key && (
+            {cover && (
               <img
-                src={article.cover_asset_key}
+                src={cover}
                 alt={lang === "es" ? article.title_es : article.title_en}
                 loading="eager"
                 style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", borderRadius: 12, marginBottom: "1.25rem" }}

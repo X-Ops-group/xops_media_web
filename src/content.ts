@@ -65,6 +65,38 @@ function loadAllNicheIds(): string[] {
   return Object.keys(modules).map((p) => p.split("/").slice(-2, -1)[0]);
 }
 
+// Mapeo de `articles.json` `cover_asset_key` (slug relativo tipo
+// "teamcity-cve-2026-63077-rce") a URL servida por Vite desde `public/`.
+// Las portadas viven en `public/covers/<slug>.png` y se sirven en raíz como
+// `/covers/<slug>.png` — Vite las copia tal cual al dist, sin hashear (son
+// assets estáticos referenciados por nombre desde articles.json; cambiarles
+// el nombre rompería el contrato).
+//
+// Si la portada está ausente del repo (artículo sin portada aún), el slug
+// simplemente no aparece en el map y `coverUrlFor()` devuelve null — el
+// componente ArticleCard/ArticlePage trata null como "no hay portada".
+const COVER_SLUGS = [
+  "teamcity-cve-2026-63077-rce",
+  "kvm-nested-virtualization-isolation-flaw",
+  "metabase-zero-day-sql-injection",
+  "cve-2026-20316-cisco-secure-fmc",
+  "veeam-terraform-django-security-patches",
+] as const;
+
+const COVER_MAP: Record<string, string> = Object.fromEntries(
+  COVER_SLUGS.map((slug) => [slug, `/covers/${slug}.png` as string])
+);
+
+/**
+ * Resuelve el `cover_asset_key` de un artículo a la URL servida por Vite.
+ * Devuelve null si el artículo no tiene cover o si el slug no se encuentra
+ * en el repositorio de assets (p.ej. portada pendiente de añadir).
+ */
+export function coverUrlFor(article: Pick<Article, "cover_asset_key">): string | null {
+  if (!article.cover_asset_key) return null;
+  return COVER_MAP[article.cover_asset_key] ?? null;
+}
+
 export function allArticles(): Article[] {
   return loadAllNicheIds()
     .flatMap((n) => loadJson(n).articles)
