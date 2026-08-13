@@ -7,6 +7,7 @@ export interface Article {
   body_en: string;
   slug: string;
   cover_asset_key: string | null;
+  source_urls: { url: string; name: string }[];
   published_at: string;
 }
 
