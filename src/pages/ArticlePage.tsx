@@ -48,14 +48,42 @@ export function ArticlePage({ lang }: { lang: Lang }) {
             <AdSlot variant="leaderboard" id={`article-${article.slug}-top`} />
 
             <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.08rem", lineHeight: 1.75 }}>
-              {paragraphs.map((p, i) => (
-                <div key={i}>
-                  <p style={{ marginBottom: "1.2rem" }}>{p}</p>
-                  {i + 1 === midpoint && paragraphs.length > 1 && (
-                    <AdSlot variant="in-article" id={`article-${article.slug}-mid`} />
-                  )}
-                </div>
-              ))}
+              {paragraphs.map((p, i) => {
+                // Markdown-style headings (# / ##) must not be rendered inside <p>.
+                // Detect leading markdown heading marker and emit an <h2> instead
+                // so screen readers and crawlers see a real heading instead of
+                // the literal "## Section Title" string as visible body text.
+                const h2 = /^##\s+(.+?)\s*$/m.exec(p);
+                if (h2) {
+                  return (
+                    <div key={i}>
+                      <h2
+                        style={{
+                          fontFamily: "Georgia, serif",
+                          fontSize: "1.35rem",
+                          margin: "2rem 0 0.85rem",
+                          color: "#F4F7FB",
+                          fontWeight: 700,
+                          lineHeight: 1.3,
+                        }}
+                      >
+                        {h2[1]}
+                      </h2>
+                      {i + 1 === midpoint && paragraphs.length > 1 && (
+                        <AdSlot variant="in-article" id={`article-${article.slug}-mid`} />
+                      )}
+                    </div>
+                  );
+                }
+                return (
+                  <div key={i}>
+                    <p style={{ marginBottom: "1.2rem" }}>{p}</p>
+                    {i + 1 === midpoint && paragraphs.length > 1 && (
+                      <AdSlot variant="in-article" id={`article-${article.slug}-mid`} />
+                    )}
+                  </div>
+                );
+              })}
             </div>
             {article.source_urls && article.source_urls.length > 0 && (
               <section

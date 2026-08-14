@@ -172,7 +172,14 @@ function articleSnippet(a, lang) {
     <time datetime="${esc(a.published_at)}">${esc(a.published_at.slice(0, 10))}</time>
     ${body
       .split("\n\n")
-      .map((p) => `<p>${esc(p)}</p>`)
+      .map((p) => {
+        // Markdown-style headings must not be rendered inside <p>. Detect
+        // "## Section Title" and emit a real <h2> so crawlers see the section
+        // structure instead of the literal "## Section Title" text.
+        const h2 = /^##\s+(.+?)\s*$/m.exec(p);
+        if (h2) return `<h2>${esc(h2[1])}</h2>`;
+        return `<p>${esc(p)}</p>`;
+      })
       .join("\n    ")}
   </article>`;
 }
