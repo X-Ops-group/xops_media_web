@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 import { AdSlot } from "../components/AdSlot";
 import { ArticleFeed } from "../components/ArticleCard";
 import { useSEO } from "../components/useSEO";
-import { loadAuthors, articlesByAuthor, type Lang } from "../content";
+import { loadAuthors, articlesByAuthor, roleLabel, type Lang } from "../content";
 
 export function AuthorDetailPage({ lang }: { lang: Lang }) {
   const { slug } = useParams();
@@ -94,17 +94,7 @@ export function AuthorDetailPage({ lang }: { lang: Lang }) {
                     borderRadius: 999,
                   }}
                 >
-                  {author.role === "writer"
-                    ? lang === "es"
-                      ? "Redactor"
-                      : "Writer"
-                    : author.role === "editor"
-                      ? lang === "es"
-                        ? "Editor"
-                        : "Editor"
-                      : lang === "es"
-                        ? "Redactor y editor"
-                        : "Writer & editor"}
+                  {roleLabel(author.role, lang)}
                 </span>
               </div>
             </header>

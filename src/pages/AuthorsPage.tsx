@@ -3,22 +3,11 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { AdSlot } from "../components/AdSlot";
 import { useSEO } from "../components/useSEO";
-import { loadAuthors, type Lang, type Author } from "../content";
+import { loadAuthors, roleLabel, type Lang, type Author } from "../content";
 
 function authorBio(author: Author, lang: Lang): string {
   const full = lang === "es" ? author.bio_es : author.bio_en;
   return full.slice(0, 200).trim() + (full.length > 200 ? "…" : "");
-}
-
-function roleLabel(role: Author["role"], lang: Lang): string {
-  if (lang === "es") {
-    if (role === "writer") return "Redactor";
-    if (role === "editor") return "Editor";
-    return "Redactor y editor";
-  }
-  if (role === "writer") return "Writer";
-  if (role === "editor") return "Editor";
-  return "Writer & editor";
 }
 
 export function AuthorsPage({ lang }: { lang: Lang }) {

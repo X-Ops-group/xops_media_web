@@ -7,6 +7,8 @@ import { useSEO } from "../components/useSEO";
 import {
   articlesByFormat,
   FORMAT_LABELS,
+  FORMAT_DESCRIPTIONS,
+  FORMAT_COLORS,
   FORMATS,
   type ArticleFormat,
   type Lang,
@@ -15,33 +17,6 @@ import {
 function isArticleFormat(s: string | undefined): s is ArticleFormat {
   return !!s && (FORMATS as readonly string[]).includes(s);
 }
-
-const FORMAT_DESCRIPTIONS: Record<ArticleFormat, { es: string; en: string }> = {
-  news: {
-    es: "Noticias operativas del día a día en DevSecOps y X-Ops.",
-    en: "Day-to-day operational news in DevSecOps and X-Ops.",
-  },
-  exploit: {
-    es: "Análisis de vulnerabilidades con explotación activa y plazos de remediación.",
-    en: "Vulnerability analyses with active exploitation and remediation deadlines.",
-  },
-  explainer: {
-    es: "Tutoriales en profundidad para entender un tema de un vistazo.",
-    en: "In-depth tutorials to grasp a topic at a glance.",
-  },
-  analysis: {
-    es: "Análisis y columnas de fondo con contexto editorial.",
-    en: "Background analysis and editorial columns with context.",
-  },
-  "field-notes": {
-    es: "Notas técnicas desde el terreno: qué funcionó y qué no en operaciones reales.",
-    en: "Field notes: what worked and what didn't in real operations.",
-  },
-  "conference-recap": {
-    es: "Recaps en directo y resúmenes de charlas de conferencias.",
-    en: "Live recaps and conference-talk summaries.",
-  },
-};
 
 export function SeriesPage({ lang }: { lang: Lang }) {
   const { format } = useParams();
@@ -76,8 +51,30 @@ export function SeriesPage({ lang }: { lang: Lang }) {
       <Header lang={lang} />
       <main style={{ maxWidth: 960, margin: "0 auto", padding: "1.5rem 1.5rem 0" }}>
         <AdSlot variant="leaderboard" id={`series-${format}-top`} />
-        <h1 style={{ fontSize: "1.7rem", marginBottom: "0.5rem" }}>
+        <h1
+          style={{
+            fontSize: "1.7rem",
+            marginBottom: "0.5rem",
+            display: "flex",
+            alignItems: "center",
+            gap: "0.65rem",
+            flexWrap: "wrap",
+          }}
+        >
           {label ?? (lang === "es" ? "Serie no encontrada" : "Series not found")}
+          {validFormat && (
+            <span
+              aria-hidden="true"
+              style={{
+                display: "inline-block",
+                width: 14,
+                height: 14,
+                borderRadius: 4,
+                background: FORMAT_COLORS[validFormat],
+                boxShadow: "0 0 0 2px rgba(0,0,0,0.05)",
+              }}
+            />
+          )}
         </h1>
         {!validFormat && (
           <p style={{ color: "var(--text-secondary)" }}>

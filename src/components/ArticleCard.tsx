@@ -47,12 +47,15 @@ export function ArticleCard({ a, lang }: { a: Article; lang: Lang }) {
 
 /** Feed de tarjetas con anuncio nativo intercalado cada `adEvery` items — mismo patrón que elcorreo.ae. */
 export function ArticleFeed({ articles, lang, adEvery = 3 }: { articles: Article[]; lang: Lang; adEvery?: number }) {
+  // Por debajo de adEvery artículos no insertamos ningún slot: un anuncio
+  // solitario sobre un feed corto roba más atención de la que compensa.
+  const showAds = articles.length >= adEvery;
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1.1rem" }}>
       {articles.map((a, i) => (
         <div key={a.id}>
           <ArticleCard a={a} lang={lang} />
-          {(i + 1) % adEvery === 0 && i !== articles.length - 1 && <AdSlot variant="native" id={`feed-${i}`} />}
+          {showAds && (i + 1) % adEvery === 0 && i !== articles.length - 1 && <AdSlot variant="native" id={`feed-${i}`} />}
         </div>
       ))}
     </div>

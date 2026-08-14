@@ -55,6 +55,17 @@ export interface Author {
   avatar?: string;
 }
 
+export function roleLabel(role: Author["role"], lang: Lang): string {
+  if (lang === "es") {
+    if (role === "writer") return "Redactor";
+    if (role === "editor") return "Editor";
+    return "Redactor y editor";
+  }
+  if (role === "writer") return "Writer";
+  if (role === "editor") return "Editor";
+  return "Writer & editor";
+}
+
 export interface ConferenceTalk {
   title: string;
   speaker: string;
@@ -146,6 +157,42 @@ export const FORMAT_LABELS: Record<(typeof FORMATS)[number], { es: string; en: s
   analysis: { es: "Análisis", en: "Analysis" },
   "field-notes": { es: "Field Notes", en: "Field Notes" },
   "conference-recap": { es: "Crónica", en: "Conference Recap" },
+};
+
+export const FORMAT_DESCRIPTIONS: Record<(typeof FORMATS)[number], { es: string; en: string }> = {
+  news: {
+    es: "Noticias operativas del día a día en DevSecOps y X-Ops.",
+    en: "Day-to-day operational news in DevSecOps and X-Ops.",
+  },
+  exploit: {
+    es: "Análisis de vulnerabilidades con explotación activa y plazos de remediación.",
+    en: "Vulnerability analyses with active exploitation and remediation deadlines.",
+  },
+  explainer: {
+    es: "Tutoriales en profundidad para entender un tema de un vistazo.",
+    en: "In-depth tutorials to grasp a topic at a glance.",
+  },
+  analysis: {
+    es: "Análisis y columnas de fondo con contexto editorial.",
+    en: "Background analysis and editorial columns with context.",
+  },
+  "field-notes": {
+    es: "Notas técnicas desde el terreno: qué funcionó y qué no en operaciones reales.",
+    en: "Field notes: what worked and what didn't in real operations.",
+  },
+  "conference-recap": {
+    es: "Recaps en directo y resúmenes de charlas de conferencias.",
+    en: "Live recaps and conference-talk summaries.",
+  },
+};
+
+export const FORMAT_COLORS: Record<(typeof FORMATS)[number], string> = {
+  news: "#3b82f6",
+  exploit: "#ef4444",
+  explainer: "#10b981",
+  analysis: "#8b5cf6",
+  "field-notes": "#f59e0b",
+  "conference-recap": "#ec4899",
 };
 
 export const URGENCY_LEVELS = [
