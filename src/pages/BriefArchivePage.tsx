@@ -187,53 +187,57 @@ export function BriefArchivePage({ lang }: { lang: Lang }) {
                       border: "1px solid var(--surface-0)",
                       borderRadius: 12,
                       background: "var(--card-bg)",
-                      padding: "1.25rem 1.4rem",
+                      padding: 0,
+                      overflow: "hidden",
                     }}
                   >
-                    <article>
-                      <p
-                        style={{
-                          color: "var(--text-muted)",
-                          fontSize: "0.8rem",
-                          letterSpacing: "0.04em",
-                          marginBottom: "0.35rem",
-                        }}
-                      >
-                        {isEs ? "Edición" : "Edition"} #{b.number} ·{" "}
-                        {formatPeriod(b, lang)}
-                      </p>
-                      <h2
-                        style={{
-                          fontSize: "1.15rem",
-                          lineHeight: 1.3,
-                          margin: 0,
-                          marginBottom: "0.5rem",
-                        }}
-                      >
-                        <Link
-                          to={`/${lang}/${segment}/${b.edition}`}
+                    <Link
+                      to={`/${lang}/${segment}/${b.edition}`}
+                      style={{
+                        display: "block",
+                        color: "inherit",
+                        textDecoration: "none",
+                        padding: "1.25rem 1.4rem",
+                      }}
+                    >
+                      <article>
+                        <p
                           style={{
+                            color: "var(--text-muted)",
+                            fontSize: "0.8rem",
+                            letterSpacing: "0.04em",
+                            marginBottom: "0.35rem",
+                          }}
+                        >
+                          {isEs ? "Edición" : "Edition"} #{b.number} ·{" "}
+                          {formatPeriod(b, lang)}
+                        </p>
+                        <h2
+                          style={{
+                            fontSize: "1.15rem",
+                            lineHeight: 1.3,
+                            margin: 0,
+                            marginBottom: "0.5rem",
                             color: "var(--media-accent-light)",
-                            textDecoration: "none",
                           }}
                         >
                           {headline}
-                        </Link>
-                      </h2>
-                      {b.articles.length > 0 && (
-                        <p
-                          style={{
-                            color: "var(--text-secondary)",
-                            fontSize: "0.9rem",
-                            margin: 0,
-                          }}
-                        >
-                          {isEs
-                            ? `${b.articles.length} pieza${b.articles.length === 1 ? "" : "s"} seleccionada${b.articles.length === 1 ? "" : "s"}`
-                            : `${b.articles.length} selected piece${b.articles.length === 1 ? "" : "s"}`}
-                        </p>
-                      )}
-                    </article>
+                        </h2>
+                        {b.articles.length > 0 && (
+                          <p
+                            style={{
+                              color: "var(--text-secondary)",
+                              fontSize: "0.9rem",
+                              margin: 0,
+                            }}
+                          >
+                            {isEs
+                              ? `${b.articles.length} pieza${b.articles.length === 1 ? "" : "s"} seleccionada${b.articles.length === 1 ? "" : "s"}`
+                              : `${b.articles.length} selected piece${b.articles.length === 1 ? "" : "s"}`}
+                          </p>
+                        )}
+                      </article>
+                    </Link>
                   </li>
                 );
               })}

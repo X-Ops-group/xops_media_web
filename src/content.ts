@@ -22,6 +22,13 @@ export interface Article {
   updated_at?: string; // ISO timestamp; absent means article never updated
   primary_tag?: string;
   topics?: string[]; // ids from TOPICS (security, cloud-native, platform, sre, ai-infra)
+  /** Editorial meta description for SERP snippets (EN/ES). When present, used
+   * by prerender + seo.ts INSTEAD of auto-deriving from the body. Length is
+   * editor-controlled; the prerender pipeline caps at 155 chars on a sentence
+   * boundary. Optional — defaults to deriving from `body_es` / `body_en` if
+   * missing. See withDefaults. */
+  meta_description_es?: string;
+  meta_description_en?: string;
   tags?: { id: string; label: string; kind?: string }[];
 }
 
