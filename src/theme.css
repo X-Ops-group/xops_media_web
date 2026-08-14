@@ -29,3 +29,85 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; text-decoration: none; }
+
+/* ArticleCard: imagen a la izquierda por defecto; se apila arriba en pantallas
+   angostas para no dejarla minúscula junto al texto. */
+.article-card-media {
+  width: 120px;
+  height: 120px;
+}
+@media (max-width: 480px) {
+  .article-card {
+    flex-direction: column;
+  }
+  .article-card-media {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+/* Header — skip link & focus ring (Task 14 Steps 5–6). The skip link must
+   appear first in tab order and only become visible on focus; the focus ring
+   upgrades the default 1px outline to 2px so it stays perceptible on dark
+   backgrounds without affecting mouse users. */
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -100px;
+  z-index: 100;
+  padding: 0.6rem 0.9rem;
+  background: var(--surface-1);
+  color: var(--text-primary);
+  border: 2px solid var(--media-accent);
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 120ms ease-out;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0.75rem;
+  outline: 3px solid var(--media-accent-light);
+  outline-offset: 2px;
+}
+:where(a, button):focus-visible {
+  outline: 2px solid var(--media-accent-light);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* EcosystemBar — hide the sub-label hint under 640px so the bar stays
+   single-line on phones (4 slots × ~3rem + brand chip already crowds 390px). */
+@media (max-width: 640px) {
+  .ecosystem-bar-hint {
+    display: none;
+  }
+}
+
+/* CategoryPage (Task 42) — two-column layout: main feed on the left, sticky
+   author sidebar on the right. Below 900px the sidebar stacks below the feed
+   (per the audit note that long sidebars on mobile are worse than no sidebar,
+   so we still render it — just collapsed under the content). */
+.category-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .category-sidebar {
+    position: static !important;
+  }
+}
+
+/* Topic pill hover affordance — slightly lift background so keyboard and
+   mouse users see the interactive state. The active pill already uses the
+   accent token; hover on the inactive pill nudges toward the same hue so the
+   transition reads as "approaching selection". */
+.topic-pill:hover:not(.topic-pill-active) {
+  background: var(--surface-0);
+  color: var(--text-primary);
+}
