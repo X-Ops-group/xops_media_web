@@ -3,6 +3,9 @@ import { Home } from "./pages/Home";
 import { Category } from "./pages/Category";
 import { ArticlePage } from "./pages/ArticlePage";
 import { NotFound } from "./pages/NotFound";
+import { AuthorsPage } from "./pages/AuthorsPage";
+import { AuthorDetailPage } from "./pages/AuthorDetailPage";
+import { SeriesPage } from "./pages/SeriesPage";
 import "./theme.css";
 import type { Lang } from "./content";
 
@@ -71,8 +74,8 @@ export default function App() {
       {/* EN */}
       <Route path={`/${SEGMENTS.en.category}/:slug`} element={<Category lang="en" />} />
       <Route path={`/${SEGMENTS.en.article}/:slug`} element={<ArticlePage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.authors}`} element={<Stub name="Authors" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.author}/:slug`} element={<Stub name="Author" lang="en" />} />
+      <Route path={`/${SEGMENTS.en.authors}`} element={<AuthorsPage lang="en" />} />
+      <Route path={`/${SEGMENTS.en.author}/:slug`} element={<AuthorDetailPage lang="en" />} />
       <Route path={`/${SEGMENTS.en.about}`} element={<Stub name="About" lang="en" />} />
       <Route path={`/${SEGMENTS.en.methodology}`} element={<Stub name="Methodology" lang="en" />} />
       <Route path={`/${SEGMENTS.en.ethics}`} element={<Stub name="Ethics" lang="en" />} />
@@ -80,7 +83,7 @@ export default function App() {
       <Route path={`/${SEGMENTS.en.weeklyBrief}`} element={<Stub name="Weekly Brief archive" lang="en" />} />
       <Route path={`/${SEGMENTS.en.weeklyBrief}/:edition`} element={<Stub name="Weekly Brief edition" lang="en" />} />
       <Route path={`/${SEGMENTS.en.exploitWatch}`} element={<Stub name="Exploit Watch" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.series}/:format`} element={<Stub name="Series" lang="en" />} />
+      <Route path={`/${SEGMENTS.en.series}/:format`} element={<SeriesPage lang="en" />} />
       <Route path={`/${SEGMENTS.en.tags}/:tag`} element={<Stub name="Tag" lang="en" />} />
       <Route path={`/${SEGMENTS.en.archive}`} element={<Stub name="Archive" lang="en" />} />
       <Route path={`/${SEGMENTS.en.conference}`} element={<Stub name="Conference" lang="en" />} />
@@ -89,8 +92,8 @@ export default function App() {
       {/* ES */}
       <Route path={`/${SEGMENTS.es.category}/:slug`} element={<Category lang="es" />} />
       <Route path={`/${SEGMENTS.es.article}/:slug`} element={<ArticlePage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.authors}`} element={<Stub name="Autores" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.author}/:slug`} element={<Stub name="Autor" lang="es" />} />
+      <Route path={`/${SEGMENTS.es.authors}`} element={<AuthorsPage lang="es" />} />
+      <Route path={`/${SEGMENTS.es.author}/:slug`} element={<AuthorDetailPage lang="es" />} />
       <Route path={`/${SEGMENTS.es.about}`} element={<Stub name="Quiénes somos" lang="es" />} />
       <Route path={`/${SEGMENTS.es.methodology}`} element={<Stub name="Metodología" lang="es" />} />
       <Route path={`/${SEGMENTS.es.ethics}`} element={<Stub name="Ética" lang="es" />} />
@@ -98,7 +101,7 @@ export default function App() {
       <Route path={`/${SEGMENTS.es.weeklyBrief}`} element={<Stub name="Resumen semanal" lang="es" />} />
       <Route path={`/${SEGMENTS.es.weeklyBrief}/:edition`} element={<Stub name="Edición del resumen semanal" lang="es" />} />
       <Route path={`/${SEGMENTS.es.exploitWatch}`} element={<Stub name="Exploits activos" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.series}/:format`} element={<Stub name="Serie" lang="es" />} />
+      <Route path={`/${SEGMENTS.es.series}/:format`} element={<SeriesPage lang="es" />} />
       <Route path={`/${SEGMENTS.es.tags}/:tag`} element={<Stub name="Etiqueta" lang="es" />} />
       <Route path={`/${SEGMENTS.es.archive}`} element={<Stub name="Archivo" lang="es" />} />
       <Route path={`/${SEGMENTS.es.conference}`} element={<Stub name="Conferencia" lang="es" />} />
