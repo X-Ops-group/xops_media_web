@@ -177,6 +177,45 @@ function articleSnippet(a, lang) {
   </article>`;
 }
 
+/**
+ * Build a 140-160 char meta description for an article. Preferred path uses
+ * the editor-controlled `meta_description_{es,en}` field (committed, not
+ * derived on the fly). Fallback path: strip any leading `# H1` markdown
+ * heading line, then take the first sentence of the first non-empty body
+ * paragraph, capped at 155 chars on a sentence boundary.
+ *
+ * NEVER returns the H1 in the output — both paths strip or skip it.
+ */
+function articleDescription(a, lang) {
+  const editorial = lang === "es" ? a.meta_description_es : a.meta_description_en;
+  if (editorial && editorial.trim()) {
+    return capAtSentence(editorial.replace(/\s+/g, " ").trim(), 155);
+  }
+  const body = lang === "es" ? a.body_es : a.body_en;
+  // Some articles (notably cve-2026-20316-cisco-secure-fmc) inline the H1 as
+  // a standalone `# Title…` paragraph at the very start of the body — that
+  // used to leak verbatim into the snippet (T43 review F1). Skip it.
+  const candidateParagraph =
+    body
+      .split("\n\n")
+      .map((p) => p.replace(/^\s*#\s+[^\n]+\n?/, "").trim())
+      .find((p) => p.length > 0) ?? "";
+  const firstSentenceOfParagraph = (candidateParagraph.match(/^[\s\S]*?[.!?](?=\s|$)/) ?? [""])[0].trim();
+  return capAtSentence(firstSentenceOfParagraph, 155);
+}
+
+/** Cap a string at the last sentence boundary no later than `maxChars`.
+ *  If no sentence terminator exists within the window, hard-trim with an
+ *  ellipsis so we never return a mid-word cut. */
+function capAtSentence(s, maxChars) {
+  if (s.length <= maxChars) return s;
+  const slice = s.slice(0, maxChars);
+  const matches = [...slice.matchAll(/[.!?](?=\s|$)/g)];
+  if (matches.length === 0) return slice.replace(/\s+\S*$/, "") + "…";
+  const lastEnd = matches[matches.length - 1].index + 1;
+  return slice.slice(0, lastEnd).trim();
+}
+
 function feedSnippet(articles, lang) {
   const seg = ROUTE_SEGMENTS[lang].article;
   return `<ul>
@@ -430,7 +469,7 @@ for (const a of allArticles) {
     const cover = a.cover_asset_key ? `${SITE_URL}/covers/${a.cover_asset_key}.jpeg` : null;
     writePage(`${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`, {
       title: `${title} — X-Ops Media`,
-      description: body.slice(0, 155).trim() + "…",
+      description: articleDescription(a, lang),
       canonical,
       alternate,
       lang,
