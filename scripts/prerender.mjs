@@ -166,7 +166,10 @@ function topicLabel(topic, lang) {
 function articleSnippet(a, lang) {
   const title = lang === "es" ? a.title_es : a.title_en;
   const body = lang === "es" ? a.body_es : a.body_en;
+  const coverUrl = a.cover_asset_key ? `/covers/${a.cover_asset_key}.png` : null;
+  const coverImg = coverUrl ? `<img src="${esc(coverUrl)}" alt="${esc(title)}" loading="lazy" style="width: 100%; max-width: 720px; height: auto; border-radius: 8px; margin-bottom: 1rem;" />` : "";
   return `<article>
+    ${coverImg}
     <div>${esc(topicLabel(a.topic, lang))}</div>
     <h1>${esc(title)}</h1>
     <time datetime="${esc(a.published_at)}">${esc(a.published_at.slice(0, 10))}</time>
@@ -241,7 +244,9 @@ function feedSnippet(articles, lang) {
       .map((a) => {
         const title = lang === "es" ? a.title_es : a.title_en;
         const body = lang === "es" ? a.body_es : a.body_en;
-        return `<li><a href="/${lang}/${seg}/${esc(a.slug)}"><h2>${esc(title)}</h2><p>${esc(body.slice(0, 200))}…</p></a></li>`;
+        const coverUrl = a.cover_asset_key ? `/covers/${a.cover_asset_key}.png` : null;
+        const coverImg = coverUrl ? `<img src="${esc(coverUrl)}" alt="${esc(title)}" loading="lazy" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px; margin-bottom: 0.5rem;" />` : "";
+        return `<li><a href="/${lang}/${seg}/${esc(a.slug)}">${coverImg}<h2>${esc(title)}</h2><p>${esc(body.slice(0, 200))}…</p></a></li>`;
       })
       .join("\n    ")}
   </ul>`;
