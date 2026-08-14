@@ -37,6 +37,23 @@ export function escapeAttr(s: string): string {
   );
 }
 
+/**
+ * Append the " — X-Ops Media" brand suffix to a page title ONLY if it fits
+ * inside the SERP-friendly 60-char budget. Past 60 chars, Google truncates
+ * the title in the result snippet and the brand gets dropped on the floor —
+ * better to drop the brand and keep the title whole (T43 review F3).
+ *
+ * Example: brandTitle("CVE-2026-63077: Critical TeamCity RCE") → "… — X-Ops Media"
+ * because the bare title (45 chars) leaves 15 for the suffix; the long form
+ * "CVE-2026-20316 in Cisco Secure Firewall Management Center" alone is 56
+ * chars, which leaves only 12 — fits — so the suffix stays.
+ */
+export function brandTitle(title: string): string {
+  const SUFFIX = ` — ${SITE_NAME}`;
+  if (title.length + SUFFIX.length <= 60) return `${title}${SUFFIX}`;
+  return title;
+}
+
 // ── JSON-LD builders ───────────────────────────────────────────────────────
 
 function orgJsonLd() {
@@ -145,8 +162,8 @@ export function homeMeta(lang: Lang): PageMeta {
   const isEs = lang === "es";
   return {
     title: isEs
-      ? `${SITE_NAME} — Noticias de DevSecOps, X-Ops y AI Infra`
-      : `${SITE_NAME} — DevSecOps, X-Ops and AI Infra News`,
+      ? brandTitle("Noticias de DevSecOps, X-Ops y AI Infra")
+      : brandTitle("DevSecOps, X-Ops and AI Infra News"),
     description: isEs
       ? "Noticias curadas de DevSecOps, seguridad de contenedores, plataformas y AI infra — investigadas, redactadas y aprobadas por un humano antes de publicarse."
       : "Curated DevSecOps, container security, platform engineering and AI infra news — researched, drafted, and human-approved before it ever publishes.",
@@ -165,7 +182,7 @@ export function categoryMeta(lang: Lang, topic: Topic): PageMeta {
   const label = isEs ? topic.labelEs : topic.labelEn;
   const url = `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`;
   return {
-    title: `${label} — ${SITE_NAME}`,
+    title: brandTitle(label),
     description: isEs ? `Últimas noticias de ${label}.` : `The latest ${label} news.`,
     canonical: url,
     alternateUrl: `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].category}/${otherSlug}`,

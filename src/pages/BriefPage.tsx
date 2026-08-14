@@ -27,6 +27,22 @@ export function BriefPage({ lang }: { lang: Lang }) {
   const segment = isEs ? "resumen-semanal" : "weekly-brief";
   const articleSegment = ROUTE_SEGMENTS[lang].article;
 
+  // Sorted editions (newest first) used to compute Prev/Next siblings of the
+  // current brief — visible Next/Previous links let readers move through the
+  // archive without bouncing back to the index.
+  const sortedEditions = briefs
+    ? [...briefs].sort((a, b) => b.edition.localeCompare(a.edition))
+    : null;
+  const currentIndex = sortedEditions
+    ? sortedEditions.findIndex((b) => b.edition === edition)
+    : -1;
+  const prevEdition =
+    sortedEditions && currentIndex >= 0 && currentIndex + 1 < sortedEditions.length
+      ? sortedEditions[currentIndex + 1]
+      : null;
+  const nextEdition =
+    sortedEditions && currentIndex > 0 ? sortedEditions[currentIndex - 1] : null;
+
   useSEO(
     brief
       ? {
@@ -66,21 +82,23 @@ export function BriefPage({ lang }: { lang: Lang }) {
       >
         <AdSlot variant="leaderboard" id={`brief-${edition ?? "missing"}-${lang}-top`} />
 
-        <p
+        <nav
+          aria-label={isEs ? "Ruta de navegación" : "Breadcrumb"}
           style={{
-            color: "var(--text-muted)",
-            letterSpacing: "0.04em",
             fontSize: "0.85rem",
-            marginBottom: "0.5rem",
+            letterSpacing: "0.04em",
+            color: "var(--text-muted)",
+            marginBottom: "1rem",
           }}
         >
           <Link
             to={`/${lang}/${segment}`}
             style={{ color: "var(--media-accent-light)", textDecoration: "none" }}
           >
-            {isEs ? "Resumen semanal" : "The Week in X-Ops"}
+            {"← "}
+            {isEs ? "Volver al archivo" : "Back to archive"}
           </Link>
-        </p>
+        </nav>
 
         {briefs === null && (
           <section
@@ -161,16 +179,28 @@ export function BriefPage({ lang }: { lang: Lang }) {
                 {isEs ? brief.headline_es : brief.headline_en}
               </h1>
               {(brief.summary_es || brief.summary_en) && (
-                <p
-                  style={{
-                    color: "var(--text-secondary)",
-                    fontSize: "1rem",
-                    margin: 0,
-                    maxWidth: "60ch",
-                  }}
-                >
-                  {isEs ? brief.summary_es : brief.summary_en}
-                </p>
+                <section aria-labelledby="editor-summary">
+                  <h2
+                    id="editor-summary"
+                    style={{
+                      fontSize: "1.15rem",
+                      marginBottom: "0.5rem",
+                      color: "var(--text-secondary)",
+                    }}
+                  >
+                    {isEs ? "Resumen editorial" : "Editor's summary"}
+                  </h2>
+                  <p
+                    style={{
+                      color: "var(--text-secondary)",
+                      fontSize: "1rem",
+                      margin: 0,
+                      maxWidth: "60ch",
+                    }}
+                  >
+                    {isEs ? brief.summary_es : brief.summary_en}
+                  </p>
+                </section>
               )}
             </header>
 
@@ -220,6 +250,72 @@ export function BriefPage({ lang }: { lang: Lang }) {
                 </ul>
               </section>
             )}
+
+            {/* Prev/Next navigation — readers expect a linear editorial flow
+                without bouncing back to the archive. Wrapped in a single <nav>
+                with an aria-label so assistive tech announces the relationship. */}
+            <nav
+              aria-label={isEs ? "Otras ediciones" : "Other editions"}
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "1rem",
+                justifyContent: "space-between",
+                marginTop: "2.5rem",
+                paddingTop: "1.25rem",
+                borderTop: "1px solid var(--surface-0)",
+                fontSize: "0.92rem",
+              }}
+            >
+              <div style={{ flex: "1 1 12rem" }}>
+                {prevEdition && (
+                  <Link
+                    to={`/${lang}/${segment}/${prevEdition.edition}`}
+                    style={{
+                      color: "var(--media-accent-light)",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {"← "}
+                    {isEs ? "Edición anterior" : "Previous edition"}
+                    <span
+                      style={{
+                        display: "block",
+                        color: "var(--text-muted)",
+                        fontSize: "0.85rem",
+                        marginTop: "0.2rem",
+                      }}
+                    >
+                      {formatPeriod(prevEdition, lang)}
+                    </span>
+                  </Link>
+                )}
+              </div>
+              <div style={{ flex: "1 1 12rem", textAlign: "right" }}>
+                {nextEdition && (
+                  <Link
+                    to={`/${lang}/${segment}/${nextEdition.edition}`}
+                    style={{
+                      color: "var(--media-accent-light)",
+                      textDecoration: "none",
+                    }}
+                  >
+                    {isEs ? "Edición siguiente" : "Next edition"}
+                    {" →"}
+                    <span
+                      style={{
+                        display: "block",
+                        color: "var(--text-muted)",
+                        fontSize: "0.85rem",
+                        marginTop: "0.2rem",
+                      }}
+                    >
+                      {formatPeriod(nextEdition, lang)}
+                    </span>
+                  </Link>
+                )}
+              </div>
+            </nav>
           </article>
         )}
       </main>
