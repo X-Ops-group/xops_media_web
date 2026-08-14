@@ -207,7 +207,7 @@ export function articleMeta(lang: Lang, article: Article, topic?: Topic, author?
   const cover = coverUrlFor(article);
 
   return {
-    title: `${title} — ${SITE_NAME}`,
+    title: brandTitle(title),
     description,
     canonical: url,
     alternateUrl: `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].article}/${article.slug}`,
@@ -236,7 +236,7 @@ export function authorMeta(lang: Lang, author: Author): PageMeta {
   const url = `${SITE_URL}/${lang}/author/${author.slug}`;
   const description = plainExcerpt(isEs ? author.bio_es : author.bio_en, 200);
   return {
-    title: `${author.display_name} — ${SITE_NAME}`,
+    title: brandTitle(author.display_name),
     description,
     canonical: url,
     alternateUrl: `${SITE_URL}/${otherLang}/author/${author.slug}`,
@@ -255,7 +255,7 @@ export function authorMeta(lang: Lang, author: Author): PageMeta {
 export function authorsIndexMeta(lang: Lang): PageMeta {
   const isEs = lang === "es";
   return {
-    title: isEs ? `Autores — ${SITE_NAME}` : `Authors — ${SITE_NAME}`,
+    title: brandTitle(isEs ? "Autores" : "Authors"),
     description: isEs
       ? "El equipo editorial de X-Ops Media: redactores y editores que firman y revisan cada artículo."
       : "The X-Ops Media editorial team: the writers and editors who file and review every article.",
