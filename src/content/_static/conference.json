@@ -1,0 +1,52 @@
+{
+  "event_name": "X-Ops Conference",
+  "tagline_es": "La conferencia independiente sobre operaciones de seguridad, cadenas de suministro e infraestructura ofensiva.",
+  "tagline_en": "The independent conference on security operations, supply chains, and offensive infrastructure.",
+  "next_edition": {
+    "date": "2026-11-19",
+    "location": "Madrid, Spain",
+    "cfp_url": "https://xops-conference.com/cfp/2026",
+    "call_for_papers_open": true,
+    "cfp_deadline": "2026-09-15"
+  },
+  "recent_talks": [
+    {
+      "title": "Firmando el pipeline: SBOM, attestation y los olvidos de SLSA L3",
+      "speaker": "Maria Lacalle",
+      "date": "2026-06-12",
+      "video_url": "https://xops-conference.com/talks/2026/sbom-attestation-slsa",
+      "summary_es": "Recorrido por los errores recurrentes al implementar attestation en pipelines de CI/CD reales: qué genera CycloneDX con qué versión, dónde se rompe la trazabilidad, y por qué SLSA L3 sigue siendo un objetivo costoso en equipos pequeños.",
+      "summary_en": "A walk through recurring mistakes when implementing attestation in real CI/CD pipelines: what CycloneDX actually generates with each version, where traceability breaks, and why SLSA L3 remains an expensive target for small teams."
+    },
+    {
+      "title": "Escapando de L2: bugs de EPT en KVM anidado",
+      "speaker": "Diego Rivas",
+      "date": "2026-06-12",
+      "video_url": "https://xops-conference.com/talks/2026/kvm-nested-ept",
+      "summary_es": "Análisis técnico de una familia de bugs en el manejo de Extended Page Tables en KVM anidado, con dos casos reales de la cadena de investigación y la timeline de coordinación con el kernel team.",
+      "summary_en": "Technical analysis of a family of bugs in Extended Page Table handling in nested KVM, including two real cases from the research chain and the coordination timeline with the kernel team."
+    },
+    {
+      "title": "Lecciones de un TeamCity comprometido: respuesta a incidente en CI",
+      "speaker": "Laura Mendoza",
+      "date": "2026-06-13",
+      "video_url": "https://xops-conference.com/talks/2026/teamcity-ir",
+      "summary_es": "Notas de campo de un engagement real donde una falla de RCE en un servidor TeamCity permitió pivote al pipeline de producción. Qué se vio, qué se contuvo, qué se habría hecho de manera distinta.",
+      "summary_en": "Field notes from a real engagement where an RCE flaw in a TeamCity server allowed pivoting to the production pipeline. What was seen, what was contained, and what we would have done differently."
+    },
+    {
+      "title": "Cómo se decide un advisory: dentro de un equipo de respuesta",
+      "speaker": "Pablo Santamaría",
+      "date": "2026-06-13",
+      "video_url": "https://xops-conference.com/talks/2026/advisory-decisions",
+      "summary_es": "Entrevista en formato mesa redonda con tres investigadores y un responsable de PSIRT sobre cómo se decide qué se publica, cuándo, y qué se calla. Sin PowerPoint, sin guion.",
+      "summary_en": "Roundtable interview with three researchers and a PSIRT lead on how they decide what gets published, when, and what is kept quiet. No slides, no script."
+    }
+  ],
+  "links": {
+    "main": "https://xops-conference.com",
+    "cfp": "https://xops-conference.com/cfp/2026",
+    "schedule": "https://xops-conference.com/2026/schedule",
+    "archive": "https://xops-conference.com/archive"
+  }
+}

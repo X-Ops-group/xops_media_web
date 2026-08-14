@@ -1,0 +1,70 @@
+{
+  "authors": [
+    {
+      "slug": "antonio-juanilla",
+      "display_name": "Antonio Juanilla",
+      "role": "both",
+      "bio_es": "Fundador y editor jefe de X-Ops Media. Lleva quince años trabajando en la intersección entre operaciones de seguridad y desarrollo de software, con foco en cadenas de suministro de software, respuesta a incidentes y plataformas de automatización seguras. En X-Ops Media coordina la línea editorial, revisa cada artículo antes de publicación y firma las columnas de fondo.",
+      "bio_en": "Founder and editor-in-chief of X-Ops Media. He has spent fifteen years working at the intersection of security operations and software development, focused on software supply chains, incident response, and secure automation platforms. At X-Ops Media he coordinates the editorial line, reviews every article before publication, and writes the long-form columns.",
+      "links": {
+        "github": "https://github.com/antoniojuanilla",
+        "linkedin": "https://www.linkedin.com/in/antoniojuanilla"
+      },
+      "credentials": [],
+      "avatar": "/static/authors/antonio-juanilla.png"
+    },
+    {
+      "slug": "maria-lacalle",
+      "display_name": "Maria Lacalle",
+      "role": "writer",
+      "bio_es": "Investigadora senior en X-Ops Media, especializada en DevSecOps y seguridad de pipelines de CI/CD. Cubre la actualidad de SAST, SCA, firma de artefactos y controles de cadena de suministro. Antes de unirse a X-Ops lideró el equipo de seguridad de plataforma de una fintech europea y contribuyó a proyectos open-source de endurecimiento de runners de CI.",
+      "bio_en": "Senior researcher at X-Ops Media, specialized in DevSecOps and CI/CD pipeline security. She covers the news around SAST, SCA, artifact signing, and software supply-chain controls. Before joining X-Ops she led platform security at a European fintech and contributed to open-source projects hardening CI runners.",
+      "links": {
+        "github": "https://github.com/marialacalle",
+        "linkedin": "https://www.linkedin.com/in/marialacalle"
+      },
+      "credentials": [],
+      "avatar": "/static/authors/maria-lacalle.png"
+    },
+    {
+      "slug": "diego-rivas",
+      "display_name": "Diego Rivas",
+      "role": "writer",
+      "bio_es": "Investigador senior en X-Ops Media, centrado en operaciones de infraestructura y plataformas X-Ops: hipervisores, Kubernetes, redes definidas por software y almacenamiento distribuido. Lleva una década publicando análisis de vulnerabilidades de bajo nivel y notas técnicas sobre comportamiento del kernel en producción.",
+      "bio_en": "Senior researcher at X-Ops Media, focused on infrastructure operations and X-Ops platforms: hypervisors, Kubernetes, software-defined networking, and distributed storage. He has been publishing low-level vulnerability analyses and technical notes on kernel behavior in production for the past decade.",
+      "links": {
+        "github": "https://github.com/diegorivas",
+        "linkedin": "https://www.linkedin.com/in/diegorivas"
+      },
+      "credentials": [],
+      "avatar": "/static/authors/diego-rivas.png"
+    },
+    {
+      "slug": "laura-mendoza",
+      "display_name": "Laura Mendoza",
+      "role": "writer",
+      "bio_es": "Analista de vulnerabilidades en X-Ops Media, responsable de la cobertura rápida de CVEs y de mantener Exploit Watch al día. Trabaja con el catálogo CISA KEV, los avisos de proveedores y los feeds de honeypots para producir las alertas operativas y los análisis de exploiting-active que publica X-Ops Media.",
+      "bio_en": "Vulnerability analyst at X-Ops Media, responsible for the rapid CVE coverage and keeping Exploit Watch up to date. She works with the CISA KEV catalog, vendor advisories, and honeypot feeds to produce the operational alerts and actively-exploited analyses published by X-Ops Media.",
+      "links": {
+        "github": "https://github.com/lauramendoza",
+        "mastodon": "https://infosec.exchange/@lauramendoza"
+      },
+      "credentials": [],
+      "avatar": "/static/authors/laura-mendoza.png"
+    },
+    {
+      "slug": "pablo-santamaria",
+      "display_name": "Pablo Santamaría",
+      "role": "both",
+      "bio_es": "Corresponsal de conferencia en X-Ops Media. Cubre en vivo las principales conferencias de seguridad de Europa y Latinoamérica, entrevista ponentes y escribe los recaps de las charlas. Colabora con la organización de X-Ops Conference en la selección de charlas y la curaduría del programa.",
+      "bio_en": "Conference correspondent at X-Ops Media. He covers the major security conferences in Europe and Latin America live, interviews speakers, and writes the talk recaps. He collaborates with the X-Ops Conference organization on talk selection and program curation.",
+      "links": {
+        "github": "https://github.com/pablosantamaria",
+        "linkedin": "https://www.linkedin.com/in/pablosantamaria",
+        "twitter": "https://twitter.com/pablosantamaria"
+      },
+      "credentials": [],
+      "avatar": "/static/authors/pablo-santamaria.png"
+    }
+  ]
+}
