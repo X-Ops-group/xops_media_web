@@ -151,7 +151,7 @@ ${jsonLd.map((obj) => `  <script type="application/ld+json">${JSON.stringify(obj
 </head>`
   );
   html = html.replace('<html lang="en">', `<html lang="${lang}">`);
-  html = html.replace('<div id="root"></div>', `<div id="root">${bodyHtml}</div>`);
+  html = html.replace('<div id="root"></div>', `<div id="root"><a class="skip-link" href="#main">${lang === "es" ? "Saltar al contenido" : "Skip to content"}</a><main id="main">${bodyHtml}</main></div>`);
 
   const outPath = join(DIST_DIR, routePath, "index.html");
   mkdirSync(dirname(outPath), { recursive: true });
