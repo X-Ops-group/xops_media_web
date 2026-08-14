@@ -138,3 +138,34 @@ a { color: inherit; text-decoration: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ExploitWatchPage (T39 F6) — below 720px the operative table reflows to a
+   card list instead of horizontal-scrolling. Each <td> carries a data-label
+   attr (CVE / Vendor·Product / Severity / Due / Summary); the pseudo-element
+   turns it into the visible row label since thead is hidden at this width. */
+@media (max-width: 720px) {
+  .exploit-watch-table thead {
+    display: none;
+  }
+  .exploit-watch-table,
+  .exploit-watch-table tbody {
+    display: block;
+    width: 100%;
+  }
+  .exploit-watch-table tr {
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--surface-0);
+  }
+  .exploit-watch-table td {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    padding: 0.25rem 0.5rem;
+    white-space: normal !important;
+  }
+  .exploit-watch-table td::before {
+    content: attr(data-label);
+    color: var(--text-muted);
+    font-size: 0.78rem;
+  }
+}
