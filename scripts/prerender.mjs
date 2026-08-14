@@ -137,7 +137,7 @@ function writePage(routePath, { title, description, canonical, alternate, lang, 
   <link rel="canonical" href="${esc(canonical)}" />
   <link rel="alternate" hreflang="${lang === "es" ? "en" : "es"}" href="${esc(alternate)}" />
   <link rel="alternate" hreflang="${lang}" href="${esc(canonical)}" />
-  <link rel="alternate" hreflang="x-default" href="${esc(alternate)}" />
+  <link rel="alternate" hreflang="x-default" href="${esc(`${SITE_URL}/en`)}" />
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(description)}" />
   <meta property="og:url" content="${esc(canonical)}" />
