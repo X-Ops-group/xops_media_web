@@ -17,11 +17,15 @@ function setLink(rel: string, href: string, hreflang?: string) {
   let el = document.head.querySelector<HTMLLinkElement>(selector);
   if (!el) {
     el = document.createElement("link");
-    el.setAttribute("rel", rel);
+    el.setAttribute(rel, rel);
     if (hreflang) el.setAttribute("hreflang", hreflang);
     document.head.appendChild(el);
   }
   el.setAttribute("href", href);
+}
+
+function removeMetaByKey(attr: "name" | "property", key: string) {
+  document.head.querySelectorAll(`meta[${attr}="${key}"]`).forEach((n) => n.remove());
 }
 
 function setJsonLd(objects: object[]) {
@@ -35,7 +39,12 @@ function setJsonLd(objects: object[]) {
   }
 }
 
-/** Aplica title/meta/canonical/hreflang/JSON-LD al <head> — SPA-friendly, sin dependencias externas. */
+/**
+ * Applies title / meta / canonical / hreflang / JSON-LD to <head>.
+ * SPA-friendly, no external dependencies. Defensive: anything that looks like
+ * raw HTML in `description` is escaped at write time (see `escapeAttr` in
+ * `seo.ts`); never echo unescaped user content into meta tags.
+ */
 export function useSEO(meta: PageMeta, lang: Lang) {
   useEffect(() => {
     document.title = meta.title;
@@ -47,13 +56,26 @@ export function useSEO(meta: PageMeta, lang: Lang) {
     setMeta("property", "og:type", "website");
     setMeta("property", "og:url", meta.canonical);
     setMeta("property", "og:site_name", "X-Ops Media");
+    setMeta("property", "og:locale", lang === "es" ? "es_ES" : "en_US");
+    if (meta.ogImage) {
+      setMeta("property", "og:image", meta.ogImage);
+    } else {
+      removeMetaByKey("property", "og:image");
+    }
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:title", meta.title);
     setMeta("name", "twitter:description", meta.description);
+    if (meta.ogImage) {
+      setMeta("name", "twitter:image", meta.ogImage);
+    } else {
+      removeMetaByKey("name", "twitter:image");
+    }
 
     setLink("canonical", meta.canonical);
     setLink("alternate", meta.alternateUrl, lang === "es" ? "en" : "es");
     setLink("alternate", meta.canonical, lang);
+    // x-default — falls back to the English mirror (homepage convention).
+    setLink("alternate", `${meta.canonical.split("/").slice(0, 3).join("/")}/en`, "x-default");
 
     setJsonLd(meta.jsonLd);
   }, [meta, lang]);
