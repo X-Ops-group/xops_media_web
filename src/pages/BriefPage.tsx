@@ -218,22 +218,16 @@ export function BriefPage({ lang }: { lang: Lang }) {
                 </h2>
                 <ul
                   style={{
-                    listStyle: "none",
-                    padding: 0,
+                    paddingLeft: "1.5rem",
                     margin: 0,
                     display: "flex",
                     flexDirection: "column",
-                    gap: "0.75rem",
+                    gap: "0.6rem",
+                    listStyleType: "disc",
                   }}
                 >
-                  {brief.articles.map((a) => (
-                    <li
-                      key={a.slug}
-                      style={{
-                        borderLeft: "3px solid var(--media-accent)",
-                        paddingLeft: "0.85rem",
-                      }}
-                    >
+                  {brief.articles.map((a, i) => (
+                    <li key={a.slug}>
                       <Link
                         to={`/${lang}/${articleSegment}/${a.slug}`}
                         style={{
@@ -243,6 +237,17 @@ export function BriefPage({ lang }: { lang: Lang }) {
                           fontWeight: 500,
                         }}
                       >
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            color: "var(--text-muted)",
+                            fontFamily: "var(--font-sans)",
+                            fontVariantNumeric: "tabular-nums",
+                            marginRight: "0.5rem",
+                          }}
+                        >
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
                         {isEs ? a.title_es : a.title_en}
                       </Link>
                     </li>

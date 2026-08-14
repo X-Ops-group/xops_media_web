@@ -283,7 +283,7 @@ export function seriesMeta(lang: Lang, format: { id: string; label: string; desc
   const otherLang = isEs ? "en" : "es";
   const url = `${SITE_URL}/${lang}/series/${format.id}`;
   return {
-    title: `${format.label} — ${SITE_NAME}`,
+    title: brandTitle(format.label),
     description: format.description,
     canonical: url,
     alternateUrl: `${SITE_URL}/${otherLang}/series/${format.id}`,
@@ -319,7 +319,7 @@ export function staticPageMeta(lang: Lang, page: Page): PageMeta {
   const description = isEs ? page.meta_description_es : page.meta_description_en;
   const url = `${SITE_URL}/${lang}/${seg}`;
   return {
-    title: `${title} — ${SITE_NAME}`,
+    title: brandTitle(title),
     description,
     canonical: url,
     alternateUrl: `${SITE_URL}/${otherLang}/${isEs ? segMap[page.slug].en : segMap[page.slug].es}`,
