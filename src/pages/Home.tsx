@@ -46,7 +46,7 @@ export function Home({ lang }: { lang: Lang }) {
   return (
     <>
       <Header lang={lang} />
-      <main style={{ maxWidth: 960, margin: "0 auto", padding: "1.5rem 1.5rem 0" }}>
+      <main id="main" style={{ maxWidth: 960, margin: "0 auto", padding: "1.5rem 1.5rem 0" }}>
         <AdSlot variant="leaderboard" id="home-top" />
 
         {/* ── Hero ──────────────────────────────────────────────────────── */}
@@ -145,7 +145,6 @@ function LeadCard({ article, lang }: { article: import("../content").Article; la
       className="lead-card"
       style={{
         display: "grid",
-        gridTemplateColumns: cover ? "minmax(0, 1.2fr) minmax(0, 1fr)" : "1fr",
         gap: "1.25rem",
         alignItems: "start",
         textDecoration: "none",
@@ -156,7 +155,8 @@ function LeadCard({ article, lang }: { article: import("../content").Article; la
         <img
           src={cover}
           alt={title}
-          loading="lazy"
+          loading="eager"
+          fetchPriority="high"
           className="lead-card-media"
           style={{
             width: "100%",

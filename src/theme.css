@@ -130,8 +130,11 @@ a { color: inherit; text-decoration: none; }
 /* LeadStory — stacked cover on narrow viewports so the image never gets
    crushed to thumbnail size beside the headline. Below 560px the 1.2/1
    desktop split collapses to a single column. */
+.lead-card {
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+}
 @media (max-width: 560px) {
   .lead-card {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 }
