@@ -6,6 +6,9 @@ import { NotFound } from "./pages/NotFound";
 import { AuthorsPage } from "./pages/AuthorsPage";
 import { AuthorDetailPage } from "./pages/AuthorDetailPage";
 import { SeriesPage } from "./pages/SeriesPage";
+import { BriefArchivePage } from "./pages/BriefArchivePage";
+import { BriefPage } from "./pages/BriefPage";
+import { ExploitWatchPage } from "./pages/ExploitWatchPage";
 import "./theme.css";
 import type { Lang } from "./content";
 
@@ -80,9 +83,9 @@ export default function App() {
       <Route path={`/${SEGMENTS.en.methodology}`} element={<Stub name="Methodology" lang="en" />} />
       <Route path={`/${SEGMENTS.en.ethics}`} element={<Stub name="Ethics" lang="en" />} />
       <Route path={`/${SEGMENTS.en.contact}`} element={<Stub name="Contact" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.weeklyBrief}`} element={<Stub name="Weekly Brief archive" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.weeklyBrief}/:edition`} element={<Stub name="Weekly Brief edition" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.exploitWatch}`} element={<Stub name="Exploit Watch" lang="en" />} />
+      <Route path={`/${SEGMENTS.en.weeklyBrief}`} element={<BriefArchivePage lang="en" />} />
+      <Route path={`/${SEGMENTS.en.weeklyBrief}/:edition`} element={<BriefPage lang="en" />} />
+      <Route path={`/${SEGMENTS.en.exploitWatch}`} element={<ExploitWatchPage lang="en" />} />
       <Route path={`/${SEGMENTS.en.series}/:format`} element={<SeriesPage lang="en" />} />
       <Route path={`/${SEGMENTS.en.tags}/:tag`} element={<Stub name="Tag" lang="en" />} />
       <Route path={`/${SEGMENTS.en.archive}`} element={<Stub name="Archive" lang="en" />} />
@@ -98,9 +101,9 @@ export default function App() {
       <Route path={`/${SEGMENTS.es.methodology}`} element={<Stub name="Metodología" lang="es" />} />
       <Route path={`/${SEGMENTS.es.ethics}`} element={<Stub name="Ética" lang="es" />} />
       <Route path={`/${SEGMENTS.es.contact}`} element={<Stub name="Contacto" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.weeklyBrief}`} element={<Stub name="Resumen semanal" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.weeklyBrief}/:edition`} element={<Stub name="Edición del resumen semanal" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.exploitWatch}`} element={<Stub name="Exploits activos" lang="es" />} />
+      <Route path={`/${SEGMENTS.es.weeklyBrief}`} element={<BriefArchivePage lang="es" />} />
+      <Route path={`/${SEGMENTS.es.weeklyBrief}/:edition`} element={<BriefPage lang="es" />} />
+      <Route path={`/${SEGMENTS.es.exploitWatch}`} element={<ExploitWatchPage lang="es" />} />
       <Route path={`/${SEGMENTS.es.series}/:format`} element={<SeriesPage lang="es" />} />
       <Route path={`/${SEGMENTS.es.tags}/:tag`} element={<Stub name="Etiqueta" lang="es" />} />
       <Route path={`/${SEGMENTS.es.archive}`} element={<Stub name="Archivo" lang="es" />} />
