@@ -78,6 +78,26 @@ export function BriefArchivePage({ lang }: { lang: Lang }) {
   // arrives in arbitrary order.
   const sortedBriefs = briefs ? [...briefs].sort((a, b) => b.edition.localeCompare(a.edition)) : null;
 
+  // Group by year (descending) so a 30+ edition archive becomes a scannable
+  // sequence of year sections instead of a flat list. Each section keeps the
+  // existing `<ul>` of edition cards — the year heading becomes the section
+  // label so screen readers announce the count of editions in that year.
+  const groupedByYear: Array<{ year: number; briefs: WeeklyBrief[] }> | null =
+    sortedBriefs
+      ? (() => {
+          const map = new Map<number, WeeklyBrief[]>();
+          for (const b of sortedBriefs) {
+            const y = new Date(b.edition).getFullYear();
+            const list = map.get(y) ?? [];
+            list.push(b);
+            map.set(y, list);
+          }
+          return [...map.entries()]
+            .sort((a, b) => b[0] - a[0])
+            .map(([year, briefs]) => ({ year, briefs }));
+        })()
+      : null;
+
   useSEO(
     {
       title: isEs
@@ -166,82 +186,106 @@ export function BriefArchivePage({ lang }: { lang: Lang }) {
           </p>
         )}
 
-        {sortedBriefs !== null && sortedBriefs.length > 0 && (
+        {groupedByYear !== null && groupedByYear.length > 0 && (
           <nav aria-label={isEs ? "Ediciones del resumen semanal" : "Weekly brief editions"}>
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-                display: "flex",
-                flexDirection: "column",
-                gap: "1rem",
-              }}
-            >
-              {sortedBriefs.map((b) => {
-                const headline = isEs ? b.headline_es : b.headline_en;
-                return (
-                  <li
-                    key={b.edition}
-                    style={{
-                      border: "1px solid var(--surface-0)",
-                      borderRadius: 12,
-                      background: "var(--card-bg)",
-                      padding: 0,
-                      overflow: "hidden",
-                    }}
-                  >
-                    <Link
-                      to={`/${lang}/${segment}/${b.edition}`}
-                      style={{
-                        display: "block",
-                        color: "inherit",
-                        textDecoration: "none",
-                        padding: "1.25rem 1.4rem",
-                      }}
-                    >
-                      <article>
-                        <p
+            {groupedByYear.map((group) => (
+              <section
+                key={group.year}
+                aria-labelledby={`year-${group.year}`}
+                style={{ marginBottom: "2rem" }}
+              >
+                <h2
+                  id={`year-${group.year}`}
+                  style={{
+                    fontSize: "0.95rem",
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "var(--text-muted)",
+                    marginBottom: "0.75rem",
+                    fontFamily: "var(--font-sans)",
+                  }}
+                >
+                  {group.year}{" "}
+                  <span style={{ fontWeight: 400, opacity: 0.7 }}>
+                    ({group.briefs.length})
+                  </span>
+                </h2>
+                <ul
+                  style={{
+                    listStyle: "none",
+                    padding: 0,
+                    margin: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1rem",
+                  }}
+                >
+                  {group.briefs.map((b) => {
+                    const headline = isEs ? b.headline_es : b.headline_en;
+                    return (
+                      <li
+                        key={b.edition}
+                        style={{
+                          border: "1px solid var(--surface-0)",
+                          borderRadius: 12,
+                          background: "var(--card-bg)",
+                          padding: 0,
+                          overflow: "hidden",
+                        }}
+                      >
+                        <Link
+                          to={`/${lang}/${segment}/${b.edition}`}
                           style={{
-                            color: "var(--text-muted)",
-                            fontSize: "0.8rem",
-                            letterSpacing: "0.04em",
-                            marginBottom: "0.35rem",
+                            display: "block",
+                            color: "inherit",
+                            textDecoration: "none",
+                            padding: "1.25rem 1.4rem",
                           }}
                         >
-                          {isEs ? "Edición" : "Edition"} #{b.number} ·{" "}
-                          {formatPeriod(b, lang)}
-                        </p>
-                        <h2
-                          style={{
-                            fontSize: "1.15rem",
-                            lineHeight: 1.3,
-                            margin: 0,
-                            marginBottom: "0.5rem",
-                            color: "var(--media-accent-light)",
-                          }}
-                        >
-                          {headline}
-                        </h2>
-                        {b.articles.length > 0 && (
-                          <p
-                            style={{
-                              color: "var(--text-secondary)",
-                              fontSize: "0.9rem",
-                              margin: 0,
-                            }}
-                          >
-                            {isEs
-                              ? `${b.articles.length} pieza${b.articles.length === 1 ? "" : "s"} seleccionada${b.articles.length === 1 ? "" : "s"}`
-                              : `${b.articles.length} selected piece${b.articles.length === 1 ? "" : "s"}`}
-                          </p>
-                        )}
-                      </article>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+                          <article>
+                            <p
+                              style={{
+                                color: "var(--text-muted)",
+                                fontSize: "0.8rem",
+                                letterSpacing: "0.04em",
+                                marginBottom: "0.35rem",
+                              }}
+                            >
+                              {isEs ? "Edición" : "Edition"} #{b.number} ·{" "}
+                              {formatPeriod(b, lang)}
+                            </p>
+                            <h3
+                              style={{
+                                fontSize: "1.15rem",
+                                lineHeight: 1.3,
+                                margin: 0,
+                                marginBottom: "0.5rem",
+                                color: "var(--media-accent-light)",
+                              }}
+                            >
+                              {headline}
+                            </h3>
+                            {b.articles.length > 0 && (
+                              <p
+                                style={{
+                                  color: "var(--text-secondary)",
+                                  fontSize: "0.9rem",
+                                  margin: 0,
+                                }}
+                              >
+                                {isEs
+                                  ? `${b.articles.length} pieza${b.articles.length === 1 ? "" : "s"} seleccionada${b.articles.length === 1 ? "" : "s"}`
+                                  : `${b.articles.length} selected piece${b.articles.length === 1 ? "" : "s"}`}
+                              </p>
+                            )}
+                          </article>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            ))}
           </nav>
         )}
       </main>
