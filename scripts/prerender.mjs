@@ -491,6 +491,7 @@ for (const a of allArticles) {
           "@context": "https://schema.org",
           "@type": "NewsArticle",
           headline: title,
+          description: articleDescription(a, lang),
           datePublished: a.published_at,
           dateModified: a.updated_at ?? a.published_at,
           inLanguage: lang,

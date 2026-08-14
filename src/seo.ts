@@ -54,6 +54,43 @@ export function brandTitle(title: string): string {
   return title;
 }
 
+/** Cap a string at the last sentence boundary no later than `maxChars`. */
+function capAtSentence(s: string, maxChars: number): string {
+  if (s.length <= maxChars) return s;
+  const slice = s.slice(0, maxChars);
+  const matches = [...slice.matchAll(/[.!?](?=\s|$)/g)];
+  if (matches.length === 0) return slice.replace(/\s+\S*$/, "") + "…";
+  const lastEnd = matches[matches.length - 1].index + 1;
+  return slice.slice(0, lastEnd).trim();
+}
+
+/**
+ * Build the meta description (and JSON-LD `description`) for an article.
+ * Mirrors the prerender.mjs implementation so the prerendered SERP snippet
+ * and the live SPA share a single source of truth. See T43 review F1/F2/F5.
+ *
+ * 1. Prefer editorial meta_description_{es,en} (commit 63d0ffc).
+ * 2. Otherwise strip the leading H1 markdown (`# Title…`) if the article body
+ *    inlined it, then take the first sentence of the first non-empty
+ *    paragraph and cap at 155 chars on a sentence boundary.
+ *
+ * NEVER returns the H1.
+ */
+export function articleMetaDescription(article: Article, lang: Lang): string {
+  const editorial = lang === "es" ? article.meta_description_es : article.meta_description_en;
+  if (editorial && editorial.trim()) {
+    return capAtSentence(editorial.replace(/\s+/g, " ").trim(), 155);
+  }
+  const body = lang === "es" ? article.body_es : article.body_en;
+  const candidate =
+    body
+      .split("\n\n")
+      .map((p) => p.replace(/^\s*#\s+[^\n]+\n?/, "").trim())
+      .find((p) => p.length > 0) ?? "";
+  const firstSentence = (candidate.match(/^[\s\S]*?[.!?](?=\s|$)/) ?? [""])[0].trim();
+  return capAtSentence(firstSentence, 155);
+}
+
 // ── JSON-LD builders ───────────────────────────────────────────────────────
 
 function orgJsonLd() {
@@ -99,7 +136,7 @@ function newsArticleJsonLd(
 ) {
   const otherLang = lang === "es" ? "en" : "es";
   const title = lang === "es" ? article.title_es : article.title_en;
-  const description = plainExcerpt(lang === "es" ? article.body_es : article.body_en, 200);
+  const description = articleMetaDescription(article, lang);
   const cover = coverUrlFor(article);
   const authorObj = author
     ? { "@type": "Person", name: author.display_name, url: `${SITE_URL}/${otherLang}/author/${author.slug}` }
