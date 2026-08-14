@@ -111,3 +111,27 @@ a { color: inherit; text-decoration: none; }
   background: var(--surface-0);
   color: var(--text-primary);
 }
+
+/* HomePage (Task 39) — feed + sidebar grid below the hero. Mirrors the
+   .category-grid pattern already in production: sidebar gets a fixed track
+   on desktop and stacks under the feed below 900px. */
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* LeadStory — stacked cover on narrow viewports so the image never gets
+   crushed to thumbnail size beside the headline. Below 560px the 1.2/1
+   desktop split collapses to a single column. */
+@media (max-width: 560px) {
+  .lead-card {
+    grid-template-columns: 1fr !important;
+  }
+}
