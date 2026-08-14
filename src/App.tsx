@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Category } from "./pages/Category";
 import { ArticlePage } from "./pages/ArticlePage";
@@ -68,6 +68,19 @@ const SEGMENTS = {
   },
 } as const;
 
+// Detects the intended locale for an unmatched path so the 404 page reads in
+// the right language even when nothing under /en or /es matched (T39 F1).
+function detectLang(pathname: string): Lang {
+  return pathname.startsWith("/es") ? "es" : "en";
+}
+
+// Wrapper so the wildcard route can read the current path (Route.element is
+// constructed once, outside render, so it can't take pathname as a prop).
+function NotFoundRoute() {
+  const location = useLocation();
+  return <NotFound lang={detectLang(location.pathname)} />;
+}
+
 // 16 routes per language (EN + ES) + the bare-locale redirect + a 404 wildcard.
 export default function App() {
   return (
@@ -110,12 +123,15 @@ export default function App() {
       <Route path={`/es/${SEGMENTS.es.conference}`} element={<Stub name="Conferencia" lang="es" />} />
       <Route path="/es" element={<Home lang="es" />} />
 
-      {/* 404 wildcard — last so it doesn't shadow the named routes. The bare
-          `/en` and `/es` home routes above are more specific than `*`, so
-          they still win for the locale roots. Anything else falls here. */}
-      <Route path="/en/*" element={<NotFound lang="en" />} />
-      <Route path="/es/*" element={<NotFound lang="es" />} />
-      <Route path="*" element={<Navigate to="/en" replace />} />
+      {/* 404 wildcard — a single catch-all, declared last, after every named
+          route. The previous /en/* and /es/* wildcards shadowed every named
+          locale-scoped route (declared before the named routes above, and a
+          "/*" wildcard ranks no lower than a fully static named route in
+          React Router's specificity scoring) — /en/exploit-watch and every
+          other /en/<slug> route 404'd (T39 F1). One wildcard, last, fixes
+          it: named routes above always win because they're strictly more
+          specific than "*". */}
+      <Route path="*" element={<NotFoundRoute />} />
     </Routes>
   );
 }
