@@ -75,39 +75,39 @@ export default function App() {
       <Route path="/" element={<Navigate to="/en" replace />} />
 
       {/* EN */}
-      <Route path={`/${SEGMENTS.en.category}/:slug`} element={<Category lang="en" />} />
-      <Route path={`/${SEGMENTS.en.article}/:slug`} element={<ArticlePage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.authors}`} element={<AuthorsPage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.author}/:slug`} element={<AuthorDetailPage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.about}`} element={<Stub name="About" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.methodology}`} element={<Stub name="Methodology" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.ethics}`} element={<Stub name="Ethics" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.contact}`} element={<Stub name="Contact" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.weeklyBrief}`} element={<BriefArchivePage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.weeklyBrief}/:edition`} element={<BriefPage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.exploitWatch}`} element={<ExploitWatchPage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.series}/:format`} element={<SeriesPage lang="en" />} />
-      <Route path={`/${SEGMENTS.en.tags}/:tag`} element={<Stub name="Tag" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.archive}`} element={<Stub name="Archive" lang="en" />} />
-      <Route path={`/${SEGMENTS.en.conference}`} element={<Stub name="Conference" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.category}/:slug`} element={<Category lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.article}/:slug`} element={<ArticlePage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.authors}`} element={<AuthorsPage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.author}/:slug`} element={<AuthorDetailPage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.about}`} element={<Stub name="About" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.methodology}`} element={<Stub name="Methodology" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.ethics}`} element={<Stub name="Ethics" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.contact}`} element={<Stub name="Contact" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.weeklyBrief}`} element={<BriefArchivePage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.weeklyBrief}/:edition`} element={<BriefPage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.exploitWatch}`} element={<ExploitWatchPage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.series}/:format`} element={<SeriesPage lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.tags}/:tag`} element={<Stub name="Tag" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.archive}`} element={<Stub name="Archive" lang="en" />} />
+      <Route path={`/en/${SEGMENTS.en.conference}`} element={<Stub name="Conference" lang="en" />} />
       <Route path="/en" element={<Home lang="en" />} />
 
       {/* ES */}
-      <Route path={`/${SEGMENTS.es.category}/:slug`} element={<Category lang="es" />} />
-      <Route path={`/${SEGMENTS.es.article}/:slug`} element={<ArticlePage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.authors}`} element={<AuthorsPage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.author}/:slug`} element={<AuthorDetailPage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.about}`} element={<Stub name="Quiénes somos" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.methodology}`} element={<Stub name="Metodología" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.ethics}`} element={<Stub name="Ética" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.contact}`} element={<Stub name="Contacto" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.weeklyBrief}`} element={<BriefArchivePage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.weeklyBrief}/:edition`} element={<BriefPage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.exploitWatch}`} element={<ExploitWatchPage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.series}/:format`} element={<SeriesPage lang="es" />} />
-      <Route path={`/${SEGMENTS.es.tags}/:tag`} element={<Stub name="Etiqueta" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.archive}`} element={<Stub name="Archivo" lang="es" />} />
-      <Route path={`/${SEGMENTS.es.conference}`} element={<Stub name="Conferencia" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.category}/:slug`} element={<Category lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.article}/:slug`} element={<ArticlePage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.authors}`} element={<AuthorsPage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.author}/:slug`} element={<AuthorDetailPage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.about}`} element={<Stub name="Quiénes somos" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.methodology}`} element={<Stub name="Metodología" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.ethics}`} element={<Stub name="Ética" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.contact}`} element={<Stub name="Contacto" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.weeklyBrief}`} element={<BriefArchivePage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.weeklyBrief}/:edition`} element={<BriefPage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.exploitWatch}`} element={<ExploitWatchPage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.series}/:format`} element={<SeriesPage lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.tags}/:tag`} element={<Stub name="Etiqueta" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.archive}`} element={<Stub name="Archivo" lang="es" />} />
+      <Route path={`/es/${SEGMENTS.es.conference}`} element={<Stub name="Conferencia" lang="es" />} />
       <Route path="/es" element={<Home lang="es" />} />
 
       {/* 404 wildcard — last so it doesn't shadow the named routes. The bare
