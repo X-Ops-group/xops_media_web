@@ -254,6 +254,21 @@ export function BriefArchivePage({ lang }: { lang: Lang }) {
                               {isEs ? "Edición" : "Edition"} #{b.number} ·{" "}
                               {formatPeriod(b, lang)}
                             </p>
+                            <span
+                              aria-hidden="true"
+                              style={{
+                                display: "block",
+                                fontFamily: "var(--font-serif)",
+                                fontVariantNumeric: "tabular-nums",
+                                fontSize: "2.25rem",
+                                lineHeight: 1,
+                                color: "var(--text-muted)",
+                                marginBottom: "0.5rem",
+                                letterSpacing: "-0.02em",
+                              }}
+                            >
+                              #{String(b.number).padStart(2, "0")}
+                            </span>
                             <h3
                               style={{
                                 fontSize: "1.15rem",

@@ -216,6 +216,17 @@ function capAtSentence(s, maxChars) {
   return slice.slice(0, lastEnd).trim();
 }
 
+/**
+ * Same 60-char SERP budget as seo.ts brandTitle — keep this and
+ * src/seo.ts in sync to avoid title/og:title mismatch between prerendered
+ * HTML and live SPA pages.
+ */
+function brandTitle(title) {
+  const SUFFIX = " — X-Ops Media";
+  if (title.length + SUFFIX.length <= 60) return `${title}${SUFFIX}`;
+  return title;
+}
+
 function feedSnippet(articles, lang) {
   const seg = ROUTE_SEGMENTS[lang].article;
   return `<ul>
@@ -289,7 +300,7 @@ for (const topic of TOPICS) {
     const canonical = `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`;
     const alternate = `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].category}/${otherSlug}`;
     writePage(`${lang}/${ROUTE_SEGMENTS[lang].category}/${slug}`, {
-      title: `${label} — X-Ops Media`,
+      title: brandTitle(label),
       description: lang === "es" ? `Últimas noticias de ${label}.` : `The latest ${label} news.`,
       canonical,
       alternate,
@@ -326,7 +337,7 @@ for (const page of STATIC_PAGES) {
     const canonical = `${SITE_URL}/${lang}/${seg}`;
     const alternate = `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang][segKey]}`;
     writePage(`${lang}/${seg}`, {
-      title: `${title} — X-Ops Media`,
+      title: brandTitle(title),
       description,
       canonical,
       alternate,
