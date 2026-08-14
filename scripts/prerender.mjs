@@ -267,7 +267,8 @@ const writtenRoutes = [];
 
 // --- Home (en/es) ---
 for (const lang of ["en", "es"]) {
-  const title = lang === "es" ? "X-Ops Media — Noticias de DevSecOps, X-Ops y AI Infra" : "X-Ops Media — DevSecOps, X-Ops and AI Infra News";
+  const baseTitle = lang === "es" ? "Noticias de DevSecOps, X-Ops y AI Infra" : "DevSecOps, X-Ops and AI Infra News";
+  const title = brandTitle(baseTitle);
   const description =
     lang === "es"
       ? "Noticias curadas de DevSecOps, seguridad de contenedores, plataformas y AI infra — investigadas, redactadas y aprobadas por un humano antes de publicarse."
@@ -479,7 +480,7 @@ for (const a of allArticles) {
     const alternate = `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].article}/${a.slug}`;
     const cover = a.cover_asset_key ? `${SITE_URL}/covers/${a.cover_asset_key}.jpeg` : null;
     writePage(`${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`, {
-      title: `${title} — X-Ops Media`,
+      title: brandTitle(title),
       description: articleDescription(a, lang),
       canonical,
       alternate,
