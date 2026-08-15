@@ -28,8 +28,9 @@ export function BriefPage({ lang }: { lang: Lang }) {
   const articleSegment = ROUTE_SEGMENTS[lang].article;
 
   // Sorted editions (newest first) used to compute Prev/Next siblings of the
-  // current brief — visible Next/Previous links let readers move through the
-  // archive without bouncing back to the index.
+  // current brief — the audit needs visible Next/Previous links on the
+  // detail page so readers can move through the archive without bouncing
+  // back to the index.
   const sortedEditions = briefs
     ? [...briefs].sort((a, b) => b.edition.localeCompare(a.edition))
     : null;
