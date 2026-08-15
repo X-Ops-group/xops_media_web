@@ -490,7 +490,7 @@ for (const a of allArticles) {
     const otherLang = lang === "es" ? "en" : "es";
     const canonical = `${SITE_URL}/${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`;
     const alternate = `${SITE_URL}/${otherLang}/${ROUTE_SEGMENTS[otherLang].article}/${a.slug}`;
-    const cover = a.cover_asset_key ? `${SITE_URL}/covers/${a.cover_asset_key}.jpeg` : null;
+    const cover = a.cover_asset_key ? `${SITE_URL}/covers/${a.cover_asset_key}.png` : null;
     writePage(`${lang}/${ROUTE_SEGMENTS[lang].article}/${a.slug}`, {
       title: brandTitle(title),
       description: articleDescription(a, lang),
