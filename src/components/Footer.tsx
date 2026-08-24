@@ -1,5 +1,7 @@
+import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { loadConference, type Lang } from "../content";
+import { XIcon, InstagramIcon, LinkedInIcon, YouTubeIcon } from "./SocialIcons";
 
 const EXTERNAL = "noopener noreferrer";
 
@@ -42,6 +44,53 @@ export function Footer({ lang }: { lang: Lang }) {
     color: "var(--text-muted)",
     marginBottom: "0.75rem",
   };
+
+  const iconButtonStyle = {
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "2rem",
+    height: "2rem",
+    borderRadius: "999px",
+    border: "1px solid var(--surface-0)",
+    color: "var(--text-secondary)",
+  };
+  // One row of platform icon-buttons for a brand's social accounts.
+  const socialRow = (
+    brand: string,
+    accounts: { icon: ReactNode; href: string; platform: string }[],
+    pendingPlatforms: { icon: ReactNode; platform: string }[] = [],
+  ) => (
+    <div role="group" aria-label={brand} style={{ display: "flex", gap: "0.5rem" }}>
+      {accounts.map(({ icon, href, platform }) => (
+        <a
+          key={platform}
+          href={href}
+          style={iconButtonStyle}
+          target="_blank"
+          rel={EXTERNAL}
+          aria-label={`${brand} — ${platform}`}
+          title={`${brand} — ${platform}`}
+        >
+          {icon}
+        </a>
+      ))}
+      {pendingPlatforms.map(({ icon, platform }) => (
+        <span
+          key={platform}
+          aria-disabled="true"
+          title={
+            lang === "es"
+              ? `${platform} — próximamente`
+              : `${platform} — coming soon`
+          }
+          style={{ ...iconButtonStyle, color: "var(--text-muted)", cursor: "not-allowed", borderStyle: "dashed" }}
+        >
+          {icon}
+        </span>
+      ))}
+    </div>
+  );
 
   return (
     <footer
@@ -128,28 +177,23 @@ export function Footer({ lang }: { lang: Lang }) {
           <div style={{ ...headingStyle, marginTop: "0.75rem" }}>
             X-Ops
           </div>
-          <a href="https://x.com/xopsconference" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            X
-          </a>
-          <a href="https://www.instagram.com/xops_conference" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            Instagram
-          </a>
-          <a href="https://www.linkedin.com/company/101439409" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            LinkedIn
-          </a>
-          {soon("YouTube")}
+          {socialRow(
+            "X-Ops",
+            [
+              { icon: <XIcon />, href: "https://x.com/xopsconference", platform: "X" },
+              { icon: <InstagramIcon />, href: "https://www.instagram.com/xops_conference", platform: "Instagram" },
+              { icon: <LinkedInIcon />, href: "https://www.linkedin.com/company/101439409", platform: "LinkedIn" },
+            ],
+            [{ icon: <YouTubeIcon />, platform: "YouTube" }],
+          )}
           <div style={{ ...headingStyle, marginTop: "0.75rem" }}>
             Hacker Dreams
           </div>
-          <a href="https://x.com/hackerdreamsorg" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            X
-          </a>
-          <a href="https://www.instagram.com/hackerdreamsorg" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            Instagram
-          </a>
-          <a href="https://www.linkedin.com/company/101236097" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            LinkedIn
-          </a>
+          {socialRow("Hacker Dreams", [
+            { icon: <XIcon />, href: "https://x.com/hackerdreamsorg", platform: "X" },
+            { icon: <InstagramIcon />, href: "https://www.instagram.com/hackerdreamsorg", platform: "Instagram" },
+            { icon: <LinkedInIcon />, href: "https://www.linkedin.com/company/101236097", platform: "LinkedIn" },
+          ])}
         </nav>
       </div>
 
