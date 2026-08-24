@@ -126,13 +126,29 @@ export function Footer({ lang }: { lang: Lang }) {
             {lang === "es" ? "Política de cookies" : "Cookie Policy"}
           </Link>
           <div style={{ ...headingStyle, marginTop: "0.75rem" }}>
-            {lang === "es" ? "Social" : "Social"}
+            X-Ops
           </div>
-          <a href="https://twitter.com/xopsmedia" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            Twitter
+          <a href="https://x.com/xopsconference" style={linkStyle} target="_blank" rel={EXTERNAL}>
+            X
           </a>
-          <a href="https://github.com/xops" style={linkStyle} target="_blank" rel={EXTERNAL}>
-            GitHub
+          <a href="https://www.instagram.com/xops_conference" style={linkStyle} target="_blank" rel={EXTERNAL}>
+            Instagram
+          </a>
+          <a href="https://www.linkedin.com/company/101439409" style={linkStyle} target="_blank" rel={EXTERNAL}>
+            LinkedIn
+          </a>
+          {soon("YouTube")}
+          <div style={{ ...headingStyle, marginTop: "0.75rem" }}>
+            Hacker Dreams
+          </div>
+          <a href="https://x.com/hackerdreamsorg" style={linkStyle} target="_blank" rel={EXTERNAL}>
+            X
+          </a>
+          <a href="https://www.instagram.com/hackerdreamsorg" style={linkStyle} target="_blank" rel={EXTERNAL}>
+            Instagram
+          </a>
+          <a href="https://www.linkedin.com/company/101236097" style={linkStyle} target="_blank" rel={EXTERNAL}>
+            LinkedIn
           </a>
         </nav>
       </div>
