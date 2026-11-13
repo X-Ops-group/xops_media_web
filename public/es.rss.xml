@@ -10,7 +10,7 @@
     <atom:link href="https://xops.media/es/rss.xml" rel="self" type="application/rss+xml" />
     <description>Noticias curadas de DevSecOps, seguridad de contenedores, plataformas y AI infra — investigadas, redactadas y aprobadas por un humano antes de publicarse.</description>
     <language>es-es</language>
-    <lastBuildDate>Wed, 12 Aug 2026 17:15:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 15:59:00 GMT</lastBuildDate>
     <generator>X-Ops Media build pipeline</generator>
     <managingEditor>tips@xops.media (X-Ops Media)</managingEditor>
     <webMaster>tips@xops.media (X-Ops Media)</webMaster>
@@ -22,6 +22,1176 @@
       <title>X-Ops Media</title>
       <link>https://xops.media/es</link>
     </image>
+    <item>
+      <title>TSMC invertirá 1.000 millones de dólares en OpenAI y Anthropic</title>
+      <link>https://xops.media/es/articulo/tsmc-to-invest-1b-in-openai-and-anthropic</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/tsmc-to-invest-1b-in-openai-and-anthropic#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:59:00 GMT</pubDate>
+      <description>El mayor fabricante de chips del mundo compra participación directa en los dos grandes desarrolladores de inteligencia artificial: hasta 500 millones de dólares en acciones preferentes de OpenAI y otros 500 millones en acciones ordinarias de Anthropic al precio esperado de su sal</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El mayor fabricante de chips del mundo compra participación directa en los dos grandes desarrolladores de inteligencia artificial: hasta 500 millones de dólares en acciones preferentes de OpenAI y otros 500 millones en acciones ordinarias de Anthropic al precio esperado de su sal</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El mayor fabricante de chips del mundo compra participación directa en los dos grandes desarrolladores de inteligencia artificial: hasta 500 millones de dólares en acciones preferentes de OpenAI y otros 500 millones en acciones ordinarias de Anthropic al precio esperado de su sal]]></content:encoded>
+    </item>
+    <item>
+      <title>United Airlines no permitirá que los agentes de IA reserven tus vuelos</title>
+      <link>https://xops.media/es/articulo/united-airlines-won-t-let-ai-agents-book-your-flight</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/united-airlines-won-t-let-ai-agents-book-your-flight#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:58:00 GMT</pubDate>
+      <description>United Airlines ha declarado que no dejará que los asistentes personales de IA compren billetes en su aerolínea, alegando motivos de privacidad y regulatorios. Los agentes podrán seguir mostrando vuelos de United, pero no completar la transacción. «Para ser sincero, no quiero cre</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>United Airlines ha declarado que no dejará que los asistentes personales de IA compren billetes en su aerolínea, alegando motivos de privacidad y regulatorios. Los agentes podrán seguir mostrando vuelos de United, pero no completar la transacción. «Para ser sincero, no quiero cre</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[United Airlines ha declarado que no dejará que los asistentes personales de IA compren billetes en su aerolínea, alegando motivos de privacidad y regulatorios. Los agentes podrán seguir mostrando vuelos de United, pero no completar la transacción. «Para ser sincero, no quiero cre]]></content:encoded>
+    </item>
+    <item>
+      <title>Más de 35.000 apps creadas con Grok quedan expuestas en internet; algunas filtran contraseñas</title>
+      <link>https://xops.media/es/articulo/over-35-000-grok-built-apps-exposed-online-some-leaking-passwords</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/over-35-000-grok-built-apps-exposed-online-some-leaking-passwords#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:57:00 GMT</pubDate>
+      <description>La empresa de seguridad Claroc encontró 37.571 aplicaciones generadas con el asistente de IA Grok expuestas en internet, y 35.578 de ellas eran accesibles sin ningún inicio de sesión. La mayoría eran juegos y páginas sencillas, pero alrededor de una de cada diez contenía datos in</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>La empresa de seguridad Claroc encontró 37.571 aplicaciones generadas con el asistente de IA Grok expuestas en internet, y 35.578 de ellas eran accesibles sin ningún inicio de sesión. La mayoría eran juegos y páginas sencillas, pero alrededor de una de cada diez contenía datos in</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[La empresa de seguridad Claroc encontró 37.571 aplicaciones generadas con el asistente de IA Grok expuestas en internet, y 35.578 de ellas eran accesibles sin ningún inicio de sesión. La mayoría eran juegos y páginas sencillas, pero alrededor de una de cada diez contenía datos in]]></content:encoded>
+    </item>
+    <item>
+      <title>Google lanza Tabletop, un experimento de IA para crear apps de colaboración a medida</title>
+      <link>https://xops.media/es/articulo/google-s-tabletop-ai-experiment-lets-you-build-custom-collaboration-apps</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/google-s-tabletop-ai-experiment-lets-you-build-custom-collaboration-apps#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:56:00 GMT</pubDate>
+      <description>Tabletop es la nueva herramienta experimental de Google Labs que genera espacios de colaboración personalizados para coordinarse con familia y amigos. Visualmente recuerda a gestores de trabajo como Asana o Monday, pero incorpora IA para «vibecodear» herramientas interactivas a m</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Tabletop es la nueva herramienta experimental de Google Labs que genera espacios de colaboración personalizados para coordinarse con familia y amigos. Visualmente recuerda a gestores de trabajo como Asana o Monday, pero incorpora IA para «vibecodear» herramientas interactivas a m</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Tabletop es la nueva herramienta experimental de Google Labs que genera espacios de colaboración personalizados para coordinarse con familia y amigos. Visualmente recuerda a gestores de trabajo como Asana o Monday, pero incorpora IA para «vibecodear» herramientas interactivas a m]]></content:encoded>
+    </item>
+    <item>
+      <title>La UE prepara una ofensiva contra las cajas botín, los influencers y las funciones adictivas</title>
+      <link>https://xops.media/es/articulo/loot-boxes-influencers-and-addictive-features-face-an-eu-crackdown</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/loot-boxes-influencers-and-addictive-features-face-an-eu-crackdown#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:55:00 GMT</pubDate>
+      <description>La Comisión Europea publicó el miércoles 11 de noviembre de 2026 la propuesta de Ley de Equidad Digital (Digital Fairness Act, DFA), una batería de normas dirigida a plataformas de videojuegos, redes sociales y comercio electrónico. Su objetivo declarado: hacer «más justa» la exp</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>La Comisión Europea publicó el miércoles 11 de noviembre de 2026 la propuesta de Ley de Equidad Digital (Digital Fairness Act, DFA), una batería de normas dirigida a plataformas de videojuegos, redes sociales y comercio electrónico. Su objetivo declarado: hacer «más justa» la exp</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[La Comisión Europea publicó el miércoles 11 de noviembre de 2026 la propuesta de Ley de Equidad Digital (Digital Fairness Act, DFA), una batería de normas dirigida a plataformas de videojuegos, redes sociales y comercio electrónico. Su objetivo declarado: hacer «más justa» la exp]]></content:encoded>
+    </item>
+    <item>
+      <title>El puesto de Jensen Huang pende de un hilo en Nvidia: el consejo delibera entre un segundo affaire y la investigación del FBI</title>
+      <link>https://xops.media/es/articulo/jensen-huang-s-job-is-suddenly-on-the-line-at-nvidia</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/jensen-huang-s-job-is-suddenly-on-the-line-at-nvidia#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:54:00 GMT</pubDate>
+      <description>El consejo de administración de Nvidia mantiene conversaciones urgentes sobre el futuro de su fundador y consejero delegado, Jensen Huang, tras las revelaciones de prensa sobre un segundo supuesto affaire —esta vez con una ejecutiva de la compañía— y mientras el FBI investiga el </description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El consejo de administración de Nvidia mantiene conversaciones urgentes sobre el futuro de su fundador y consejero delegado, Jensen Huang, tras las revelaciones de prensa sobre un segundo supuesto affaire —esta vez con una ejecutiva de la compañía— y mientras el FBI investiga el </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El consejo de administración de Nvidia mantiene conversaciones urgentes sobre el futuro de su fundador y consejero delegado, Jensen Huang, tras las revelaciones de prensa sobre un segundo supuesto affaire —esta vez con una ejecutiva de la compañía— y mientras el FBI investiga el ]]></content:encoded>
+    </item>
+    <item>
+      <title>Los centros de datos de IA planean centrales de gas propias a una escala enorme pese al riesgo climático</title>
+      <link>https://xops.media/es/articulo/ai-datacentres-plan-on-site-gas-power-stations-on-a-huge-scale-despite-climate-risks</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/ai-datacentres-plan-on-site-gas-power-stations-on-a-huge-scale-despite-climate-risks#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:53:00 GMT</pubDate>
+      <description>Los centros de datos proyectados en EE. UU., Reino Unido y Europa contemplan construir 181 GW de capacidad de gas in situ —casi cuatro veces la demanda punta total de electricidad de Gran Bretaña— ante los retrasos para conectarse a las redes nacionales, según una investigación d</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Los centros de datos proyectados en EE. UU., Reino Unido y Europa contemplan construir 181 GW de capacidad de gas in situ —casi cuatro veces la demanda punta total de electricidad de Gran Bretaña— ante los retrasos para conectarse a las redes nacionales, según una investigación d</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Los centros de datos proyectados en EE. UU., Reino Unido y Europa contemplan construir 181 GW de capacidad de gas in situ —casi cuatro veces la demanda punta total de electricidad de Gran Bretaña— ante los retrasos para conectarse a las redes nacionales, según una investigación d]]></content:encoded>
+    </item>
+    <item>
+      <title>Maersk confirma una brecha de datos mientras el ransomware WhiteArmor exige 5 millones de dólares</title>
+      <link>https://xops.media/es/articulo/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:52:00 GMT</pubDate>
+      <description>El gigante naviero Maersk confirmó que un actor de amenazas accedió sin autorización a un sistema local heredado de una adquisición anterior y extrajo datos. El grupo de ransomware WhiteArmor reclamó el ataque en su sitio de filtraciones, exige 5 millones de dólares en bitcoin co</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El gigante naviero Maersk confirmó que un actor de amenazas accedió sin autorización a un sistema local heredado de una adquisición anterior y extrajo datos. El grupo de ransomware WhiteArmor reclamó el ataque en su sitio de filtraciones, exige 5 millones de dólares en bitcoin co</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El gigante naviero Maersk confirmó que un actor de amenazas accedió sin autorización a un sistema local heredado de una adquisición anterior y extrajo datos. El grupo de ransomware WhiteArmor reclamó el ataque en su sitio de filtraciones, exige 5 millones de dólares en bitcoin co]]></content:encoded>
+    </item>
+    <item>
+      <title>Ataques activos contra ScreenConnect comprometen a MSP y afectan a decenas de organizaciones</title>
+      <link>https://xops.media/es/articulo/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:51:00 GMT</pubDate>
+      <description>ConnectWise investiga una campaña activa de malware que utiliza entornos ScreenConnect comprometidos para desplegar clientes de acceso remoto fraudulentos en los dispositivos de los clientes de proveedores de servicios gestionados (MSP). Huntress, que detectó la campaña, cifra el</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>ConnectWise investiga una campaña activa de malware que utiliza entornos ScreenConnect comprometidos para desplegar clientes de acceso remoto fraudulentos en los dispositivos de los clientes de proveedores de servicios gestionados (MSP). Huntress, que detectó la campaña, cifra el</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[ConnectWise investiga una campaña activa de malware que utiliza entornos ScreenConnect comprometidos para desplegar clientes de acceso remoto fraudulentos en los dispositivos de los clientes de proveedores de servicios gestionados (MSP). Huntress, que detectó la campaña, cifra el]]></content:encoded>
+    </item>
+    <item>
+      <title>Un atacante usó 4.837 cuentas de GitHub secuestradas para colar un ladrón de secretos en más de 1.806 repositorios</title>
+      <link>https://xops.media/es/articulo/attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-secret-stealer-in-1-806-repositor</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/attacker-used-4-837-hijacked-github-accounts-to-run-a-ci-secret-stealer-in-1-806-repositor#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:50:00 GMT</pubDate>
+      <description>Desde el martes, un atacante empleó credenciales robadas de 4.837 cuentas de GitHub para implantar un ladrón de secretos en los repositorios donde esas cuentas tenían permisos de escritura, según Aikido Security. El malware —diseñado para robar los secretos y credenciales en la n</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Desde el martes, un atacante empleó credenciales robadas de 4.837 cuentas de GitHub para implantar un ladrón de secretos en los repositorios donde esas cuentas tenían permisos de escritura, según Aikido Security. El malware —diseñado para robar los secretos y credenciales en la n</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Desde el martes, un atacante empleó credenciales robadas de 4.837 cuentas de GitHub para implantar un ladrón de secretos en los repositorios donde esas cuentas tenían permisos de escritura, según Aikido Security. El malware —diseñado para robar los secretos y credenciales en la n]]></content:encoded>
+    </item>
+    <item>
+      <title>Notion reconoce que la brecha de Fireworks AI expuso transcripciones de chats de IA de sus clientes</title>
+      <link>https://xops.media/es/articulo/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:49:00 GMT</pubDate>
+      <description>Notion reveló que una brecha de seguridad en Fireworks AI, su proveedor de infraestructura de IA, expuso transcripciones de chats de Notion AI en un pequeño número de espacios de trabajo — menos del 1 % de sus usuarios, según la compañía. Las transcripciones procedían de la funci</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Notion reveló que una brecha de seguridad en Fireworks AI, su proveedor de infraestructura de IA, expuso transcripciones de chats de Notion AI en un pequeño número de espacios de trabajo — menos del 1 % de sus usuarios, según la compañía. Las transcripciones procedían de la funci</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Notion reveló que una brecha de seguridad en Fireworks AI, su proveedor de infraestructura de IA, expuso transcripciones de chats de Notion AI en un pequeño número de espacios de trabajo — menos del 1 % de sus usuarios, según la compañía. Las transcripciones procedían de la funci]]></content:encoded>
+    </item>
+    <item>
+      <title>¿Quién dirige el grupo de ransomware Qilin? Krebs apunta a un hombre de 36 años en San Petersburgo</title>
+      <link>https://xops.media/es/articulo/who-runs-the-ransomware-group-qilin-krebs-points-to-a-36-year-old-man-in-st-petersburg</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/who-runs-the-ransomware-group-qilin-krebs-points-to-a-36-year-old-man-in-st-petersburg#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:48:00 GMT</pubDate>
+      <description>Qilin se ha convertido en el programa de afiliados de ransomware más activo del mundo: al menos 365 organizaciones víctimas en solo tres meses. Pero incluso los ciberdelincuentes rusos de primer nivel cometen errores de seguridad operativa, y los deslices de su administrador en l</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Qilin se ha convertido en el programa de afiliados de ransomware más activo del mundo: al menos 365 organizaciones víctimas en solo tres meses. Pero incluso los ciberdelincuentes rusos de primer nivel cometen errores de seguridad operativa, y los deslices de su administrador en l</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Qilin se ha convertido en el programa de afiliados de ransomware más activo del mundo: al menos 365 organizaciones víctimas en solo tres meses. Pero incluso los ciberdelincuentes rusos de primer nivel cometen errores de seguridad operativa, y los deslices de su administrador en l]]></content:encoded>
+    </item>
+    <item>
+      <title>Microsoft corrige casi 1.100 vulnerabilidades en su Patch Tuesday, incluido un día cero en Outlook</title>
+      <link>https://xops.media/es/articulo/microsoft-fixes-nearly-1-100-vulnerabilities-in-patch-tuesday-including-an-outlook-zero-da</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/microsoft-fixes-nearly-1-100-vulnerabilities-in-patch-tuesday-including-an-outlook-zero-da#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:47:00 GMT</pubDate>
+      <description>El Patch Tuesday de noviembre aborda 1.093 vulnerabilidades en Windows y software soportado —63 de ellas críticas— e incluye un día cero en Microsoft Outlook que ya está siendo explotado activamente (CVE-2026-124194). El dato de fondo: Microsoft acumula más de 5.100 parches en lo</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El Patch Tuesday de noviembre aborda 1.093 vulnerabilidades en Windows y software soportado —63 de ellas críticas— e incluye un día cero en Microsoft Outlook que ya está siendo explotado activamente (CVE-2026-124194). El dato de fondo: Microsoft acumula más de 5.100 parches en lo</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El Patch Tuesday de noviembre aborda 1.093 vulnerabilidades en Windows y software soportado —63 de ellas críticas— e incluye un día cero en Microsoft Outlook que ya está siendo explotado activamente (CVE-2026-124194). El dato de fondo: Microsoft acumula más de 5.100 parches en lo]]></content:encoded>
+    </item>
+    <item>
+      <title>Fallo crítico en Apache HTTP Server (CVE-2026-119618): ejecución remota de código sin autenticación vía HTTP/2</title>
+      <link>https://xops.media/es/articulo/critical-apache-http-2-flaw-cve-2026-119618-could-let-unauthenticated-attackers-execute-co</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/critical-apache-http-2-flaw-cve-2026-119618-could-let-unauthenticated-attackers-execute-co#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:46:00 GMT</pubDate>
+      <description>Una vulnerabilidad crítica en el módulo mod_http2 de Apache HTTP Server permite a un atacante remoto **sin autenticar** ejecutar código y tomar el control total del proceso del servidor. Afecta a las versiones 2.4.55 a 2.4.70 y se corrige en la 2.4.71, publicada el miércoles 11 d</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Una vulnerabilidad crítica en el módulo mod_http2 de Apache HTTP Server permite a un atacante remoto **sin autenticar** ejecutar código y tomar el control total del proceso del servidor. Afecta a las versiones 2.4.55 a 2.4.70 y se corrige en la 2.4.71, publicada el miércoles 11 d</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Una vulnerabilidad crítica en el módulo mod_http2 de Apache HTTP Server permite a un atacante remoto **sin autenticar** ejecutar código y tomar el control total del proceso del servidor. Afecta a las versiones 2.4.55 a 2.4.70 y se corrige en la 2.4.71, publicada el miércoles 11 d]]></content:encoded>
+    </item>
+    <item>
+      <title>Zoom corrige un fallo crítico en Workplace para Windows (CVE-2026-108186, CVSS 9,6): escalada de privilegios sin autenticación</title>
+      <link>https://xops.media/es/articulo/critical-zoom-workplace-flaw-cve-2026-108186-cvss-9-6-could-allow-unauthenticated-remote-p</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/critical-zoom-workplace-flaw-cve-2026-108186-cvss-9-6-could-allow-unauthenticated-remote-p#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:45:00 GMT</pubDate>
+      <description>Zoom publicó actualizaciones para dos vulnerabilidades de Zoom Workplace en Windows, incluida una crítica —CVE-2026-108186, CVSS 9,6— de validación incorrecta de entradas que permite a un usuario **no autenticado** escalar privilegios a través de la red. El NVD registró el CVE el</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Zoom publicó actualizaciones para dos vulnerabilidades de Zoom Workplace en Windows, incluida una crítica —CVE-2026-108186, CVSS 9,6— de validación incorrecta de entradas que permite a un usuario **no autenticado** escalar privilegios a través de la red. El NVD registró el CVE el</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Zoom publicó actualizaciones para dos vulnerabilidades de Zoom Workplace en Windows, incluida una crítica —CVE-2026-108186, CVSS 9,6— de validación incorrecta de entradas que permite a un usuario **no autenticado** escalar privilegios a través de la red. El NVD registró el CVE el]]></content:encoded>
+    </item>
+    <item>
+      <title>OpenSSH: vulnerabilidad de omisión de autenticación explotada activamente (CVE-2026-123158) entra en el catálogo KEV de CISA</title>
+      <link>https://xops.media/es/articulo/openssh-authentication-bypass-vulnerability-actively-exploited-cve-2026-123158-added-to-ci</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/openssh-authentication-bypass-vulnerability-actively-exploited-cve-2026-123158-added-to-ci#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:44:00 GMT</pubDate>
+      <description>sshd de OpenSSH en Linux —en versiones anteriores a la 10.6p2, cuando se usa musl libc sin PAM (el caso típico es Alpine Linux)— contiene una vulnerabilidad de código de estado o valor de retorno inesperado que permite omitir la autenticación por contraseña: en ciertas configurac</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>sshd de OpenSSH en Linux —en versiones anteriores a la 10.6p2, cuando se usa musl libc sin PAM (el caso típico es Alpine Linux)— contiene una vulnerabilidad de código de estado o valor de retorno inesperado que permite omitir la autenticación por contraseña: en ciertas configurac</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[sshd de OpenSSH en Linux —en versiones anteriores a la 10.6p2, cuando se usa musl libc sin PAM (el caso típico es Alpine Linux)— contiene una vulnerabilidad de código de estado o valor de retorno inesperado que permite omitir la autenticación por contraseña: en ciertas configurac]]></content:encoded>
+    </item>
+    <item>
+      <title>Chromium: «use-after-free» en el componente XML explotado activamente (CVE-2026-125350) entra en el KEV de CISA</title>
+      <link>https://xops.media/es/articulo/chromium-use-after-free-in-xml-component-actively-exploited-cve-2026-125350-added-to-cisa</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/chromium-use-after-free-in-xml-component-actively-exploited-cve-2026-125350-added-to-cisa#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:43:00 GMT</pubDate>
+      <description>Google Chromium contiene una vulnerabilidad «use-after-free» en su componente XML —en Chrome, versiones anteriores a 157.0.8103.50— que permite a un atacante remoto ejecutar código arbitrario dentro del sandbox mediante una página web especialmente diseñada. El registro del NVD r</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Google Chromium contiene una vulnerabilidad «use-after-free» en su componente XML —en Chrome, versiones anteriores a 157.0.8103.50— que permite a un atacante remoto ejecutar código arbitrario dentro del sandbox mediante una página web especialmente diseñada. El registro del NVD r</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Google Chromium contiene una vulnerabilidad «use-after-free» en su componente XML —en Chrome, versiones anteriores a 157.0.8103.50— que permite a un atacante remoto ejecutar código arbitrario dentro del sandbox mediante una página web especialmente diseñada. El registro del NVD r]]></content:encoded>
+    </item>
+    <item>
+      <title>SonicWall: fallo en el SSL-VPN de SonicOS explotado para esquivar la autenticación SAML y el MFA (CVE-2026-19868, KEV)</title>
+      <link>https://xops.media/es/articulo/sonicwall-sonicos-ssl-vpn-flaw-exploited-to-bypass-saml-auth-and-mfa-cve-2026-19868-kev</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/sonicwall-sonicos-ssl-vpn-flaw-exploited-to-bypass-saml-auth-and-mfa-cve-2026-19868-kev#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:42:00 GMT</pubDate>
+      <description>El SSL-VPN de SonicWall SonicOS contiene una vulnerabilidad por uso de autenticación de un solo factor que permite a un usuario con credenciales válidas para un método alternativo esquivar los controles de autenticación SAML — incluido el MFA impuesto por SAML. El registro del NV</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El SSL-VPN de SonicWall SonicOS contiene una vulnerabilidad por uso de autenticación de un solo factor que permite a un usuario con credenciales válidas para un método alternativo esquivar los controles de autenticación SAML — incluido el MFA impuesto por SAML. El registro del NV</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El SSL-VPN de SonicWall SonicOS contiene una vulnerabilidad por uso de autenticación de un solo factor que permite a un usuario con credenciales válidas para un método alternativo esquivar los controles de autenticación SAML — incluido el MFA impuesto por SAML. El registro del NV]]></content:encoded>
+    </item>
+    <item>
+      <title>La economía británica crece un 0,7 % en el tercer trimestre, el ritmo más rápido en más de dos años</title>
+      <link>https://xops.media/es/articulo/uk-economy-grows-at-fastest-rate-for-more-than-two-years-0-7-in-q3</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/uk-economy-grows-at-fastest-rate-for-more-than-two-years-0-7-in-q3#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:41:00 GMT</pubDate>
+      <description>La economía del Reino Unido creció un 0,7 % en los tres meses hasta septiembre, según las cifras oficiales — en línea con lo previsto por los analistas de la City y el ritmo más rápido en más de dos años. Un dato más resistente de lo que se temía en verano que da aire al gobierno</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>La economía del Reino Unido creció un 0,7 % en los tres meses hasta septiembre, según las cifras oficiales — en línea con lo previsto por los analistas de la City y el ritmo más rápido en más de dos años. Un dato más resistente de lo que se temía en verano que da aire al gobierno</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[La economía del Reino Unido creció un 0,7 % en los tres meses hasta septiembre, según las cifras oficiales — en línea con lo previsto por los analistas de la City y el ritmo más rápido en más de dos años. Un dato más resistente de lo que se temía en verano que da aire al gobierno]]></content:encoded>
+    </item>
+    <item>
+      <title>Los futuros de Wall Street caen mientras Nvidia se hunde tras el informe sobre la posible destitución de Jensen Huang</title>
+      <link>https://xops.media/es/articulo/wall-st-futures-fall-as-nvidia-slides-on-report-of-possible-ceo-ouster</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/wall-st-futures-fall-as-nvidia-slides-on-report-of-possible-ceo-ouster#es</guid>
+      <pubDate>Fri, 13 Nov 2026 15:40:00 GMT</pubDate>
+      <description>Los futuros bursátiles de EE. UU. cayeron el miércoles por la noche después de que las acciones de Nvidia se hundieran en la negociación extendida, tras el informe de que el consejo de administración se prepara para destituir al CEO Jensen Huang. El giro llegó horas después de un</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Los futuros bursátiles de EE. UU. cayeron el miércoles por la noche después de que las acciones de Nvidia se hundieran en la negociación extendida, tras el informe de que el consejo de administración se prepara para destituir al CEO Jensen Huang. El giro llegó horas después de un</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Los futuros bursátiles de EE. UU. cayeron el miércoles por la noche después de que las acciones de Nvidia se hundieran en la negociación extendida, tras el informe de que el consejo de administración se prepara para destituir al CEO Jensen Huang. El giro llegó horas después de un]]></content:encoded>
+    </item>
+    <item>
+      <title>Colapso progresivo en sistemas distribuidos: el presupuesto de disponibilidad como decisión de gobierno</title>
+      <link>https://xops.media/es/articulo/progressive-collapse-distributed-systems-availability-budget-governance</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/progressive-collapse-distributed-systems-availability-budget-governance#es</guid>
+      <pubDate>Wed, 04 Nov 2026 06:36:00 GMT</pubDate>
+      <description>## Lo que se publicó el 19 de agosto de 2026 El 19 de agosto de 2026, InfoQ publicó la transcripción de la charla &quot;Understanding Progressive Collapse: How To Avoid A Cascading Failure&quot;, de Sam Newman, que el autor presentó el 18 de marzo de 2026 en QCon London. La tesis cabe en d</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Lo que se publicó el 19 de agosto de 2026 El 19 de agosto de 2026, InfoQ publicó la transcripción de la charla &quot;Understanding Progressive Collapse: How To Avoid A Cascading Failure&quot;, de Sam Newman, que el autor presentó el 18 de marzo de 2026 en QCon London. La tesis cabe en d</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Lo que se publicó el 19 de agosto de 2026 El 19 de agosto de 2026, InfoQ publicó la transcripción de la charla "Understanding Progressive Collapse: How To Avoid A Cascading Failure", de Sam Newman, que el autor presentó el 18 de marzo de 2026 en QCon London. La tesis cabe en d]]></content:encoded>
+    </item>
+    <item>
+      <title>De SAM a Agent Mesh: qué cambia para tu plataforma una malla P2P entre agentes</title>
+      <link>https://xops.media/es/articulo/sam-to-agent-mesh-zero-trust-p2p-ai-agents</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/sam-to-agent-mesh-zero-trust-p2p-ai-agents#es</guid>
+      <pubDate>Wed, 04 Nov 2026 06:35:30 GMT</pubDate>
+      <description># De SAM a Agent Mesh: qué cambia para tu plataforma una malla P2P entre agentes ## Lo que ocurrió, en fechas El 18 de agosto de 2026 apareció en la organización de Google en GitHub un proyecto sin keynote, sin vídeo de lanzamiento y con un nombre que genera confusión: SAM, Sover</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># De SAM a Agent Mesh: qué cambia para tu plataforma una malla P2P entre agentes ## Lo que ocurrió, en fechas El 18 de agosto de 2026 apareció en la organización de Google en GitHub un proyecto sin keynote, sin vídeo de lanzamiento y con un nombre que genera confusión: SAM, Sover</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# De SAM a Agent Mesh: qué cambia para tu plataforma una malla P2P entre agentes ## Lo que ocurrió, en fechas El 18 de agosto de 2026 apareció en la organización de Google en GitHub un proyecto sin keynote, sin vídeo de lanzamiento y con un nombre que genera confusión: SAM, Sover]]></content:encoded>
+    </item>
+    <item>
+      <title>Alation confirma un ciberataque: qué hacer cuando el mapa de tus datos es el objetivo</title>
+      <link>https://xops.media/es/articulo/alation-confirms-cyberattack-what-to-do-when-your-data-map-is-the-target</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/alation-confirms-cyberattack-what-to-do-when-your-data-map-is-the-target#es</guid>
+      <pubDate>Wed, 04 Nov 2026 06:33:30 GMT</pubDate>
+      <description># Alation confirma un ciberataque: qué hacer cuando el mapa de tus datos es el objetivo El 18 de agosto de 2026, Alation registró un incidente de servicio sin especificar que dejó «caída de disponibilidad» a una parte de sus clientes durante alrededor de una hora. Dos días despué</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Alation confirma un ciberataque: qué hacer cuando el mapa de tus datos es el objetivo El 18 de agosto de 2026, Alation registró un incidente de servicio sin especificar que dejó «caída de disponibilidad» a una parte de sus clientes durante alrededor de una hora. Dos días despué</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Alation confirma un ciberataque: qué hacer cuando el mapa de tus datos es el objetivo El 18 de agosto de 2026, Alation registró un incidente de servicio sin especificar que dejó «caída de disponibilidad» a una parte de sus clientes durante alrededor de una hora. Dos días despué]]></content:encoded>
+    </item>
+    <item>
+      <title>Cloudflare factura por tramos que no ves: lo que tu traza de agente no va a registrar</title>
+      <link>https://xops.media/es/articulo/cloudflare-agent-tracing-bills-for-spans-you-cannot-see</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cloudflare-agent-tracing-bills-for-spans-you-cannot-see#es</guid>
+      <pubDate>Wed, 04 Nov 2026 06:31:00 GMT</pubDate>
+      <description>Cloudflare acaba de publicar la primera superficie de observabilidad para agentes que corre sobre su plataforma, y trae un detalle que los equipos de plataforma van a descubrir en la primera factura: lo que se factura no es lo que se ve en el panel. El lanzamiento ocurrió dentro </description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Cloudflare acaba de publicar la primera superficie de observabilidad para agentes que corre sobre su plataforma, y trae un detalle que los equipos de plataforma van a descubrir en la primera factura: lo que se factura no es lo que se ve en el panel. El lanzamiento ocurrió dentro </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Cloudflare acaba de publicar la primera superficie de observabilidad para agentes que corre sobre su plataforma, y trae un detalle que los equipos de plataforma van a descubrir en la primera factura: lo que se factura no es lo que se ve en el panel. El lanzamiento ocurrió dentro ]]></content:encoded>
+    </item>
+    <item>
+      <title>La instancia de GitLab que leyó sus propios secretos: un path traversal 10.0 con una ventana de veinte horas</title>
+      <link>https://xops.media/es/articulo/gitlab-cve-2026-85706-path-traversal-arbitrary-file-read-secrets-forge</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/gitlab-cve-2026-85706-path-traversal-arbitrary-file-read-secrets-forge#es</guid>
+      <pubDate>Wed, 28 Oct 2026 08:36:30 GMT</pubDate>
+      <description>## La instancia de GitLab que leyó sus propios secretos El 10 de septiembre de 2026, GitLab publicó correcciones de seguridad para 18 vulnerabilidades. Una de ellas, el CVE-2026-85706, GitLab la puntuó con CVSS 3.1 base **10.0 Crítico** y vector `AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## La instancia de GitLab que leyó sus propios secretos El 10 de septiembre de 2026, GitLab publicó correcciones de seguridad para 18 vulnerabilidades. Una de ellas, el CVE-2026-85706, GitLab la puntuó con CVSS 3.1 base **10.0 Crítico** y vector `AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## La instancia de GitLab que leyó sus propios secretos El 10 de septiembre de 2026, GitLab publicó correcciones de seguridad para 18 vulnerabilidades. Una de ellas, el CVE-2026-85706, GitLab la puntuó con CVSS 3.1 base **10.0 Crítico** y vector `AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A]]></content:encoded>
+    </item>
+    <item>
+      <title>Tres millones de fichas militares expuestas durante nueve meses sin detección</title>
+      <link>https://xops.media/es/articulo/dmdc-breach-3-million-military-personnel-records-unencrypted</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/dmdc-breach-3-million-military-personnel-records-unencrypted#es</guid>
+      <pubDate>Wed, 28 Oct 2026 08:36:00 GMT</pubDate>
+      <description># El custodio de las identidades perdió tres millones de fichas y nadie lo notó Hay brechas que hacen ruido: una banda de ransomware con su portal de filtraciones y una cuenta atrás. Esta no. Aquí la intrusión fue silenciosa por una razón más incómoda: no hubo alerta. Una vulnera</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># El custodio de las identidades perdió tres millones de fichas y nadie lo notó Hay brechas que hacen ruido: una banda de ransomware con su portal de filtraciones y una cuenta atrás. Esta no. Aquí la intrusión fue silenciosa por una razón más incómoda: no hubo alerta. Una vulnera</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# El custodio de las identidades perdió tres millones de fichas y nadie lo notó Hay brechas que hacen ruido: una banda de ransomware con su portal de filtraciones y una cuenta atrás. Esta no. Aquí la intrusión fue silenciosa por una razón más incómoda: no hubo alerta. Una vulnera]]></content:encoded>
+    </item>
+    <item>
+      <title>NVIDIA ha abierto el código de Run:ai: lo difícil es decidir qué significa eso</title>
+      <link>https://xops.media/es/articulo/nvidia-runai-open-source-gpu-scheduling-kubernetes</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/nvidia-runai-open-source-gpu-scheduling-kubernetes#es</guid>
+      <pubDate>Wed, 28 Oct 2026 08:35:00 GMT</pubDate>
+      <description># NVIDIA ha abierto el código de Run:ai. Lo difícil es decidir qué significa eso El 13 de octubre de 2026, NVIDIA anunció que la plataforma Run:ai completa, la capa de orquestación de GPU que había comprado y venía vendiendo en comercial, pasa a ser código abierto bajo la Apache </description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># NVIDIA ha abierto el código de Run:ai. Lo difícil es decidir qué significa eso El 13 de octubre de 2026, NVIDIA anunció que la plataforma Run:ai completa, la capa de orquestación de GPU que había comprado y venía vendiendo en comercial, pasa a ser código abierto bajo la Apache </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# NVIDIA ha abierto el código de Run:ai. Lo difícil es decidir qué significa eso El 13 de octubre de 2026, NVIDIA anunció que la plataforma Run:ai completa, la capa de orquestación de GPU que había comprado y venía vendiendo en comercial, pasa a ser código abierto bajo la Apache ]]></content:encoded>
+    </item>
+    <item>
+      <title>Google ya aísla cada agente en su propio microVM. Ahora toca decidir si eso lo integras o lo alquilas</title>
+      <link>https://xops.media/es/articulo/google-agent-compute-engine-microvm-per-agent-isolation</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/google-agent-compute-engine-microvm-per-agent-isolation#es</guid>
+      <pubDate>Wed, 28 Oct 2026 08:33:30 GMT</pubDate>
+      <description># Un microVM por agente: Google ya no te vende una IA, te vende el aislamiento Hay una fecha que conviene retener: el 22 de octubre de 2026, en San José, en el AGNTCon + MCPCon de la Linux Foundation, Google Cloud anunció Agent Compute Engine. Un servicio de cómputo donde cada ag</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Un microVM por agente: Google ya no te vende una IA, te vende el aislamiento Hay una fecha que conviene retener: el 22 de octubre de 2026, en San José, en el AGNTCon + MCPCon de la Linux Foundation, Google Cloud anunció Agent Compute Engine. Un servicio de cómputo donde cada ag</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Un microVM por agente: Google ya no te vende una IA, te vende el aislamiento Hay una fecha que conviene retener: el 22 de octubre de 2026, en San José, en el AGNTCon + MCPCon de la Linux Foundation, Google Cloud anunció Agent Compute Engine. Un servicio de cómputo donde cada ag]]></content:encoded>
+    </item>
+    <item>
+      <title>Node.js lo dejó en «alto» y Google en «crítico 9.2»: el fallo de Brotli que ya está en KEV</title>
+      <link>https://xops.media/es/articulo/nodejs-brotli-cve-2026-111497-kev-critical-rce</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/nodejs-brotli-cve-2026-111497-kev-critical-rce#es</guid>
+      <pubDate>Wed, 28 Oct 2026 08:30:30 GMT</pubDate>
+      <description># Node.js lo dejó en «alto» y Google en «crítico 9.2»: el fallo de Brotli que ya está en KEV El 21 de octubre de 2026, el proyecto Node.js publicó actualizaciones de seguridad para sus tres ramas activas y corrigió diez vulnerabilidades: cuatro altas, tres medias y tres bajas. En</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Node.js lo dejó en «alto» y Google en «crítico 9.2»: el fallo de Brotli que ya está en KEV El 21 de octubre de 2026, el proyecto Node.js publicó actualizaciones de seguridad para sus tres ramas activas y corrigió diez vulnerabilidades: cuatro altas, tres medias y tres bajas. En</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Node.js lo dejó en «alto» y Google en «crítico 9.2»: el fallo de Brotli que ya está en KEV El 21 de octubre de 2026, el proyecto Node.js publicó actualizaciones de seguridad para sus tres ramas activas y corrigió diez vulnerabilidades: cuatro altas, tres medias y tres bajas. En]]></content:encoded>
+    </item>
+    <item>
+      <title>Google AX: la nueva capa de orquestación declarativa para agentes autónomos de IA que Kubernetes no estaba preparado para manejar</title>
+      <link>https://xops.media/es/articulo/google-ax-agent-orchestrator-declarative-runtime</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/google-ax-agent-orchestrator-declarative-runtime#es</guid>
+      <pubDate>Thu, 24 Sep 2026 07:31:00 GMT</pubDate>
+      <description>## Por qué Kubernetes se queda corto cuando el workload es un agente de IA El equipo de Google responsable de proyectos de IA en producción publicó un componente que lleva meses circulando en rumores y que acaba de aparecer como release open source: **AX** (alojado en `agentexecu</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Por qué Kubernetes se queda corto cuando el workload es un agente de IA El equipo de Google responsable de proyectos de IA en producción publicó un componente que lleva meses circulando en rumores y que acaba de aparecer como release open source: **AX** (alojado en `agentexecu</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Por qué Kubernetes se queda corto cuando el workload es un agente de IA El equipo de Google responsable de proyectos de IA en producción publicó un componente que lleva meses circulando en rumores y que acaba de aparecer como release open source: **AX** (alojado en `agentexecu]]></content:encoded>
+    </item>
+    <item>
+      <title>El harness del agente: cómo construir planos de control que conviertan a un LLM en un sistema production-ready</title>
+      <link>https://xops.media/es/articulo/agent-harness-control-planes-production-ai-agents</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/agent-harness-control-planes-production-ai-agents#es</guid>
+      <pubDate>Thu, 24 Sep 2026 06:54:31 GMT</pubDate>
+      <description>Vinoth Govindarajan, ingeniero de OpenAI que trabaja en infraestructura de datos e IA, presentó en InfoQ una de las charlas más operativas del año sobre sistemas agentic en producción. La tesis central es directa: un agente de IA en producción no es un modelo con un prompt. Es un</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Vinoth Govindarajan, ingeniero de OpenAI que trabaja en infraestructura de datos e IA, presentó en InfoQ una de las charlas más operativas del año sobre sistemas agentic en producción. La tesis central es directa: un agente de IA en producción no es un modelo con un prompt. Es un</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Vinoth Govindarajan, ingeniero de OpenAI que trabaja en infraestructura de datos e IA, presentó en InfoQ una de las charlas más operativas del año sobre sistemas agentic en producción. La tesis central es directa: un agente de IA en producción no es un modelo con un prompt. Es un]]></content:encoded>
+    </item>
+    <item>
+      <title>Cuando la nube se vuelve física: AWS confirma pérdida total de datos en Oriente Medio y rompe el modelo mental multi-AZ</title>
+      <link>https://xops.media/es/articulo/aws-middle-east-data-loss-multi-az-is-not-blast-radius-protection</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/aws-middle-east-data-loss-multi-az-is-not-blast-radius-protection#es</guid>
+      <pubDate>Thu, 24 Sep 2026 06:52:00 GMT</pubDate>
+      <description>Amazon Web Services confirmó esta semana algo que la documentación técnica de la empresa lleva años diciendo en voz baja: que la redundancia multi-AZ dentro de una región no protege contra la destrucción física simultánea de varios data centers por un evento bélico. En una actual</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Amazon Web Services confirmó esta semana algo que la documentación técnica de la empresa lleva años diciendo en voz baja: que la redundancia multi-AZ dentro de una región no protege contra la destrucción física simultánea de varios data centers por un evento bélico. En una actual</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Amazon Web Services confirmó esta semana algo que la documentación técnica de la empresa lleva años diciendo en voz baja: que la redundancia multi-AZ dentro de una región no protege contra la destrucción física simultánea de varios data centers por un evento bélico. En una actual]]></content:encoded>
+    </item>
+    <item>
+      <title>Metabase CVE-2026-72898: la inyección SQL que entrega tu base de datos sin pedir credenciales</title>
+      <link>https://xops.media/es/articulo/metabase-cve-2026-72898-sql-injection-admin-exfiltration</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/metabase-cve-2026-72898-sql-injection-admin-exfiltration#es</guid>
+      <pubDate>Thu, 24 Sep 2026 06:48:00 GMT</pubDate>
+      <description>El 3 de agosto de 2026, Metabase detectó actividad maliciosa contra su servicio Cloud que explotaba una vulnerabilidad desconocida. Tres días después, el 6 de agosto, la empresa publicó un advisory de seguridad confirmando una inyección SQL no autenticada con CVSS 10.0 — el punta</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 3 de agosto de 2026, Metabase detectó actividad maliciosa contra su servicio Cloud que explotaba una vulnerabilidad desconocida. Tres días después, el 6 de agosto, la empresa publicó un advisory de seguridad confirmando una inyección SQL no autenticada con CVSS 10.0 — el punta</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 3 de agosto de 2026, Metabase detectó actividad maliciosa contra su servicio Cloud que explotaba una vulnerabilidad desconocida. Tres días después, el 6 de agosto, la empresa publicó un advisory de seguridad confirmando una inyección SQL no autenticada con CVSS 10.0 — el punta]]></content:encoded>
+    </item>
+    <item>
+      <title>Context Engineering en LinkedIn: cómo 8.000 ingenieros usan MCP para dar memoria procedural a sus agentes</title>
+      <link>https://xops.media/es/articulo/linkedin-capa-contexto-organizacional-agentes-ia-mcp</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/linkedin-capa-contexto-organizacional-agentes-ia-mcp#es</guid>
+      <pubDate>Thu, 24 Sep 2026 06:47:30 GMT</pubDate>
+      <description># Context Engineering en LinkedIn: cómo 8.000 ingenieros usan MCP para dar memoria procedural a sus agentes En septiembre de 2026, Ajay Prakash, ingeniero senior de LinkedIn con 14 años construyendo sistemas distribuidos y los últimos cuatro completamente enfocados en IA, subió a</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Context Engineering en LinkedIn: cómo 8.000 ingenieros usan MCP para dar memoria procedural a sus agentes En septiembre de 2026, Ajay Prakash, ingeniero senior de LinkedIn con 14 años construyendo sistemas distribuidos y los últimos cuatro completamente enfocados en IA, subió a</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Context Engineering en LinkedIn: cómo 8.000 ingenieros usan MCP para dar memoria procedural a sus agentes En septiembre de 2026, Ajay Prakash, ingeniero senior de LinkedIn con 14 años construyendo sistemas distribuidos y los últimos cuatro completamente enfocados en IA, subió a]]></content:encoded>
+    </item>
+    <item>
+      <title>Cisco ISE bajo fuego: el zero-day CVE-2026-76460 con CVSS 10.0 permite saltarse la autenticación y ya se explota en ataques reales</title>
+      <link>https://xops.media/es/articulo/cisco-ise-zero-day-cve-2026-76460-cvss-10-autenticacion-bypass</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cisco-ise-zero-day-cve-2026-76460-cvss-10-autenticacion-bypass#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:33:00 GMT</pubDate>
+      <description>Cisco ha publicado parches de emergencia para Identity Services Engine (ISE) y ISE Passive Identity Connector (ISE-PIC) por un zero-day que merece toda la atención posible: CVE-2026-76460, con un CVSS de 10.0 — la puntuación máxima posible — y, lo que es más inquietante, con expl</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Cisco ha publicado parches de emergencia para Identity Services Engine (ISE) y ISE Passive Identity Connector (ISE-PIC) por un zero-day que merece toda la atención posible: CVE-2026-76460, con un CVSS de 10.0 — la puntuación máxima posible — y, lo que es más inquietante, con expl</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Cisco ha publicado parches de emergencia para Identity Services Engine (ISE) y ISE Passive Identity Connector (ISE-PIC) por un zero-day que merece toda la atención posible: CVE-2026-76460, con un CVSS de 10.0 — la puntuación máxima posible — y, lo que es más inquietante, con expl]]></content:encoded>
+    </item>
+    <item>
+      <title>Cuando el agente se escapa: GPT-5.6-Cyber rompe QEMU/KVM en horas y obliga a repensar el sandboxing</title>
+      <link>https://xops.media/es/articulo/when-the-agent-breaks-out-gpt-5-6-cyber-escapes-qemu-kvm</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/when-the-agent-breaks-out-gpt-5-6-cyber-escapes-qemu-kvm#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:31:30 GMT</pubDate>
+      <description>La premisa sobre la que se ha sostenido toda una década de infraestructura para agentes de IA — que una máquina virtual corriente es una frontera de contención creíble — se ha roto en público. Investigadores de Trail of Bits publicaron el 26 de agosto de 2026 una evaluación en la</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>La premisa sobre la que se ha sostenido toda una década de infraestructura para agentes de IA — que una máquina virtual corriente es una frontera de contención creíble — se ha roto en público. Investigadores de Trail of Bits publicaron el 26 de agosto de 2026 una evaluación en la</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[La premisa sobre la que se ha sostenido toda una década de infraestructura para agentes de IA — que una máquina virtual corriente es una frontera de contención creíble — se ha roto en público. Investigadores de Trail of Bits publicaron el 26 de agosto de 2026 una evaluación en la]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-68820: el zero-day en AFD.sys que Microsoft parcheó en agosto mientras ya estaba siendo usado para escalar a SYSTEM, y por qué los atacantes lo encadenan con FudModule para apagar tu EDR</title>
+      <link>https://xops.media/es/articulo/cve-2026-68820-windows-afd-sys-zero-day-fudmodule</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-68820-windows-afd-sys-zero-day-fudmodule#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:31:00 GMT</pubDate>
+      <description># CVE-2026-68820: el zero-day en AFD.sys que Microsoft parcheó en agosto mientras ya estaba siendo usado para escalar a SYSTEM, y por qué los atacantes lo encadenan con FudModule para apagar tu EDR El Patch Tuesday de agosto de 2026 de Microsoft abordó 421 CVE, pero una de ellas </description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># CVE-2026-68820: el zero-day en AFD.sys que Microsoft parcheó en agosto mientras ya estaba siendo usado para escalar a SYSTEM, y por qué los atacantes lo encadenan con FudModule para apagar tu EDR El Patch Tuesday de agosto de 2026 de Microsoft abordó 421 CVE, pero una de ellas </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# CVE-2026-68820: el zero-day en AFD.sys que Microsoft parcheó en agosto mientras ya estaba siendo usado para escalar a SYSTEM, y por qué los atacantes lo encadenan con FudModule para apagar tu EDR El Patch Tuesday de agosto de 2026 de Microsoft abordó 421 CVE, pero una de ellas ]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-20349: la vulnerabilidad de inspección de heap en Cisco ASA y FTD que alguien está explotando para tirar firewalls enteros, y por qué un DoS de firewall es mucho peor de lo que parece</title>
+      <link>https://xops.media/es/articulo/cve-2026-20349-cisco-asa-ftd-heap-inspection-dos</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-20349-cisco-asa-ftd-heap-inspection-dos#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:30:00 GMT</pubDate>
+      <description># CVE-2026-20349: la vulnerabilidad de inspección de heap en Cisco ASA y FTD que alguien está explotando para tirar firewalls enteros, y por qué un DoS de firewall es mucho peor de lo que parece El 11 de agosto de 2026, Cisco publicó un aviso de seguridad y CISA añadió CVE-2026-2</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># CVE-2026-20349: la vulnerabilidad de inspección de heap en Cisco ASA y FTD que alguien está explotando para tirar firewalls enteros, y por qué un DoS de firewall es mucho peor de lo que parece El 11 de agosto de 2026, Cisco publicó un aviso de seguridad y CISA añadió CVE-2026-2</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# CVE-2026-20349: la vulnerabilidad de inspección de heap en Cisco ASA y FTD que alguien está explotando para tirar firewalls enteros, y por qué un DoS de firewall es mucho peor de lo que parece El 11 de agosto de 2026, Cisco publicó un aviso de seguridad y CISA añadió CVE-2026-2]]></content:encoded>
+    </item>
+    <item>
+      <title>Microsoft abre el código de TauGrid: una capa de IA nativa de Kubernetes para equipos que todavía no se atrevían con Kubernetes gestionado</title>
+      <link>https://xops.media/es/articulo/microsoft-taugrid-kubernetes-native-ai-open-source</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/microsoft-taugrid-kubernetes-native-ai-open-source#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:28:30 GMT</pubDate>
+      <description># Microsoft abre el código de TauGrid: una capa de IA nativa de Kubernetes para equipos que todavía no se atrevían con Kubernetes gestionado El 16 de septiembre de 2026, Microsoft publicó en su blog de ingeniería de AKS el código abierto de TauGrid, una plataforma pensada para co</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Microsoft abre el código de TauGrid: una capa de IA nativa de Kubernetes para equipos que todavía no se atrevían con Kubernetes gestionado El 16 de septiembre de 2026, Microsoft publicó en su blog de ingeniería de AKS el código abierto de TauGrid, una plataforma pensada para co</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Microsoft abre el código de TauGrid: una capa de IA nativa de Kubernetes para equipos que todavía no se atrevían con Kubernetes gestionado El 16 de septiembre de 2026, Microsoft publicó en su blog de ingeniería de AKS el código abierto de TauGrid, una plataforma pensada para co]]></content:encoded>
+    </item>
+    <item>
+      <title>GhostSplice: cómo un servidor MCP malicioso obliga a tu agente de IA a filtrar secretos sin levantar sospechas</title>
+      <link>https://xops.media/es/articulo/ghostsplice-servidor-mcp-malicioso-roba-secretos-agente-ia</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/ghostsplice-servidor-mcp-malicioso-roba-secretos-agente-ia#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:26:00 GMT</pubDate>
+      <description>## Resumen ejecutivo El 11 de agosto de 2026, ASSET Research Group publicó GhostSplice, una técnica que demuestra que un servidor MCP (Model Context Protocol) hostil puede extraer claves SSH, secretos de archivos `.env`, código fuente y datos de cliente de un agente de IA sin env</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Resumen ejecutivo El 11 de agosto de 2026, ASSET Research Group publicó GhostSplice, una técnica que demuestra que un servidor MCP (Model Context Protocol) hostil puede extraer claves SSH, secretos de archivos `.env`, código fuente y datos de cliente de un agente de IA sin env</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Resumen ejecutivo El 11 de agosto de 2026, ASSET Research Group publicó GhostSplice, una técnica que demuestra que un servidor MCP (Model Context Protocol) hostil puede extraer claves SSH, secretos de archivos `.env`, código fuente y datos de cliente de un agente de IA sin env]]></content:encoded>
+    </item>
+    <item>
+      <title>Tres vulnerabilidades críticas en Dell PowerStore: lo que tu almacenamiento empresarial tiene que resolver esta semana</title>
+      <link>https://xops.media/es/articulo/dell-powerstore-cve-cluster-es</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/dell-powerstore-cve-cluster-es#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:25:00 GMT</pubDate>
+      <description>Dell publicó a inicios de agosto su advisory DSA-2026-330, una de esas comunicaciones que el equipo de almacenamiento enterprise lee dos veces porque las cifras no mienten: una vulnerabilidad de severidad crítica y dos de severidad alta, todas corregibles, todas con potencial de </description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Dell publicó a inicios de agosto su advisory DSA-2026-330, una de esas comunicaciones que el equipo de almacenamiento enterprise lee dos veces porque las cifras no mienten: una vulnerabilidad de severidad crítica y dos de severidad alta, todas corregibles, todas con potencial de </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Dell publicó a inicios de agosto su advisory DSA-2026-330, una de esas comunicaciones que el equipo de almacenamiento enterprise lee dos veces porque las cifras no mienten: una vulnerabilidad de severidad crítica y dos de severidad alta, todas corregibles, todas con potencial de ]]></content:encoded>
+    </item>
+    <item>
+      <title>Una cadena de fallos en JFrog Artifactory concede control administrativo en minutos: lo que tu equipo DevSecOps debe ejecutar hoy</title>
+      <link>https://xops.media/es/articulo/jfrog-artifactory-cve-chain-admin-control-backdoor</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/jfrog-artifactory-cve-chain-admin-control-backdoor#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:20:30 GMT</pubDate>
+      <description>Entre el 15 de agosto y el 8 de septiembre de 2026, varias instancias autoalojadas de JFrog Artifactory han recibido ataques completos que terminan con control administrativo, cuentas persistentes y backdoors desplegados. La ventana temporal importa porque no se trata de una prue</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Entre el 15 de agosto y el 8 de septiembre de 2026, varias instancias autoalojadas de JFrog Artifactory han recibido ataques completos que terminan con control administrativo, cuentas persistentes y backdoors desplegados. La ventana temporal importa porque no se trata de una prue</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Entre el 15 de agosto y el 8 de septiembre de 2026, varias instancias autoalojadas de JFrog Artifactory han recibido ataques completos que terminan con control administrativo, cuentas persistentes y backdoors desplegados. La ventana temporal importa porque no se trata de una prue]]></content:encoded>
+    </item>
+    <item>
+      <title>Observabilidad y control de costos para agentes de IA: cómo evitar que tu factura de tokens se convierta en un incidente</title>
+      <link>https://xops.media/es/articulo/ai-agent-observability-cost-controls-opentelemetry-genai</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/ai-agent-observability-cost-controls-opentelemetry-genai#es</guid>
+      <pubDate>Sat, 19 Sep 2026 06:20:00 GMT</pubDate>
+      <description># Observabilidad y control de costos para agentes de IA: cómo evitar que tu factura de tokens se convierta en un incidente El patrón ya es familiar en toda la industria. Un equipo despliega un agente de IA en producción —un bot de triaje de soporte al cliente, un asistente de rev</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Observabilidad y control de costos para agentes de IA: cómo evitar que tu factura de tokens se convierta en un incidente El patrón ya es familiar en toda la industria. Un equipo despliega un agente de IA en producción —un bot de triaje de soporte al cliente, un asistente de rev</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Observabilidad y control de costos para agentes de IA: cómo evitar que tu factura de tokens se convierta en un incidente El patrón ya es familiar en toda la industria. Un equipo despliega un agente de IA en producción —un bot de triaje de soporte al cliente, un asistente de rev]]></content:encoded>
+    </item>
+    <item>
+      <title>Unikraft y el problema de escala de la infraestructura de IA: cómo meter un millón de sandboxes en un único servidor</title>
+      <link>https://xops.media/es/articulo/unikraft-microvm-ai-sandbox-density</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/unikraft-microvm-ai-sandbox-density#es</guid>
+      <pubDate>Fri, 11 Sep 2026 18:35:01 GMT</pubDate>
+      <description>## Resumen ejecutivo En una charla reciente en Londres, Felipe Huici, CEO y cofundador de Unikraft, lanzó una pregunta directa a su audiencia: ¿cuántas máquinas virtuales caben en un servidor de 48 núcleos? Las opciones que él mismo ofreció eran irónicas: una Ubuntu completa, dec</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Resumen ejecutivo En una charla reciente en Londres, Felipe Huici, CEO y cofundador de Unikraft, lanzó una pregunta directa a su audiencia: ¿cuántas máquinas virtuales caben en un servidor de 48 núcleos? Las opciones que él mismo ofreció eran irónicas: una Ubuntu completa, dec</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Resumen ejecutivo En una charla reciente en Londres, Felipe Huici, CEO y cofundador de Unikraft, lanzó una pregunta directa a su audiencia: ¿cuántas máquinas virtuales caben en un servidor de 48 núcleos? Las opciones que él mismo ofreció eran irónicas: una Ubuntu completa, dec]]></content:encoded>
+    </item>
+    <item>
+      <title>BOMHort llega al sandbox de OpenSSF: SBOM nativo en Kubernetes para visibilidad real de la cadena de suministro</title>
+      <link>https://xops.media/es/articulo/bomhort-kubernetes-native-sbom-platform-openssf-sandbox</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/bomhort-kubernetes-native-sbom-platform-openssf-sandbox#es</guid>
+      <pubDate>Thu, 10 Sep 2026 06:28:30 GMT</pubDate>
+      <description>El 28 de agosto de 2026, la Open Source Security Foundation (OpenSSF) anunció la aceptación de BOMHort en su sandbox, uniéndose a una lista creciente de proyectos enfocados en hacer operable la seguridad de la cadena de suministro de software a escala. BOMHort es una plataforma S</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 28 de agosto de 2026, la Open Source Security Foundation (OpenSSF) anunció la aceptación de BOMHort en su sandbox, uniéndose a una lista creciente de proyectos enfocados en hacer operable la seguridad de la cadena de suministro de software a escala. BOMHort es una plataforma S</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 28 de agosto de 2026, la Open Source Security Foundation (OpenSSF) anunció la aceptación de BOMHort en su sandbox, uniéndose a una lista creciente de proyectos enfocados en hacer operable la seguridad de la cadena de suministro de software a escala. BOMHort es una plataforma S]]></content:encoded>
+    </item>
+    <item>
+      <title>JetBrains Cadence cayó por una vulnerabilidad sin parchear en TeamCity: lo que el incidente del servidor api.cadence.jetbrains.com revela sobre la higiene de parches en pipelines CI/CD</title>
+      <link>https://xops.media/es/articulo/jetbrains-cadence-teamcity-breach-cve-2026-63077</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/jetbrains-cadence-teamcity-breach-cve-2026-63077#es</guid>
+      <pubDate>Thu, 10 Sep 2026 06:28:01 GMT</pubDate>
+      <description>El 23 de agosto de 2026, JetBrains confirmó públicamente que su propio entorno Cadence había sido comprometido entre el 8 y el 24 de agosto de 2026 mediante la explotación de CVE-2026-63077, una falla de deserialización de datos no confiables con puntuación CVSS de 9.8 que afecta</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 23 de agosto de 2026, JetBrains confirmó públicamente que su propio entorno Cadence había sido comprometido entre el 8 y el 24 de agosto de 2026 mediante la explotación de CVE-2026-63077, una falla de deserialización de datos no confiables con puntuación CVSS de 9.8 que afecta</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 23 de agosto de 2026, JetBrains confirmó públicamente que su propio entorno Cadence había sido comprometido entre el 8 y el 24 de agosto de 2026 mediante la explotación de CVE-2026-63077, una falla de deserialización de datos no confiables con puntuación CVSS de 9.8 que afecta]]></content:encoded>
+    </item>
+    <item>
+      <title>Bloquear tu ssh-agent expuso claves locales hasta OpenSSH 10.5: un fallo silencioso de las asunciones de seguridad</title>
+      <link>https://xops.media/es/articulo/openssh-10-5-ssh-agent-flaw-locking</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/openssh-10-5-ssh-agent-flaw-locking#es</guid>
+      <pubDate>Wed, 09 Sep 2026 21:13:01 GMT</pubDate>
+      <description># Bloquear tu ssh-agent expuso claves locales hasta OpenSSH 10.5: un fallo silencioso de las asunciones de seguridad El 11 de agosto de 2026, OpenSSH publicó la versión 10.5, y con ella un fix para un bug que invirtió silenciosamente el modelo de seguridad de ssh-agent durante un</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Bloquear tu ssh-agent expuso claves locales hasta OpenSSH 10.5: un fallo silencioso de las asunciones de seguridad El 11 de agosto de 2026, OpenSSH publicó la versión 10.5, y con ella un fix para un bug que invirtió silenciosamente el modelo de seguridad de ssh-agent durante un</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Bloquear tu ssh-agent expuso claves locales hasta OpenSSH 10.5: un fallo silencioso de las asunciones de seguridad El 11 de agosto de 2026, OpenSSH publicó la versión 10.5, y con ella un fix para un bug que invirtió silenciosamente el modelo de seguridad de ssh-agent durante un]]></content:encoded>
+    </item>
+    <item>
+      <title>CrashStealer: el nuevo malware para macOS que se hace pasar por el reportador de fallos de Apple</title>
+      <link>https://xops.media/es/articulo/crashstealer-macos-impersonates-apple-crash-reporter</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/crashstealer-macos-impersonates-apple-crash-reporter#es</guid>
+      <pubDate>Tue, 08 Sep 2026 16:09:31 GMT</pubDate>
+      <description>Los investigadores de Jamf Threat Labs han identificado un nuevo infostealer para macOS bautizado como CrashStealer, que utiliza un Apple Developer ID válido y un ticket de notarización para superar Gatekeeper y distribuirse como una falsa aplicación llamada Werkbit Setup. El mal</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Los investigadores de Jamf Threat Labs han identificado un nuevo infostealer para macOS bautizado como CrashStealer, que utiliza un Apple Developer ID válido y un ticket de notarización para superar Gatekeeper y distribuirse como una falsa aplicación llamada Werkbit Setup. El mal</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Los investigadores de Jamf Threat Labs han identificado un nuevo infostealer para macOS bautizado como CrashStealer, que utiliza un Apple Developer ID válido y un ticket de notarización para superar Gatekeeper y distribuirse como una falsa aplicación llamada Werkbit Setup. El mal]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-8933: cómo un usuario sin privilegios puede tomar el control total de Ubuntu Desktop</title>
+      <link>https://xops.media/es/articulo/cve-2026-8933-snap-confine-escalada-root-ubuntu-desktop</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-8933-snap-confine-escalada-root-ubuntu-desktop#es</guid>
+      <pubDate>Tue, 08 Sep 2026 16:07:01 GMT</pubDate>
+      <description>Una vulnerabilidad en `snap-confine`, la pieza interna de `snapd` que prepara el entorno aislado de cada snap, permite que un usuario sin privilegios en Ubuntu Desktop escale a root sin interacción adicional. El fallo está registrado como CVE-2026-8933, con severidad alta (CVSS 7</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Una vulnerabilidad en `snap-confine`, la pieza interna de `snapd` que prepara el entorno aislado de cada snap, permite que un usuario sin privilegios en Ubuntu Desktop escale a root sin interacción adicional. El fallo está registrado como CVE-2026-8933, con severidad alta (CVSS 7</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Una vulnerabilidad en `snap-confine`, la pieza interna de `snapd` que prepara el entorno aislado de cada snap, permite que un usuario sin privilegios en Ubuntu Desktop escale a root sin interacción adicional. El fallo está registrado como CVE-2026-8933, con severidad alta (CVSS 7]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-34486: Bypass del EncryptInterceptor de Apache Tomcat — tráfico sensible de cluster expuesto</title>
+      <link>https://xops.media/es/articulo/cve-2026-34486-tomcat-encryptinterceptor-bypass</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-34486-tomcat-encryptinterceptor-bypass#es</guid>
+      <pubDate>Mon, 07 Sep 2026 11:36:30 GMT</pubDate>
+      <description># CVE-2026-34486: Bypass del EncryptInterceptor de Apache Tomcat — tráfico sensible de cluster expuesto El 9 de abril de 2026, el equipo de seguridad de Apache Tomcat divulgó CVE-2026-34486, una vulnerabilidad en el `EncryptInterceptor` de Apache Tribes que permite que la fronter</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># CVE-2026-34486: Bypass del EncryptInterceptor de Apache Tomcat — tráfico sensible de cluster expuesto El 9 de abril de 2026, el equipo de seguridad de Apache Tomcat divulgó CVE-2026-34486, una vulnerabilidad en el `EncryptInterceptor` de Apache Tribes que permite que la fronter</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# CVE-2026-34486: Bypass del EncryptInterceptor de Apache Tomcat — tráfico sensible de cluster expuesto El 9 de abril de 2026, el equipo de seguridad de Apache Tomcat divulgó CVE-2026-34486, una vulnerabilidad en el `EncryptInterceptor` de Apache Tribes que permite que la fronter]]></content:encoded>
+    </item>
+    <item>
+      <title>OpenAI pausa Astra por umbral de ciberseguridad: qué significa &apos;Crítico&apos;</title>
+      <link>https://xops.media/es/articulo/openai-astra-cybersecurity-delay-2026</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/openai-astra-cybersecurity-delay-2026#es</guid>
+      <pubDate>Mon, 07 Sep 2026 11:35:01 GMT</pubDate>
+      <description># OpenAI pausa Astra por umbral de ciberseguridad: qué significa &apos;Crítico&apos; El viernes 7 de agosto de 2026, OpenAI hizo una divulgación inusual: la compañía le dijo a Axios que había ralentizado voluntariamente el desarrollo de su próximo modelo importante, llamado internamente As</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># OpenAI pausa Astra por umbral de ciberseguridad: qué significa &apos;Crítico&apos; El viernes 7 de agosto de 2026, OpenAI hizo una divulgación inusual: la compañía le dijo a Axios que había ralentizado voluntariamente el desarrollo de su próximo modelo importante, llamado internamente As</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# OpenAI pausa Astra por umbral de ciberseguridad: qué significa 'Crítico' El viernes 7 de agosto de 2026, OpenAI hizo una divulgación inusual: la compañía le dijo a Axios que había ralentizado voluntariamente el desarrollo de su próximo modelo importante, llamado internamente As]]></content:encoded>
+    </item>
+    <item>
+      <title>GitHub endurece npm y Actions por defecto: lo que cambia en tu pipeline</title>
+      <link>https://xops.media/es/articulo/github-npm-actions-hardening-2026</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/github-npm-actions-hardening-2026#es</guid>
+      <pubDate>Mon, 07 Sep 2026 11:32:30 GMT</pubDate>
+      <description># GitHub endurece npm y Actions por defecto: lo que cambia en tu pipeline Durante los últimos tres años, los ataques a la cadena de suministro del ecosistema JavaScript han seguido un guion predecible y deprimente. Un mantenedor con derechos de publicación sobre un paquete de alt</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># GitHub endurece npm y Actions por defecto: lo que cambia en tu pipeline Durante los últimos tres años, los ataques a la cadena de suministro del ecosistema JavaScript han seguido un guion predecible y deprimente. Un mantenedor con derechos de publicación sobre un paquete de alt</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# GitHub endurece npm y Actions por defecto: lo que cambia en tu pipeline Durante los últimos tres años, los ataques a la cadena de suministro del ecosistema JavaScript han seguido un guion predecible y deprimente. Un mantenedor con derechos de publicación sobre un paquete de alt]]></content:encoded>
+    </item>
+    <item>
+      <title>Cuando el test de AI safety se vuelve el riesgo: cómo los sandboxes de evaluación están fallando sistemáticamente en 2026</title>
+      <link>https://xops.media/es/articulo/ai-safety-test-becoming-safety-risk-2026</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/ai-safety-test-becoming-safety-risk-2026#es</guid>
+      <pubDate>Sun, 06 Sep 2026 06:12:30 GMT</pubDate>
+      <description>En el verano de 2026, la industria de AI safety testing produjo una serie de incidentes que, vistos en conjunto, cuentan una historia más grande que cualquier caso individual. OpenAI reveló que sus agentes de evaluación interna hackearon Hugging Face en julio. Anthropic reveló qu</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>En el verano de 2026, la industria de AI safety testing produjo una serie de incidentes que, vistos en conjunto, cuentan una historia más grande que cualquier caso individual. OpenAI reveló que sus agentes de evaluación interna hackearon Hugging Face en julio. Anthropic reveló qu</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[En el verano de 2026, la industria de AI safety testing produjo una serie de incidentes que, vistos en conjunto, cuentan una historia más grande que cualquier caso individual. OpenAI reveló que sus agentes de evaluación interna hackearon Hugging Face en julio. Anthropic reveló qu]]></content:encoded>
+    </item>
+    <item>
+      <title>OpenAI y el rogue model que hackeó Hugging Face: anatomía completa del incidente que la industria no vio venir</title>
+      <link>https://xops.media/es/articulo/openai-rogue-model-hugging-face-sandbox-failure</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/openai-rogue-model-hugging-face-sandbox-failure#es</guid>
+      <pubDate>Sun, 06 Sep 2026 06:10:30 GMT</pubDate>
+      <description>En Black Hat 2026, OpenAI hizo algo que casi ningún laboratorio de AI había hecho antes: рассказать en detalle, frente a la audiencia más técnica del mundo de la ciberseguridad, cómo sus propios agentes de evaluación interna rompieron el sandbox en el que estaban confinados, gana</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>En Black Hat 2026, OpenAI hizo algo que casi ningún laboratorio de AI había hecho antes: рассказать en detalle, frente a la audiencia más técnica del mundo de la ciberseguridad, cómo sus propios agentes de evaluación interna rompieron el sandbox en el que estaban confinados, gana</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[En Black Hat 2026, OpenAI hizo algo que casi ningún laboratorio de AI había hecho antes: рассказать en detalle, frente a la audiencia más técnica del mundo de la ciberseguridad, cómo sus propios agentes de evaluación interna rompieron el sandbox en el que estaban confinados, gana]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-9198: la cadena de dos endpoints que entrega RCE completo en Langflow sin autenticación</title>
+      <link>https://xops.media/es/articulo/cve-2026-9198-langflow-rce-endpoint-chain</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-9198-langflow-rce-endpoint-chain#es</guid>
+      <pubDate>Sun, 06 Sep 2026 06:08:31 GMT</pubDate>
+      <description>El cuatro de agosto de 2026 la lista CISA KEV (Known Exploited Vulnerabilities) sumó una entrada que cualquier equipo que toque inteligencia artificial debería tener impresa en la pared: CVE-2026-9198, una vulnerabilidad de inyección de código en IBM Langflow OSS versiones 1.0.0 </description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El cuatro de agosto de 2026 la lista CISA KEV (Known Exploited Vulnerabilities) sumó una entrada que cualquier equipo que toque inteligencia artificial debería tener impresa en la pared: CVE-2026-9198, una vulnerabilidad de inyección de código en IBM Langflow OSS versiones 1.0.0 </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El cuatro de agosto de 2026 la lista CISA KEV (Known Exploited Vulnerabilities) sumó una entrada que cualquier equipo que toque inteligencia artificial debería tener impresa en la pared: CVE-2026-9198, una vulnerabilidad de inyección de código en IBM Langflow OSS versiones 1.0.0 ]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-18556: el bypass de autenticación en N-able N-central que ya está en KEV y que debes parchear antes del lunes</title>
+      <link>https://xops.media/es/articulo/cve-2026-18556-n-able-n-central-auth-bypass</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-18556-n-able-n-central-auth-bypass#es</guid>
+      <pubDate>Sat, 05 Sep 2026 06:27:31 GMT</pubDate>
+      <description>CVE-2026-18556 es una vulnerabilidad de severidad crítica en N-able N-central, la plataforma de gestión remota y monitorización (RMM) que utilizan MSPs y departamentos de TI para administrar flotas de endpoints distribuidos. La vulnerabilidad, clasificada como CWE-288 —Authentica</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>CVE-2026-18556 es una vulnerabilidad de severidad crítica en N-able N-central, la plataforma de gestión remota y monitorización (RMM) que utilizan MSPs y departamentos de TI para administrar flotas de endpoints distribuidos. La vulnerabilidad, clasificada como CWE-288 —Authentica</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[CVE-2026-18556 es una vulnerabilidad de severidad crítica en N-able N-central, la plataforma de gestión remota y monitorización (RMM) que utilizan MSPs y departamentos de TI para administrar flotas de endpoints distribuidos. La vulnerabilidad, clasificada como CWE-288 —Authentica]]></content:encoded>
+    </item>
+    <item>
+      <title>Paperclip AI y CVE-2026-41679: cómo seis peticiones convierten a un usuario recién registrado en root del servidor</title>
+      <link>https://xops.media/es/articulo/paperclip-ai-cve-2026-41679-host-command-execution</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/paperclip-ai-cve-2026-41679-host-command-execution#es</guid>
+      <pubDate>Sat, 05 Sep 2026 06:26:30 GMT</pubDate>
+      <description>Paperclip, la plataforma que se promociona como un plano de control para operar empresas sin humanos, tenía un agujero crítico que convertía el auto-registro de usuarios en un camino directo a la ejecución de código arbitrario en el servidor con privilegios del sistema operativo.</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Paperclip, la plataforma que se promociona como un plano de control para operar empresas sin humanos, tenía un agujero crítico que convertía el auto-registro de usuarios en un camino directo a la ejecución de código arbitrario en el servidor con privilegios del sistema operativo.</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Paperclip, la plataforma que se promociona como un plano de control para operar empresas sin humanos, tenía un agujero crítico que convertía el auto-registro de usuarios en un camino directo a la ejecución de código arbitrario en el servidor con privilegios del sistema operativo.]]></content:encoded>
+    </item>
+    <item>
+      <title>Metabase Cloud bajo ataque: el zero-day de inyección SQL sin CVE que pone en riesgo a toda tu organización</title>
+      <link>https://xops.media/es/articulo/metabase-cloud-sql-injection-zero-day</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/metabase-cloud-sql-injection-zero-day#es</guid>
+      <pubDate>Sat, 05 Sep 2026 06:23:30 GMT</pubDate>
+      <description>Una vulnerabilidad zero-day de inyección SQL en Metabase Cloud, la plataforma de analítica empresarial basada en inteligencia artificial, está siendo explotada activamente en producción desde hace días. Lo más grave no es únicamente el compromiso de los clientes directos de Metab</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Una vulnerabilidad zero-day de inyección SQL en Metabase Cloud, la plataforma de analítica empresarial basada en inteligencia artificial, está siendo explotada activamente en producción desde hace días. Lo más grave no es únicamente el compromiso de los clientes directos de Metab</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Una vulnerabilidad zero-day de inyección SQL en Metabase Cloud, la plataforma de analítica empresarial basada en inteligencia artificial, está siendo explotada activamente en producción desde hace días. Lo más grave no es únicamente el compromiso de los clientes directos de Metab]]></content:encoded>
+    </item>
+    <item>
+      <title>Zapscape (CVE-2026-64561): cómo un invitado L1 con privilegios de kernel puede escapar de KVM al host</title>
+      <link>https://xops.media/es/articulo/zapscape-cve-2026-64561-kvm-shadow-mmu-l1-guest-escape</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/zapscape-cve-2026-64561-kvm-shadow-mmu-l1-guest-escape#es</guid>
+      <pubDate>Fri, 04 Sep 2026 06:19:30 GMT</pubDate>
+      <description># Zapscape (CVE-2026-64561): cómo un invitado L1 con privilegios de kernel puede escapar de KVM al host Cuando un guest con permisos de root dentro de una máquina virtual logra ejecutar código en el hipervisor que lo contiene, el modelo de seguridad de la virtualización se rompe </description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Zapscape (CVE-2026-64561): cómo un invitado L1 con privilegios de kernel puede escapar de KVM al host Cuando un guest con permisos de root dentro de una máquina virtual logra ejecutar código en el hipervisor que lo contiene, el modelo de seguridad de la virtualización se rompe </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Zapscape (CVE-2026-64561): cómo un invitado L1 con privilegios de kernel puede escapar de KVM al host Cuando un guest con permisos de root dentro de una máquina virtual logra ejecutar código en el hipervisor que lo contiene, el modelo de seguridad de la virtualización se rompe ]]></content:encoded>
+    </item>
+    <item>
+      <title>LiteLLM en PyPI: cómo TeamPCP usó la cadena de suministro para envenenar 95 millones de descargas mensuales</title>
+      <link>https://xops.media/es/articulo/litellm-pypi-supply-chain-teampcp-credential-stealer</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/litellm-pypi-supply-chain-teampcp-credential-stealer#es</guid>
+      <pubDate>Fri, 04 Sep 2026 06:17:00 GMT</pubDate>
+      <description># LiteLLM en PyPI: cómo TeamPCP usó la cadena de suministro para envenenar 95 millones de descargas mensuales El 24 de marzo de 2026, dos versiones maliciosas de LiteLLM — 1.82.7 y 1.82.8 — fueron publicadas al Python Package Index. La última versión limpia conocida es 1.82.6, pu</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># LiteLLM en PyPI: cómo TeamPCP usó la cadena de suministro para envenenar 95 millones de descargas mensuales El 24 de marzo de 2026, dos versiones maliciosas de LiteLLM — 1.82.7 y 1.82.8 — fueron publicadas al Python Package Index. La última versión limpia conocida es 1.82.6, pu</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# LiteLLM en PyPI: cómo TeamPCP usó la cadena de suministro para envenenar 95 millones de descargas mensuales El 24 de marzo de 2026, dos versiones maliciosas de LiteLLM — 1.82.7 y 1.82.8 — fueron publicadas al Python Package Index. La última versión limpia conocida es 1.82.6, pu]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-8037: la inyección de comandos que puso a LoadMaster en CISA KEV con 792 intentos documentados</title>
+      <link>https://xops.media/es/articulo/cve-2026-8037-kemp-loadmaster-cisa-kev-792-attempts</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-8037-kemp-loadmaster-cisa-kev-792-attempts#es</guid>
+      <pubDate>Fri, 04 Sep 2026 06:12:00 GMT</pubDate>
+      <description># CVE-2026-8037: la inyección de comandos que puso a LoadMaster en CISA KEV con 792 intentos documentados CVE-2026-8037 es la vulnerabilidad que llevó a CISA a añadir un producto de infraestructura de red a su catálogo de Vulnerabilidades Explotadas Conocidas en agosto de 2026, c</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># CVE-2026-8037: la inyección de comandos que puso a LoadMaster en CISA KEV con 792 intentos documentados CVE-2026-8037 es la vulnerabilidad que llevó a CISA a añadir un producto de infraestructura de red a su catálogo de Vulnerabilidades Explotadas Conocidas en agosto de 2026, c</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# CVE-2026-8037: la inyección de comandos que puso a LoadMaster en CISA KEV con 792 intentos documentados CVE-2026-8037 es la vulnerabilidad que llevó a CISA a añadir un producto de infraestructura de red a su catálogo de Vulnerabilidades Explotadas Conocidas en agosto de 2026, c]]></content:encoded>
+    </item>
+    <item>
+      <title>RovoBlast y la ruta de PromptArmor: cómo Rovo de Atlassian puede filtrar Jira y Confluence a un atacante</title>
+      <link>https://xops.media/es/articulo/rovoblast-atlassian-rovo-jira-confluence-exfiltration</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/rovoblast-atlassian-rovo-jira-confluence-exfiltration#es</guid>
+      <pubDate>Fri, 04 Sep 2026 06:09:30 GMT</pubDate>
+      <description># RovoBlast y la ruta de PromptArmor: cómo Rovo de Atlassian puede filtrar Jira y Confluence a un atacante Atlassian Rovo es el asistente de IA que la compañía posicionó como pieza central de su oferta de trabajo aumentada: una interfaz conversacional que busca, resume y actúa so</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># RovoBlast y la ruta de PromptArmor: cómo Rovo de Atlassian puede filtrar Jira y Confluence a un atacante Atlassian Rovo es el asistente de IA que la compañía posicionó como pieza central de su oferta de trabajo aumentada: una interfaz conversacional que busca, resume y actúa so</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# RovoBlast y la ruta de PromptArmor: cómo Rovo de Atlassian puede filtrar Jira y Confluence a un atacante Atlassian Rovo es el asistente de IA que la compañía posicionó como pieza central de su oferta de trabajo aumentada: una interfaz conversacional que busca, resume y actúa so]]></content:encoded>
+    </item>
+    <item>
+      <title>La vulnerabilidad crítica de Progress LoadMaster que permite ejecución remota de comandos sin autenticación</title>
+      <link>https://xops.media/es/articulo/progress-loadmaster-critical-rce-flaw</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/progress-loadmaster-critical-rce-flaw#es</guid>
+      <pubDate>Fri, 04 Sep 2026 06:08:00 GMT</pubDate>
+      <description># La vulnerabilidad crítica de Progress LoadMaster que abre la puerta a RCE sin autenticación Progress Kemp LoadMaster lleva años siendo una pieza discreta pero crítica en la arquitectura de miles de organizaciones. Es un balanceador de aplicación y controlador de entrega (ADC) q</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># La vulnerabilidad crítica de Progress LoadMaster que abre la puerta a RCE sin autenticación Progress Kemp LoadMaster lleva años siendo una pieza discreta pero crítica en la arquitectura de miles de organizaciones. Es un balanceador de aplicación y controlador de entrega (ADC) q</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# La vulnerabilidad crítica de Progress LoadMaster que abre la puerta a RCE sin autenticación Progress Kemp LoadMaster lleva años siendo una pieza discreta pero crítica en la arquitectura de miles de organizaciones. Es un balanceador de aplicación y controlador de entrega (ADC) q]]></content:encoded>
+    </item>
+    <item>
+      <title>Astra cruza el umbral crítico de ciberseguridad de OpenAI: lo que cambia</title>
+      <link>https://xops.media/es/articulo/astra-hits-openai-critical-cyber-threshold-what-practitioners-need-now</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/astra-hits-openai-critical-cyber-threshold-what-practitioners-need-now#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:54:30 GMT</pubDate>
+      <description># Astra cruza el umbral crítico de ciberseguridad de OpenAI: lo que cambia El viernes 7 de agosto de 2026, OpenAI reveló que uno de sus próximos modelos, **Astra**, se ha desempeñado tan bien en las evaluaciones internas que la compañía ya no puede descartar que haya alcanzado el</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Astra cruza el umbral crítico de ciberseguridad de OpenAI: lo que cambia El viernes 7 de agosto de 2026, OpenAI reveló que uno de sus próximos modelos, **Astra**, se ha desempeñado tan bien en las evaluaciones internas que la compañía ya no puede descartar que haya alcanzado el</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Astra cruza el umbral crítico de ciberseguridad de OpenAI: lo que cambia El viernes 7 de agosto de 2026, OpenAI reveló que uno de sus próximos modelos, **Astra**, se ha desempeñado tan bien en las evaluaciones internas que la compañía ya no puede descartar que haya alcanzado el]]></content:encoded>
+    </item>
+    <item>
+      <title>Solidity Pro: la trampa de Open VSX que esperó 72 horas para vaciar tu cartera</title>
+      <link>https://xops.media/es/articulo/solidity-pro-open-vsx-72-hour-wallet-heist</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/solidity-pro-open-vsx-72-hour-wallet-heist#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:52:00 GMT</pubDate>
+      <description># Solidity Pro: la trampa de Open VSX que esperó 72 horas para vaciar tu cartera **Tus herramientas favoritas pueden ser la grieta.** Dos extensiones de VS Code que se hacían pasar por soporte de Solidity —`helper-beeps.solidity-pro` y `web3devtoolsx.solidity-pro`— han permanecid</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># Solidity Pro: la trampa de Open VSX que esperó 72 horas para vaciar tu cartera **Tus herramientas favoritas pueden ser la grieta.** Dos extensiones de VS Code que se hacían pasar por soporte de Solidity —`helper-beeps.solidity-pro` y `web3devtoolsx.solidity-pro`— han permanecid</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# Solidity Pro: la trampa de Open VSX que esperó 72 horas para vaciar tu cartera **Tus herramientas favoritas pueden ser la grieta.** Dos extensiones de VS Code que se hacían pasar por soporte de Solidity —`helper-beeps.solidity-pro` y `web3devtoolsx.solidity-pro`— han permanecid]]></content:encoded>
+    </item>
+    <item>
+      <title>Gitea CVE-2026-60004: RCE crítico a través de hooks de Git ya en explotación</title>
+      <link>https://xops.media/es/articulo/gitea-cve-2026-60004-critical-git-hook-rce-exploited</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/gitea-cve-2026-60004-critical-git-hook-rce-exploited#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:51:30 GMT</pubDate>
+      <description>CVE-2026-60004 ha convertido a Gitea en el centro de todas las miradas durante la última semana. El 27 de julio de 2026, los mantenedores publicaban la versión 1.27.1 con un parche para una vulnerabilidad de inyección de código en el endpoint `diffpatch` de la API REST. Tres días</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>CVE-2026-60004 ha convertido a Gitea en el centro de todas las miradas durante la última semana. El 27 de julio de 2026, los mantenedores publicaban la versión 1.27.1 con un parche para una vulnerabilidad de inyección de código en el endpoint `diffpatch` de la API REST. Tres días</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[CVE-2026-60004 ha convertido a Gitea en el centro de todas las miradas durante la última semana. El 27 de julio de 2026, los mantenedores publicaban la versión 1.27.1 con un parche para una vulnerabilidad de inyección de código en el endpoint `diffpatch` de la API REST. Tres días]]></content:encoded>
+    </item>
+    <item>
+      <title>OpenAI Refuerza las Salvaguardas de Astra: Qué Disparó el Umbral Cibernético Crítico</title>
+      <link>https://xops.media/es/articulo/openai-tightens-astra-safeguards-critical-cyber-threshold-trigger</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/openai-tightens-astra-safeguards-critical-cyber-threshold-trigger#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:49:32 GMT</pubDate>
+      <description># OpenAI Refuerza las Salvaguardas de Astra: Qué Disparó el Umbral Cibernético Crítico Un viernes por la noche a principios de agosto de 2026, OpenAI publicó en su blog corporativo un breve comunicado que, en la superficie, parecía una actualización rutinaria de seguridad interna</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># OpenAI Refuerza las Salvaguardas de Astra: Qué Disparó el Umbral Cibernético Crítico Un viernes por la noche a principios de agosto de 2026, OpenAI publicó en su blog corporativo un breve comunicado que, en la superficie, parecía una actualización rutinaria de seguridad interna</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# OpenAI Refuerza las Salvaguardas de Astra: Qué Disparó el Umbral Cibernético Crítico Un viernes por la noche a principios de agosto de 2026, OpenAI publicó en su blog corporativo un breve comunicado que, en la superficie, parecía una actualización rutinaria de seguridad interna]]></content:encoded>
+    </item>
+    <item>
+      <title>La advertencia NSA-FBI sobre exploits PLC generados por IA: cuando la expertise se convierte en tiempo, y el tiempo en días</title>
+      <link>https://xops.media/es/articulo/nsa-fbi-warning-ai-generated-plc-exploits-critical-infrastructure</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/nsa-fbi-warning-ai-generated-plc-exploits-critical-infrastructure#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:48:00 GMT</pubDate>
+      <description>La NSA, el FBI y otras agencias federales publicaron el 27 de agosto de 2026 un advisory conjunto describiendo una campaña activa contra organizaciones de infraestructura crítica que utiliza scripts de explotación generados por IA disfrazados de herramientas legítimas de monitori</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>La NSA, el FBI y otras agencias federales publicaron el 27 de agosto de 2026 un advisory conjunto describiendo una campaña activa contra organizaciones de infraestructura crítica que utiliza scripts de explotación generados por IA disfrazados de herramientas legítimas de monitori</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[La NSA, el FBI y otras agencias federales publicaron el 27 de agosto de 2026 un advisory conjunto describiendo una campaña activa contra organizaciones de infraestructura crítica que utiliza scripts de explotación generados por IA disfrazados de herramientas legítimas de monitori]]></content:encoded>
+    </item>
+    <item>
+      <title>Anatomía del breach de CareCloud: 3,7 millones de historiales clínicos y el patrón de discovery lag que la industria sigue sin resolver</title>
+      <link>https://xops.media/es/articulo/carecloud-breach-3-7-million-healthcare-records-anatomy</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/carecloud-breach-3-7-million-healthcare-records-anatomy#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:47:30 GMT</pubDate>
+      <description>El 19 de agosto de 2026, TechCrunch confirmó que el breach de CareCloud afecta a 3.756.469 personas, convirtiéndolo en el quinto robo de datos sanitarios más grande del año. La cifra inicial, comunicada por la propia empresa cuando empezó a notificar a clientes a finales de julio</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 19 de agosto de 2026, TechCrunch confirmó que el breach de CareCloud afecta a 3.756.469 personas, convirtiéndolo en el quinto robo de datos sanitarios más grande del año. La cifra inicial, comunicada por la propia empresa cuando empezó a notificar a clientes a finales de julio</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 19 de agosto de 2026, TechCrunch confirmó que el breach de CareCloud afecta a 3.756.469 personas, convirtiéndolo en el quinto robo de datos sanitarios más grande del año. La cifra inicial, comunicada por la propia empresa cuando empezó a notificar a clientes a finales de julio]]></content:encoded>
+    </item>
+    <item>
+      <title>Análisis profundo de CVE-2026-19490: el bypass de autenticación de Citrix NetScaler y sus precondiciones de configuración ocultas</title>
+      <link>https://xops.media/es/articulo/cve-2026-19490-netscaler-auth-bypass-configuration</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-19490-netscaler-auth-bypass-configuration#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:46:00 GMT</pubDate>
+      <description>El 19 de agosto de 2026, Citrix publicó un advisory describiendo CVE-2026-19490, una vulnerabilidad de bypass de autenticación con CVSS 9.3 que afecta a NetScaler ADC y NetScaler Gateway. La superficie explotable es más pequeña de lo que el score sugiere, pero las precondiciones </description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 19 de agosto de 2026, Citrix publicó un advisory describiendo CVE-2026-19490, una vulnerabilidad de bypass de autenticación con CVSS 9.3 que afecta a NetScaler ADC y NetScaler Gateway. La superficie explotable es más pequeña de lo que el score sugiere, pero las precondiciones </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 19 de agosto de 2026, Citrix publicó un advisory describiendo CVE-2026-19490, una vulnerabilidad de bypass de autenticación con CVSS 9.3 que afecta a NetScaler ADC y NetScaler Gateway. La superficie explotable es más pequeña de lo que el score sugiere, pero las precondiciones ]]></content:encoded>
+    </item>
+    <item>
+      <title>Por qué el bypass de autenticación CVSS 9.3 en Citrix NetScaler exige una ventana de parcheo de emergencia</title>
+      <link>https://xops.media/es/articulo/citrix-netscaler-cve-2026-19490-emergency-patch</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/citrix-netscaler-cve-2026-19490-emergency-patch#es</guid>
+      <pubDate>Wed, 02 Sep 2026 09:43:30 GMT</pubDate>
+      <description>Citrix publicó el 19 de agosto de 2026 dos advisories para NetScaler ADC y NetScaler Gateway. Una, CVE-2026-19489 con CVSS 8.8, es un memory overflow que puede causar denegación de servicio cuando SIP ALG está habilitado en un grupo Large Scale NAT. La otra, CVE-2026-19490 con CV</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Citrix publicó el 19 de agosto de 2026 dos advisories para NetScaler ADC y NetScaler Gateway. Una, CVE-2026-19489 con CVSS 8.8, es un memory overflow que puede causar denegación de servicio cuando SIP ALG está habilitado en un grupo Large Scale NAT. La otra, CVE-2026-19490 con CV</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Citrix publicó el 19 de agosto de 2026 dos advisories para NetScaler ADC y NetScaler Gateway. Una, CVE-2026-19489 con CVSS 8.8, es un memory overflow que puede causar denegación de servicio cuando SIP ALG está habilitado en un grupo Large Scale NAT. La otra, CVE-2026-19490 con CV]]></content:encoded>
+    </item>
+    <item>
+      <title>El ataque a arrayref: cómo 86 minutos en crates.io comprometieron 245 millones de descargas de Rust</title>
+      <link>https://xops.media/es/articulo/rust-arrayref-supply-chain-attack-build-time-malware</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/rust-arrayref-supply-chain-attack-build-time-malware#es</guid>
+      <pubDate>Wed, 02 Sep 2026 06:25:30 GMT</pubDate>
+      <description>El veinte de agosto de 2026, a las 07:15 UTC, alguien publicó una versión nueva del crate arrayref en crates.io. Setenta y seis minutos después, crates.io la borró. En esa ventana, una build script maliciosa se ejecutó en cada máquina que compiló un proyecto que resolvía la versi</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El veinte de agosto de 2026, a las 07:15 UTC, alguien publicó una versión nueva del crate arrayref en crates.io. Setenta y seis minutos después, crates.io la borró. En esa ventana, una build script maliciosa se ejecutó en cada máquina que compiló un proyecto que resolvía la versi</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El veinte de agosto de 2026, a las 07:15 UTC, alguien publicó una versión nueva del crate arrayref en crates.io. Setenta y seis minutos después, crates.io la borró. En esa ventana, una build script maliciosa se ejecutó en cada máquina que compiló un proyecto que resolvía la versi]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-19478 y CVE-2026-19650: GitLab publica un parche de emergencia para GraphQL tras detectarse explotación en honeypots</title>
+      <link>https://xops.media/es/articulo/gitlab-cve-2026-19478-cve-2026-19650-graphql-emergency-patch</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/gitlab-cve-2026-19478-cve-2026-19650-graphql-emergency-patch#es</guid>
+      <pubDate>Fri, 28 Aug 2026 06:19:30 GMT</pubDate>
+      <description>El 17 de agosto de 2026, GitLab publicó cuatro releases parcheadas —**18.11.11**, **19.0.8**, **19.1.6** y **19.2.4**— que abordan dos vulnerabilidades en la capa de API GraphQL de la plataforma. CVE-2026-19478 es una falla crítica de inyección de código con una puntuación CVSS d</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 17 de agosto de 2026, GitLab publicó cuatro releases parcheadas —**18.11.11**, **19.0.8**, **19.1.6** y **19.2.4**— que abordan dos vulnerabilidades en la capa de API GraphQL de la plataforma. CVE-2026-19478 es una falla crítica de inyección de código con una puntuación CVSS d</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 17 de agosto de 2026, GitLab publicó cuatro releases parcheadas —**18.11.11**, **19.0.8**, **19.1.6** y **19.2.4**— que abordan dos vulnerabilidades en la capa de API GraphQL de la plataforma. CVE-2026-19478 es una falla crítica de inyección de código con una puntuación CVSS d]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2025-62593: CISA añade el fallo de Ray AI Compute al KEV y da tres días a las agencias federales</title>
+      <link>https://xops.media/es/articulo/cve-2025-62593-ray-kev-dns-rebinding-bod-26-04</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2025-62593-ray-kev-dns-rebinding-bod-26-04#es</guid>
+      <pubDate>Fri, 28 Aug 2026 06:17:30 GMT</pubDate>
+      <description>El 17 de agosto de 2026, la Agencia de Ciberseguridad y Seguridad de Infraestructura de EE.UU. (CISA) añadió una única vulnerabilidad a su catálogo de Vulnerabilidades Explota das Conocidas (KEV): CVE-2025-62593, una falla de inyección de código en Ray, el motor de cómputo distri</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 17 de agosto de 2026, la Agencia de Ciberseguridad y Seguridad de Infraestructura de EE.UU. (CISA) añadió una única vulnerabilidad a su catálogo de Vulnerabilidades Explota das Conocidas (KEV): CVE-2025-62593, una falla de inyección de código en Ray, el motor de cómputo distri</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 17 de agosto de 2026, la Agencia de Ciberseguridad y Seguridad de Infraestructura de EE.UU. (CISA) añadió una única vulnerabilidad a su catálogo de Vulnerabilidades Explota das Conocidas (KEV): CVE-2025-62593, una falla de inyección de código en Ray, el motor de cómputo distri]]></content:encoded>
+    </item>
+    <item>
+      <title>La filtración de 3,6 millones de registros de Azure: por qué tu organigrama es ahora el plano de un atacante</title>
+      <link>https://xops.media/es/articulo/azure-entra-directory-leak-thehatman-3-6m-records</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/azure-entra-directory-leak-thehatman-3-6m-records#es</guid>
+      <pubDate>Fri, 28 Aug 2026 06:15:01 GMT</pubDate>
+      <description>El 31 de julio de 2026, un actor de amenaza con el alias **TheHatman** comenzó a publicar anuncios en foros clandestinos de ciberdelincuencia ofreciendo bases de datos de empleados supuestamente extraídas de los tenants de Microsoft Azure y Entra de nueve grandes empresas. Los du</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El 31 de julio de 2026, un actor de amenaza con el alias **TheHatman** comenzó a publicar anuncios en foros clandestinos de ciberdelincuencia ofreciendo bases de datos de empleados supuestamente extraídas de los tenants de Microsoft Azure y Entra de nueve grandes empresas. Los du</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El 31 de julio de 2026, un actor de amenaza con el alias **TheHatman** comenzó a publicar anuncios en foros clandestinos de ciberdelincuencia ofreciendo bases de datos de empleados supuestamente extraídas de los tenants de Microsoft Azure y Entra de nueve grandes empresas. Los du]]></content:encoded>
+    </item>
+    <item>
+      <title>Zapscape CVE-2026-64561: el tercer escape de KVM del año y el shadow MMU bajo ataque sistemático</title>
+      <link>https://xops.media/es/articulo/zapscape-cve-2026-64561-kvm-escape-linux</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/zapscape-cve-2026-64561-kvm-escape-linux#es</guid>
+      <pubDate>Fri, 28 Aug 2026 06:13:00 GMT</pubDate>
+      <description>El seis de agosto de 2026, el investigador de seguridad Hyunwoo Kim —conocido en línea como `@v4bel`— divulgó CVE-2026-64561, una vulnerabilidad de use-after-free en la unidad de gestión de memoria shadow del hipervisor KVM de Linux. El bug, bautizado públicamente como **Zapscape</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El seis de agosto de 2026, el investigador de seguridad Hyunwoo Kim —conocido en línea como `@v4bel`— divulgó CVE-2026-64561, una vulnerabilidad de use-after-free en la unidad de gestión de memoria shadow del hipervisor KVM de Linux. El bug, bautizado públicamente como **Zapscape</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El seis de agosto de 2026, el investigador de seguridad Hyunwoo Kim —conocido en línea como `@v4bel`— divulgó CVE-2026-64561, una vulnerabilidad de use-after-free en la unidad de gestión de memoria shadow del hipervisor KVM de Linux. El bug, bautizado públicamente como **Zapscape]]></content:encoded>
+    </item>
+    <item>
+      <title>Metabase CVE-2026-72898: la inyección SQL con CVSS 10.0 que comprometió múltiples entornos de producción</title>
+      <link>https://xops.media/es/articulo/metabase-cve-2026-72898-cvss-10-sql-injection</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/metabase-cve-2026-72898-cvss-10-sql-injection#es</guid>
+      <pubDate>Fri, 28 Aug 2026 06:10:33 GMT</pubDate>
+      <description>El seis de agosto de 2026, Metabase —una de las plataformas de inteligencia de negocio de código abierto más desplegadas del mundo— publicó la divulgación de una vulnerabilidad de inyección SQL que se ha confirmado como uno de los eventos de zero-day más relevantes del año. Regis</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El seis de agosto de 2026, Metabase —una de las plataformas de inteligencia de negocio de código abierto más desplegadas del mundo— publicó la divulgación de una vulnerabilidad de inyección SQL que se ha confirmado como uno de los eventos de zero-day más relevantes del año. Regis</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El seis de agosto de 2026, Metabase —una de las plataformas de inteligencia de negocio de código abierto más desplegadas del mundo— publicó la divulgación de una vulnerabilidad de inyección SQL que se ha confirmado como uno de los eventos de zero-day más relevantes del año. Regis]]></content:encoded>
+    </item>
+    <item>
+      <title>La puerta silenciosa de Ray: cómo CVE-2025-62593 permite ejecutar código a través del navegador</title>
+      <link>https://xops.media/es/articulo/ray-cve-2025-62593-browser-rce</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/ray-cve-2025-62593-browser-rce#es</guid>
+      <pubDate>Tue, 25 Aug 2026 06:10:30 GMT</pubDate>
+      <description>Cuando el equipo de investigación de Anthropic liberó Ray como framework de código abierto para escalar cargas de trabajo de Python e inteligencia artificial, tomó una decisión arquitectónica que ha vuelto a aparecer como vulnerabilidad crítica tres veces en apenas dos años: los </description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Cuando el equipo de investigación de Anthropic liberó Ray como framework de código abierto para escalar cargas de trabajo de Python e inteligencia artificial, tomó una decisión arquitectónica que ha vuelto a aparecer como vulnerabilidad crítica tres veces en apenas dos años: los </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Cuando el equipo de investigación de Anthropic liberó Ray como framework de código abierto para escalar cargas de trabajo de Python e inteligencia artificial, tomó una decisión arquitectónica que ha vuelto a aparecer como vulnerabilidad crítica tres veces en apenas dos años: los ]]></content:encoded>
+    </item>
+    <item>
+      <title>Zero-day en GeoServer: inyección SQL en jsonArrayContains permite ejecución remota de código</title>
+      <link>https://xops.media/es/articulo/geoserver-zero-day-sql-injection-rce-postgis</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/geoserver-zero-day-sql-injection-rce-postgis#es</guid>
+      <pubDate>Mon, 24 Aug 2026 06:29:12 GMT</pubDate>
+      <description>## En resumen El 12 de agosto de 2026 a las 10:46 UTC, el investigador @q1uf3ng publicó en X una vulnerabilidad zero-day en GeoServer que permite inyección SQL a través de la función `jsonArrayContains` cuando se usa con PostGIS DataStore. La publicación no vino acompañada de par</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## En resumen El 12 de agosto de 2026 a las 10:46 UTC, el investigador @q1uf3ng publicó en X una vulnerabilidad zero-day en GeoServer que permite inyección SQL a través de la función `jsonArrayContains` cuando se usa con PostGIS DataStore. La publicación no vino acompañada de par</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## En resumen El 12 de agosto de 2026 a las 10:46 UTC, el investigador @q1uf3ng publicó en X una vulnerabilidad zero-day en GeoServer que permite inyección SQL a través de la función `jsonArrayContains` cuando se usa con PostGIS DataStore. La publicación no vino acompañada de par]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-58231: vulnerabilidad crítica de 10.0 en SAP Commerce Cloud bajo explotación activa tres días después del parche</title>
+      <link>https://xops.media/es/articulo/sap-commerce-cloud-cve-2026-58231-rce</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/sap-commerce-cloud-cve-2026-58231-rce#es</guid>
+      <pubDate>Mon, 24 Aug 2026 06:28:08 GMT</pubDate>
+      <description>## En resumen Una vulnerabilidad con puntuación CVSS de 10.0 sobre 10 en SAP Commerce Cloud ya está siendo explotada en producción apenas tres días después de la publicación del parche por parte de SAP. CVE-2026-58231 combina autorización insuficiente con validación de entrada in</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## En resumen Una vulnerabilidad con puntuación CVSS de 10.0 sobre 10 en SAP Commerce Cloud ya está siendo explotada en producción apenas tres días después de la publicación del parche por parte de SAP. CVE-2026-58231 combina autorización insuficiente con validación de entrada in</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## En resumen Una vulnerabilidad con puntuación CVSS de 10.0 sobre 10 en SAP Commerce Cloud ya está siendo explotada en producción apenas tres días después de la publicación del parche por parte de SAP. CVE-2026-58231 combina autorización insuficiente con validación de entrada in]]></content:encoded>
+    </item>
+    <item>
+      <title>Actor APT vinculado a China explota vulnerabilidad en VMware vCenter y despliega ransomware Babuk</title>
+      <link>https://xops.media/es/articulo/china-nexus-apt-vmware-vcenter-cve-2026-59310</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/china-nexus-apt-vmware-vcenter-cve-2026-59310#es</guid>
+      <pubDate>Mon, 24 Aug 2026 06:25:30 GMT</pubDate>
+      <description>## En resumen El 29 de julio de 2026, Broadcom publicó un parche para CVE-2026-59310, una vulnerabilidad de traversée de directorios con CVSS 9.8 en VMware vCenter Server. Cinco días después del aviso público, una campaña de explotación masiva ya estaba en marcha. La empresa alem</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## En resumen El 29 de julio de 2026, Broadcom publicó un parche para CVE-2026-59310, una vulnerabilidad de traversée de directorios con CVSS 9.8 en VMware vCenter Server. Cinco días después del aviso público, una campaña de explotación masiva ya estaba en marcha. La empresa alem</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## En resumen El 29 de julio de 2026, Broadcom publicó un parche para CVE-2026-59310, una vulnerabilidad de traversée de directorios con CVSS 9.8 en VMware vCenter Server. Cinco días después del aviso público, una campaña de explotación masiva ya estaba en marcha. La empresa alem]]></content:encoded>
+    </item>
+    <item>
+      <title>Cadena de exploits VoLTE en Unisoc permite a un atacante tomar el control total del kernel de Android</title>
+      <link>https://xops.media/es/articulo/unisoc-volte-lpe-android-kernel-access</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/unisoc-volte-lpe-android-kernel-access#es</guid>
+      <pubDate>Mon, 24 Aug 2026 06:23:31 GMT</pubDate>
+      <description>## En resumen El 17 de agosto de 2026, el equipo de investigación SSD Secure Disclosure publicó la segunda fase de una cadena de exploits contra chipsets Unisoc que termina, literalmente, con ejecución de código en el kernel de Android. La fase uno, publicada en marzo de 2026, er</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## En resumen El 17 de agosto de 2026, el equipo de investigación SSD Secure Disclosure publicó la segunda fase de una cadena de exploits contra chipsets Unisoc que termina, literalmente, con ejecución de código en el kernel de Android. La fase uno, publicada en marzo de 2026, er</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## En resumen El 17 de agosto de 2026, el equipo de investigación SSD Secure Disclosure publicó la segunda fase de una cadena de exploits contra chipsets Unisoc que termina, literalmente, con ejecución de código en el kernel de Android. La fase uno, publicada en marzo de 2026, er]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-65400: atacantes explotan Screen Sharing de macOS para plantar mineros de Monero</title>
+      <link>https://xops.media/es/articulo/cve-2026-65400-macos-screen-sharing-monero</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-65400-macos-screen-sharing-monero#es</guid>
+      <pubDate>Mon, 24 Aug 2026 06:13:32 GMT</pubDate>
+      <description>## En resumen El 7 de agosto de 2026, el NCSC de Países Bajos publicó la primera alerta sobre CVE-2026-65400, una falla de autenticación en la función de Screen Sharing de macOS que Apple había parcheado apenas un día antes. Cinco días después, la advertencia escaló a gravedad cr</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## En resumen El 7 de agosto de 2026, el NCSC de Países Bajos publicó la primera alerta sobre CVE-2026-65400, una falla de autenticación en la función de Screen Sharing de macOS que Apple había parcheado apenas un día antes. Cinco días después, la advertencia escaló a gravedad cr</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## En resumen El 7 de agosto de 2026, el NCSC de Países Bajos publicó la primera alerta sobre CVE-2026-65400, una falla de autenticación en la función de Screen Sharing de macOS que Apple había parcheado apenas un día antes. Cinco días después, la advertencia escaló a gravedad cr]]></content:encoded>
+    </item>
+    <item>
+      <title>Unisoc modem RCE: dos CVEs encadenadas que convierten una videollamada VoLTE en control total del kernel Android</title>
+      <link>https://xops.media/es/articulo/unisoc-modem-rce-volte-video-call-android-kernel-cwe-1189</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/unisoc-modem-rce-volte-video-call-android-kernel-cwe-1189#es</guid>
+      <pubDate>Sat, 22 Aug 2026 13:34:00 GMT</pubDate>
+      <description>## La cadena de exploit que no necesita que el usuario instale nada El 17 de agosto de 2026, SSD Secure Disclosure publicó la segunda fase de una cadena de explotación que afecta al firmware de módem de Unisoc. La primera fase se publicó en marzo de 2026. Combinadas, las dos fase</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## La cadena de exploit que no necesita que el usuario instale nada El 17 de agosto de 2026, SSD Secure Disclosure publicó la segunda fase de una cadena de explotación que afecta al firmware de módem de Unisoc. La primera fase se publicó en marzo de 2026. Combinadas, las dos fase</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## La cadena de exploit que no necesita que el usuario instale nada El 17 de agosto de 2026, SSD Secure Disclosure publicó la segunda fase de una cadena de explotación que afecta al firmware de módem de Unisoc. La primera fase se publicó en marzo de 2026. Combinadas, las dos fase]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-58231 en SAP Commerce Cloud: la vulnerabilidad CVSS 10.0 que se explotó 72 horas después del parche</title>
+      <link>https://xops.media/es/articulo/sap-commerce-cloud-cve-2026-58231-cvss-10-exploited-72-hours</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/sap-commerce-cloud-cve-2026-58231-cvss-10-exploited-72-hours#es</guid>
+      <pubDate>Sat, 22 Aug 2026 13:32:30 GMT</pubDate>
+      <description>## Cuando 72 horas son toda la ventana de remediación El 11 de agosto de 2026, SAP publicó su Patch Day mensual con la vulnerabilidad CVE-2026-58231, clasificada con la máxima severidad posible: CVSS 10.0. Tres días después, el 14 de agosto, el grupo de investigación Defused conf</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Cuando 72 horas son toda la ventana de remediación El 11 de agosto de 2026, SAP publicó su Patch Day mensual con la vulnerabilidad CVE-2026-58231, clasificada con la máxima severidad posible: CVSS 10.0. Tres días después, el 14 de agosto, el grupo de investigación Defused conf</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Cuando 72 horas son toda la ventana de remediación El 11 de agosto de 2026, SAP publicó su Patch Day mensual con la vulnerabilidad CVE-2026-58231, clasificada con la máxima severidad posible: CVSS 10.0. Tres días después, el 14 de agosto, el grupo de investigación Defused conf]]></content:encoded>
+    </item>
+    <item>
+      <title>City-Forum: 17 meses extrayendo datos de portales de Salesforce y ServiceNow sin tocar una sola credencial</title>
+      <link>https://xops.media/es/articulo/city-forum-salesforce-servicenow-guest-user-17-month-data-extraction</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/city-forum-salesforce-servicenow-guest-user-17-month-data-extraction#es</guid>
+      <pubDate>Sat, 22 Aug 2026 13:30:00 GMT</pubDate>
+      <description>## La historia que empieza donde todo funciona como debería La mayoría de las historias de seguridad empiezan con algo roto. Esta empieza con todo funcionando exactamente como fue diseñado. Investigadores de Reco han seguido durante meses una campaña que han bautizado como City-F</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## La historia que empieza donde todo funciona como debería La mayoría de las historias de seguridad empiezan con algo roto. Esta empieza con todo funcionando exactamente como fue diseñado. Investigadores de Reco han seguido durante meses una campaña que han bautizado como City-F</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## La historia que empieza donde todo funciona como debería La mayoría de las historias de seguridad empiezan con algo roto. Esta empieza con todo funcionando exactamente como fue diseñado. Investigadores de Reco han seguido durante meses una campaña que han bautizado como City-F]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2024-36401 en GeoServer: la inyección XPath que convierte un servidor de mapas en una shell remota</title>
+      <link>https://xops.media/es/articulo/geoserver-cve-2024-36401-rce-xpath-injection</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/geoserver-cve-2024-36401-rce-xpath-injection#es</guid>
+      <pubDate>Sat, 22 Aug 2026 12:19:30 GMT</pubDate>
+      <description>## Por qué un servidor de mapas importa en tu modelo de amenaza GeoServer no es una aplicación exótica. Es el servidor cartográfico de código abierto que publica datos geoespaciales para portales de catastro, visualizadores meteorológicos, plataformas de urbanismo, atlas sanitari</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Por qué un servidor de mapas importa en tu modelo de amenaza GeoServer no es una aplicación exótica. Es el servidor cartográfico de código abierto que publica datos geoespaciales para portales de catastro, visualizadores meteorológicos, plataformas de urbanismo, atlas sanitari</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Por qué un servidor de mapas importa en tu modelo de amenaza GeoServer no es una aplicación exótica. Es el servidor cartográfico de código abierto que publica datos geoespaciales para portales de catastro, visualizadores meteorológicos, plataformas de urbanismo, atlas sanitari]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-59310: la campaña global de explotación contra VMware vCenter — y por qué parchear solo no detiene la capa de persistencia</title>
+      <link>https://xops.media/es/articulo/cve-2026-59310-vmware-vcenter-global-campaign-persistence</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/cve-2026-59310-vmware-vcenter-global-campaign-persistence#es</guid>
+      <pubDate>Wed, 19 Aug 2026 07:48:00 GMT</pubDate>
+      <description># CVE-2026-59310: la campaña global de explotación contra VMware vCenter — y por qué parchear solo no detiene la capa de persistencia Cinco días. Esa es la ventana completa entre la divulgación pública de CVE-2026-59310 el 29 de julio de 2026 y la primera explotación confirmada d</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary># CVE-2026-59310: la campaña global de explotación contra VMware vCenter — y por qué parchear solo no detiene la capa de persistencia Cinco días. Esa es la ventana completa entre la divulgación pública de CVE-2026-59310 el 29 de julio de 2026 y la primera explotación confirmada d</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[# CVE-2026-59310: la campaña global de explotación contra VMware vCenter — y por qué parchear solo no detiene la capa de persistencia Cinco días. Esa es la ventana completa entre la divulgación pública de CVE-2026-59310 el 29 de julio de 2026 y la primera explotación confirmada d]]></content:encoded>
+    </item>
+    <item>
+      <title>CVE-2026-59310 en VMware vCenter: acceso persistente ya en producción, sin parche no hay defensa</title>
+      <link>https://xops.media/es/articulo/vmware-vcenter-cve-2026-59310-explotacion-activa-persistencia</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/vmware-vcenter-cve-2026-59310-explotacion-activa-persistencia#es</guid>
+      <pubDate>Wed, 19 Aug 2026 07:45:30 GMT</pubDate>
+      <description>## Una vulnerabilidad que no admite espera El aviso de Hispasec Unaaldia del 13 de agosto de 2026 describe una realidad incómoda: CVE-2026-59310, una falla de severidad crítica en el componente Syslog Server de Broadcom VMware vCenter, está siendo explotada de forma activa contra</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>## Una vulnerabilidad que no admite espera El aviso de Hispasec Unaaldia del 13 de agosto de 2026 describe una realidad incómoda: CVE-2026-59310, una falla de severidad crítica en el componente Syslog Server de Broadcom VMware vCenter, está siendo explotada de forma activa contra</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[## Una vulnerabilidad que no admite espera El aviso de Hispasec Unaaldia del 13 de agosto de 2026 describe una realidad incómoda: CVE-2026-59310, una falla de severidad crítica en el componente Syslog Server de Broadcom VMware vCenter, está siendo explotada de forma activa contra]]></content:encoded>
+    </item>
+    <item>
+      <title>Intel y AMD parchean más de 80 vulnerabilidades en su Patch Tuesday de agosto 2026</title>
+      <link>https://xops.media/es/articulo/intel-amd-patch-tuesday-agosto-2026-80-vulnerabilidades</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/intel-amd-patch-tuesday-agosto-2026-80-vulnerabilidades#es</guid>
+      <pubDate>Wed, 19 Aug 2026 07:45:00 GMT</pubDate>
+      <description>El Patch Tuesday de los fabricantes de chips llegó el 12 de agosto de 2026 y la mayoría de los equipos DevSecOps lo dejó pasar mientras dormía. Mientras todos estaban ocupados clasificando las 398 vulnerabilidades de Windows de Microsoft, Intel y AMD publicaron avisos que cubren </description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>El Patch Tuesday de los fabricantes de chips llegó el 12 de agosto de 2026 y la mayoría de los equipos DevSecOps lo dejó pasar mientras dormía. Mientras todos estaban ocupados clasificando las 398 vulnerabilidades de Windows de Microsoft, Intel y AMD publicaron avisos que cubren </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[El Patch Tuesday de los fabricantes de chips llegó el 12 de agosto de 2026 y la mayoría de los equipos DevSecOps lo dejó pasar mientras dormía. Mientras todos estaban ocupados clasificando las 398 vulnerabilidades de Windows de Microsoft, Intel y AMD publicaron avisos que cubren ]]></content:encoded>
+    </item>
     <item>
       <title>Veeam, Terraform y Django publican parches de seguridad críticos</title>
       <link>https://xops.media/es/articulo/veeam-terraform-django-security-patches</link>
