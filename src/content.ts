@@ -351,6 +351,7 @@ export function loadPage(
 // simplemente no aparece en el map y `coverUrlFor()` devuelve null — el
 // componente ArticleCard/ArticlePage trata null como "no hay portada".
 const COVER_SLUGS = [
+  "x-ops-dubai-2026-media-partners",
   "teamcity-cve-2026-63077-rce",
   "kvm-nested-virtualization-isolation-flaw",
   "metabase-zero-day-sql-injection",
