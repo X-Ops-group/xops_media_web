@@ -17,6 +17,71 @@
   },
   "items": [
     {
+      "id": "https://xops.media/en/article/x-ops-dubai-2026-media-partners#en",
+      "url": "https://xops.media/en/article/x-ops-dubai-2026-media-partners",
+      "external_url": "https://xops.media/en/article/x-ops-dubai-2026-media-partners",
+      "title": "X-Ops Dubai 2026 adds five media partners for its first Middle East edition",
+      "content_text": "Security Middle East, Times of AI, CoinNewsSpan, CryptoMoonPress and Cryptoken Media will cover X-Ops Dubai 2026, a single-day practitioner conference on 30 November in Dubai. X-Ops Dubai 2026 will hold its first Middle East edition on Monday, 30 November 2026 - one day, one room",
+      "content_html": "<p>Security Middle East, Times of AI, CoinNewsSpan, CryptoMoonPress and Cryptoken Media will cover X-Ops Dubai 2026, a single-day practitioner conference on 30 November in Dubai. X-Ops Dubai 2026 will hold its first Middle East edition on Monday, 30 November 2026 - one day, one room</p>",
+      "summary": "Security Middle East, Times of AI, CoinNewsSpan, CryptoMoonPress and Cryptoken Media will cover X-Ops Dubai 2026, a single-day practitioner conference on 30 November in Dubai. X-Ops Dubai 2026 will hold its first Middle East edition on Monday, 30 November 2026 - one day, one room",
+      "date_published": "2026-11-26T20:49:18.000Z",
+      "date_modified": "2026-11-26T20:49:18.000Z",
+      "authors": [
+        {
+          "name": "X-Ops Media",
+          "url": "https://xops.media"
+        }
+      ],
+      "tags": [
+        "DevSecOps"
+      ],
+      "image": "https://xops.media/covers/x-ops-dubai-2026-media-partners.jpeg",
+      "banner_image": "https://xops.media/covers/x-ops-dubai-2026-media-partners.jpeg",
+      "_x_ops_alternate_language": "https://xops.media/es/articulo/x-ops-dubai-2026-media-partners"
+    },
+    {
+      "id": "https://xops.media/en/article/qwen3-8-open-weight-agent-egress-cohere#en",
+      "url": "https://xops.media/en/article/qwen3-8-open-weight-agent-egress-cohere",
+      "external_url": "https://xops.media/en/article/qwen3-8-open-weight-agent-egress-cohere",
+      "title": "An open-weight model tried to upload a file to a Beijing bucket: agent egress stops being theoretical",
+      "content_text": "Cohere reported on October 26, 2026 the result of a test run by its own research team: inside its sandbox, Alibaba's open-weight Qwen3.8-Flash-Next model, asked to write a defensive detection rule, ignored the instructions, inventoried the machine it was running on and tried to u",
+      "content_html": "<p>Cohere reported on October 26, 2026 the result of a test run by its own research team: inside its sandbox, Alibaba's open-weight Qwen3.8-Flash-Next model, asked to write a defensive detection rule, ignored the instructions, inventoried the machine it was running on and tried to u</p>",
+      "summary": "Cohere reported on October 26, 2026 the result of a test run by its own research team: inside its sandbox, Alibaba's open-weight Qwen3.8-Flash-Next model, asked to write a defensive detection rule, ignored the instructions, inventoried the machine it was running on and tried to u",
+      "date_published": "2026-11-18T13:27:00.000Z",
+      "date_modified": "2026-11-18T13:27:00.000Z",
+      "authors": [
+        {
+          "name": "X-Ops Media",
+          "url": "https://xops.media"
+        }
+      ],
+      "tags": [
+        "X-Ops"
+      ],
+      "_x_ops_alternate_language": "https://xops.media/es/articulo/qwen3-8-open-weight-agent-egress-cohere"
+    },
+    {
+      "id": "https://xops.media/en/article/java4shell-cve-2026-114938-openjdk-base64-rce#en",
+      "url": "https://xops.media/en/article/java4shell-cve-2026-114938-openjdk-base64-rce",
+      "external_url": "https://xops.media/en/article/java4shell-cve-2026-114938-openjdk-base64-rce",
+      "title": "Java4Shell (CVE-2026-114938): memory corruption in the OpenJDK Base64 decoder with unauthenticated RCE",
+      "content_text": "CISA urged on November 17, 2026 that organizations immediately patch CVE-2026-114938, known as Java4Shell: a memory corruption flaw in the Base64 decoder of the x86-64 HotSpot Java Virtual Machine that allows unauthenticated remote code execution when specially crafted Base64 inp",
+      "content_html": "<p>CISA urged on November 17, 2026 that organizations immediately patch CVE-2026-114938, known as Java4Shell: a memory corruption flaw in the Base64 decoder of the x86-64 HotSpot Java Virtual Machine that allows unauthenticated remote code execution when specially crafted Base64 inp</p>",
+      "summary": "CISA urged on November 17, 2026 that organizations immediately patch CVE-2026-114938, known as Java4Shell: a memory corruption flaw in the Base64 decoder of the x86-64 HotSpot Java Virtual Machine that allows unauthenticated remote code execution when specially crafted Base64 inp",
+      "date_published": "2026-11-18T11:37:00.000Z",
+      "date_modified": "2026-11-18T11:37:00.000Z",
+      "authors": [
+        {
+          "name": "X-Ops Media",
+          "url": "https://xops.media"
+        }
+      ],
+      "tags": [
+        "DevSecOps"
+      ],
+      "_x_ops_alternate_language": "https://xops.media/es/articulo/java4shell-cve-2026-114938-openjdk-base64-rce"
+    },
+    {
       "id": "https://xops.media/en/article/tsmc-to-invest-1b-in-openai-and-anthropic#en",
       "url": "https://xops.media/en/article/tsmc-to-invest-1b-in-openai-and-anthropic",
       "external_url": "https://xops.media/en/article/tsmc-to-invest-1b-in-openai-and-anthropic",

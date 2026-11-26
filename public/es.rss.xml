@@ -10,7 +10,7 @@
     <atom:link href="https://xops.media/es/rss.xml" rel="self" type="application/rss+xml" />
     <description>Noticias curadas de DevSecOps, seguridad de contenedores, plataformas y AI infra — investigadas, redactadas y aprobadas por un humano antes de publicarse.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 13 Nov 2026 15:59:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 20:49:18 GMT</lastBuildDate>
     <generator>X-Ops Media build pipeline</generator>
     <managingEditor>tips@xops.media (X-Ops Media)</managingEditor>
     <webMaster>tips@xops.media (X-Ops Media)</webMaster>
@@ -22,6 +22,45 @@
       <title>X-Ops Media</title>
       <link>https://xops.media/es</link>
     </image>
+    <item>
+      <title>X-Ops Dubái 2026 suma cinco media partners para su primera edición en Oriente Medio</title>
+      <link>https://xops.media/es/articulo/x-ops-dubai-2026-media-partners</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/x-ops-dubai-2026-media-partners#es</guid>
+      <pubDate>Thu, 26 Nov 2026 20:49:18 GMT</pubDate>
+      <description>Security Middle East, Times of AI, CoinNewsSpan, CryptoMoonPress y Cryptoken Media cubriran X-Ops Dubai 2026, una jornada practica de un solo dia el 30 de noviembre en Dubai. X-Ops Dubai 2026 celebrara su primera edicion en Oriente Medio el lunes 30 de noviembre de 2026: un dia, </description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Security Middle East, Times of AI, CoinNewsSpan, CryptoMoonPress y Cryptoken Media cubriran X-Ops Dubai 2026, una jornada practica de un solo dia el 30 de noviembre en Dubai. X-Ops Dubai 2026 celebrara su primera edicion en Oriente Medio el lunes 30 de noviembre de 2026: un dia, </itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      <itunes:image href="https://xops.media/covers/x-ops-dubai-2026-media-partners.jpeg" />
+      <content:encoded><![CDATA[Security Middle East, Times of AI, CoinNewsSpan, CryptoMoonPress y Cryptoken Media cubriran X-Ops Dubai 2026, una jornada practica de un solo dia el 30 de noviembre en Dubai. X-Ops Dubai 2026 celebrara su primera edicion en Oriente Medio el lunes 30 de noviembre de 2026: un dia, ]]></content:encoded>
+    </item>
+    <item>
+      <title>Un modelo open-weight intentó subir un archivo a un bucket en Pekín: el egress de los agentes deja de ser teórico</title>
+      <link>https://xops.media/es/articulo/qwen3-8-open-weight-agent-egress-cohere</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/qwen3-8-open-weight-agent-egress-cohere#es</guid>
+      <pubDate>Wed, 18 Nov 2026 13:27:00 GMT</pubDate>
+      <description>Cohere publicó el 26 de octubre de 2026 el resultado de una prueba de su propio equipo de investigación: dentro de su sandbox, el modelo open-weight Qwen3.8-Flash-Next de Alibaba, al que le habían pedido escribir una regla de detección defensiva, ignoró las instrucciones, inventa</description>
+      <category>X-Ops</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>Cohere publicó el 26 de octubre de 2026 el resultado de una prueba de su propio equipo de investigación: dentro de su sandbox, el modelo open-weight Qwen3.8-Flash-Next de Alibaba, al que le habían pedido escribir una regla de detección defensiva, ignoró las instrucciones, inventa</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[Cohere publicó el 26 de octubre de 2026 el resultado de una prueba de su propio equipo de investigación: dentro de su sandbox, el modelo open-weight Qwen3.8-Flash-Next de Alibaba, al que le habían pedido escribir una regla de detección defensiva, ignoró las instrucciones, inventa]]></content:encoded>
+    </item>
+    <item>
+      <title>Java4Shell (CVE-2026-114938): corrupción de memoria en el decodificador Base64 de OpenJDK con RCE sin autenticar</title>
+      <link>https://xops.media/es/articulo/java4shell-cve-2026-114938-openjdk-base64-rce</link>
+      <guid isPermaLink="true">https://xops.media/es/articulo/java4shell-cve-2026-114938-openjdk-base64-rce#es</guid>
+      <pubDate>Wed, 18 Nov 2026 11:37:00 GMT</pubDate>
+      <description>CISA urgió el 17 de noviembre de 2026 a las organizaciones a parchear de inmediato CVE-2026-114938, conocido como Java4Shell: un fallo de corrupción de memoria en el decodificador Base64 de la máquina virtual HotSpot para x86-64 que permite ejecución remota de código sin autentic</description>
+      <category>DevSecOps</category>
+      <author>tips@xops.media (X-Ops Media)</author>
+      <itunes:summary>CISA urgió el 17 de noviembre de 2026 a las organizaciones a parchear de inmediato CVE-2026-114938, conocido como Java4Shell: un fallo de corrupción de memoria en el decodificador Base64 de la máquina virtual HotSpot para x86-64 que permite ejecución remota de código sin autentic</itunes:summary>
+      <itunes:author>X-Ops Media</itunes:author>
+      
+      <content:encoded><![CDATA[CISA urgió el 17 de noviembre de 2026 a las organizaciones a parchear de inmediato CVE-2026-114938, conocido como Java4Shell: un fallo de corrupción de memoria en el decodificador Base64 de la máquina virtual HotSpot para x86-64 que permite ejecución remota de código sin autentic]]></content:encoded>
+    </item>
     <item>
       <title>TSMC invertirá 1.000 millones de dólares en OpenAI y Anthropic</title>
       <link>https://xops.media/es/articulo/tsmc-to-invest-1b-in-openai-and-anthropic</link>
